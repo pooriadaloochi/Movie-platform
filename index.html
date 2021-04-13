@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- link CSS Style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        function show_hide() {
+            if (document.getElementById("hide_form").style.display === "none") {
+                document.getElementById("hide_form").style.display = "block";
+                document.getElementById("hide_form").style.transition = ".9s";
+
+            }
+        }
+
+        function show_hide2() {
+            var y = document.getElementById("hide_form");
+            if (y.style.display === "block") {
+                y.style.display = "none";
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="masthead">
+        <div class="main_masthead">
+            <div class="sign_in">
+                <h3>ورود / ثبت نام</h3>
+            </div>
+            <div class="search" role="search">
+
+                <img src="icon/search.svg" alt="" onclick="show_hide(this)">
+                <a href="#">
+                    <form action="" method="" id="hide_form" style="display: none;">
+                        <input type="text" name="" value="" placeholder="جستجوی کلمه مورد نظر" onfocus="this.placeholder=''" onblur="this.placeholder='جستجوی کلمه مورد نظر'">
+                    </form>
+                </a>
+            </div>
+
+
+            <ul>
+                <li><a href="#" class="name_site">فیلم باز</a></li>
+                <li><a href="#">صفحه اصلی</a></li>
+                <li><a href="#">فیلم</a></li>
+                <li><a href="#">سریال</a></li>
+                <li><a href="#">دسته بندی</a></li>
+                <li><a href="#">تماس ما</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Swiper -->
+    <div class="swiper-container" onclick="show_hide2()">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <a href="#"><img src="img/film baz.png" alt=""></a>
+            </div>
+
+            <div class="swiper-slide">
+                <a href="#"><img src="img/The Godfather11.jpg" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img src="img/lord of ring.jpg" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img src="img/morgan.jpg" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img src="img/the-joker.jpg" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img src="img/godfather2.jpg" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img src="img/The Good, the Bad and the Ugly.jpg" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img src="img/pulp.jpg" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img src="img/schindler.jpg" alt=""></a>
+            </div>
+        </div>
+
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+
+        });
+    </script>
+</body>
+
+</html>
