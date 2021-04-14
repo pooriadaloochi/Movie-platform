@@ -59,55 +59,74 @@
             </ul>
         </div>
     </div>
-    <!-- Swiper -->
-    <div class="swiper-container" onclick="show_hide2()">
-        <div class="swiper-wrapper">
+    <div id="main">
+        <!-- Swiper -->
+        <div class="swiper-container" onclick="show_hide2()">
+            <div class="swiper-wrapper">
 
-            <div class="swiper-slide">
-                <a href="#"><img src="img/film baz.png" alt=""></a>
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/film baz.png" alt=""></a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/The Godfather11.jpg" alt=""></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/lord of ring.jpg" alt=""></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/morgan.jpg" alt=""></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/the-joker.jpg" alt=""></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/godfather2.jpg" alt=""></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/The Good, the Bad and the Ugly.jpg" alt=""></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/pulp.jpg" alt=""></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/schindler.jpg" alt=""></a>
+                </div>
             </div>
 
-            <div class="swiper-slide">
-                <a href="#"><img src="img/The Godfather11.jpg" alt=""></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="#"><img src="img/lord of ring.jpg" alt=""></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="#"><img src="img/morgan.jpg" alt=""></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="#"><img src="img/the-joker.jpg" alt=""></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="#"><img src="img/godfather2.jpg" alt=""></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="#"><img src="img/The Good, the Bad and the Ugly.jpg" alt=""></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="#"><img src="img/pulp.jpg" alt=""></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="#"><img src="img/schindler.jpg" alt=""></a>
-            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
-
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <div class="clear"></div>
+        <div class="relative">
+            <header class="relheader">
+                <button type="button" class="types" onclick="category(this)"> نوع
+                    <!-- <ul >
+                        <li><a href="#"> 
+                            سینمایی
+                        </a></li>
+                    </ul> -->
+                    <img src="icon/direction1.svg" alt="">as
+                </button>
+            </header>
+        </div>
     </div>
 
+
+
+
+    <!-- script Swiper -->
     <script>
         var swiper = new Swiper('.swiper-container', {
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
+            // autoplay: {
+            //     delay: 2500,
+            //     disableOnInteraction: false,
+            // },
 
         });
     </script>
