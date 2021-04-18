@@ -16,8 +16,9 @@
 </head>
 
 <body>
-    <div class="masthead">
-        <div class="main_masthead">
+
+    <header>
+        <nav id="header-nav" role="navigation">
             <div class="sign_in">
                 <a href="#">
                     <h3>ورود / ثبت نام</h3>
@@ -31,7 +32,7 @@
                 </form>
             </div>
 
-            <a href="#"><img src="img/filmbazz.png" alt="" /></a>
+            <a href="#"><img src="img/filmbazz.png" alt="" id="logo" /></a>
             <ul>
                 <!-- <li><a href="#" class="name_site"><b>فیلم باز</b></a></li> -->
                 <li>
@@ -50,8 +51,9 @@
                     <a href="#"><b>تماس ما</b></a>
                 </li>
             </ul>
-        </div>
-    </div>
+        </nav>
+    </header>
+
     <div id="main">
         <!-- Swiper -->
         <div class="swiper-container" onclick="show_hide2()">
@@ -91,6 +93,7 @@
             <div class="swiper-button-prev"></div>
         </div>
         <div class="clear"></div>
+
         <!-- relative post -->
         <div class="relative">
             <!-- header relative post -->
@@ -171,8 +174,353 @@
                     <h5>اعمال فیلتر ها</h5>
                 </div>
             </header>
+            <div class="clear"></div>
+            <!-- relative_post -->
+            <section class="relative_post">
+
+                <h1>جدیدترین فیلم ها</h1>
+                <ul id="relative_pic">
+                    <li>
+                        <a href="#">
+                            <img src="img/walking dead.jpg" alt="">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="img/jonathan.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/1917.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/Fantastic_Beasts.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/dynasties.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/unhinged.jpeg" alt="">
+                        </a>
+                    </li>
+
+                </ul>
+
+            </section>
         </div>
+        <!-- posts -->
+        <article class="post">
+            <header>
+                <img src="icon/movie.svg" alt="">
+                <h1>دانلود فیلم</h1>
+                <h1>The Fault in Our Stars</h1>
+                <div class="star_imdb"> <img src="icon/star.svg" alt=""></div>
+                <h3> : IMDB </h3>
+                <h3> 7.6&nbsp; </h3>
+            </header>
+            <section class="details_movie">
+                <a href="#"><img src="img/The Fault in Our Stars.jpg" alt=""></a>
+                <ul>
+                    <li>
+                        <h3> نام فیلم : </h3>
+                        <h3>The Fault in Our Stars</h3>
+                    </li>
+
+                    <li>
+                        <h3> ژانر : </h3>
+                        <h3>خانوادگی و درام</h3>
+                    </li>
+
+                    <li>
+                        <h3>امتیاز : </h3>
+                        <h3> &nbsp;7.8 در IMDB</h3>
+                    </li>
+
+                    <li>
+                        <h3>زبان : </h3>
+                        <h3>&nbsp;انگلیسی</h3>
+                    </li>
+
+                    <li>
+                        <h3>محصول کشور : </h3>
+                        <h3>&nbsp;آمریکا</h3>
+                    </li>
+
+                    <li>
+                        <h3>سال انتشار : </h3>
+                        <h3>&nbsp;2014</h3>
+                    </li>
+
+                    <li>
+                        <h3>کارگردان : </h3>
+                        <h3> &nbsp;دیوید فینچر</h3>
+                    </li>
+
+                    <li>
+                        <h3>بازیگران : </h3>
+                        <h3>&nbsp; Shailene Woodley, Ansel Elgort, Nat Wolff</h3>
+                    </li>
+
+                </ul>
+                <footer class="details_description">
+                    <div class="description">
+                        <h3>خلاصه داستان  : </h3>
+                        <p>فیلمی رمانتیک درام آمریکایی به کارگردانی جاش بون، برگرفته از رمانی به همین نام به قلم جان گرین است. در این فیلم شیلین وودلی، انسل الگورت، لورا درن، سام ترمل، نات وولف و ویلم دفو نقش‌آفرینی می‌کنند. فیلم‌برداری بخت پریشان در پیتسبورگ
+                            و آمستردام صورت گرفته‌است و در تاریخ ۶ ژوئن ۲۰۱۴ روی پرده .</p>
+                    </div>
+                    <div class="download">
+                        <a href="#">
+                            <h3>توضیحات + دانلود</h3>
+                        </a>
+                    </div>
+                </footer>
+            </section>
+
+        </article>
+        <!-- posts -->
+        <article class="post">
+            <header>
+                <img src="icon/movie.svg" alt="">
+                <h1>دانلود فیلم</h1>
+                <h1>The Fault in Our Stars</h1>
+                <div class="star_imdb"> <img src="icon/star.svg" alt=""></div>
+                <h3> : IMDB </h3>
+                <h3> 7.6&nbsp; </h3>
+            </header>
+            <section class="details_movie">
+                <a href="#"><img src="img/The Fault in Our Stars.jpg" alt=""></a>
+                <ul>
+                    <li>
+                        <h3> نام فیلم : </h3>
+                        <h3>The Fault in Our Stars</h3>
+                    </li>
+
+                    <li>
+                        <h3> ژانر : </h3>
+                        <h3>خانوادگی و درام</h3>
+                    </li>
+
+                    <li>
+                        <h3>امتیاز : </h3>
+                        <h3> &nbsp;7.8 در IMDB</h3>
+                    </li>
+
+                    <li>
+                        <h3>زبان : </h3>
+                        <h3>&nbsp;انگلیسی</h3>
+                    </li>
+
+                    <li>
+                        <h3>محصول کشور : </h3>
+                        <h3>&nbsp;آمریکا</h3>
+                    </li>
+
+                    <li>
+                        <h3>سال انتشار : </h3>
+                        <h3>&nbsp;2014</h3>
+                    </li>
+
+                    <li>
+                        <h3>کارگردان : </h3>
+                        <h3> &nbsp;دیوید فینچر</h3>
+                    </li>
+
+                    <li>
+                        <h3>بازیگران : </h3>
+                        <h3>&nbsp; Shailene Woodley, Ansel Elgort, Nat Wolff</h3>
+                    </li>
+
+                </ul>
+                <footer class="details_description">
+                    <div class="description">
+                        <h3>خلاصه داستان  : </h3>
+                        <p>فیلمی رمانتیک درام آمریکایی به کارگردانی جاش بون، برگرفته از رمانی به همین نام به قلم جان گرین است. در این فیلم شیلین وودلی، انسل الگورت، لورا درن، سام ترمل، نات وولف و ویلم دفو نقش‌آفرینی می‌کنند. فیلم‌برداری بخت پریشان در پیتسبورگ
+                            و آمستردام صورت گرفته‌است و در تاریخ ۶ ژوئن ۲۰۱۴ روی پرده سینما اکران شد.</p>
+                    </div>
+                    <div class="download">
+                        <a href="#">
+                            <h3>توضیحات + دانلود</h3>
+                        </a>
+                    </div>
+                </footer>
+            </section>
+
+        </article>
+        <!-- posts -->
+        <article class="post">
+            <header>
+                <img src="icon/movie.svg" alt="">
+                <h1>دانلود فیلم</h1>
+                <h1>The Fault in Our Stars</h1>
+                <div class="star_imdb"> <img src="icon/star.svg" alt=""></div>
+                <h3> : IMDB </h3>
+                <h3> 7.6&nbsp; </h3>
+            </header>
+            <section class="details_movie">
+                <a href="#"><img src="img/The Fault in Our Stars.jpg" alt=""></a>
+                <ul>
+                    <li>
+                        <h3> نام فیلم : </h3>
+                        <h3>The Fault in Our Stars</h3>
+                    </li>
+
+                    <li>
+                        <h3> ژانر : </h3>
+                        <h3>خانوادگی و درام</h3>
+                    </li>
+
+                    <li>
+                        <h3>امتیاز : </h3>
+                        <h3> &nbsp;7.8 در IMDB</h3>
+                    </li>
+
+                    <li>
+                        <h3>زبان : </h3>
+                        <h3>&nbsp;انگلیسی</h3>
+                    </li>
+
+                    <li>
+                        <h3>محصول کشور : </h3>
+                        <h3>&nbsp;آمریکا</h3>
+                    </li>
+
+                    <li>
+                        <h3>سال انتشار : </h3>
+                        <h3>&nbsp;2014</h3>
+                    </li>
+
+                    <li>
+                        <h3>کارگردان : </h3>
+                        <h3> &nbsp;دیوید فینچر</h3>
+                    </li>
+
+                    <li>
+                        <h3>بازیگران : </h3>
+                        <h3>&nbsp; Shailene Woodley, Ansel Elgort, Nat Wolff</h3>
+                    </li>
+
+                </ul>
+                <footer class="details_description">
+                    <div class="description">
+                        <h3>خلاصه داستان  : </h3>
+                        <p>فیلمی رمانتیک درام آمریکایی به کارگردانی جاش بون، برگرفته از رمانی به همین نام به قلم جان گرین است. در این فیلم شیلین وودلی، انسل الگورت، لورا درن، سام ترمل، نات وولف و ویلم دفو نقش‌آفرینی می‌کنند. فیلم‌برداری بخت پریشان در پیتسبورگ
+                            و آمستردام صورت گرفته‌است و در تاریخ ۶ ژوئن ۲۰۱۴ روی پرده سینما اکران شد.</p>
+                    </div>
+                    <div class="download">
+                        <a href="#">
+                            <h3>توضیحات + دانلود</h3>
+                        </a>
+                    </div>
+                </footer>
+            </section>
+
+        </article>
+        <!-- posts -->
+        <article class="post">
+            <header>
+                <img src="icon/movie.svg" alt="">
+                <h1>دانلود فیلم</h1>
+                <h1>The Fault in Our Stars</h1>
+                <div class="star_imdb"> <img src="icon/star.svg" alt=""></div>
+                <h3> : IMDB </h3>
+                <h3> 7.6&nbsp; </h3>
+            </header>
+            <section class="details_movie">
+                <a href="#"><img src="img/The Fault in Our Stars.jpg" alt=""></a>
+                <ul>
+                    <li>
+                        <h3> نام فیلم : </h3>
+                        <h3>The Fault in Our Stars</h3>
+                    </li>
+
+                    <li>
+                        <h3> ژانر : </h3>
+                        <h3>خانوادگی و درام</h3>
+                    </li>
+
+                    <li>
+                        <h3>امتیاز : </h3>
+                        <h3> &nbsp;7.8 در IMDB</h3>
+                    </li>
+
+                    <li>
+                        <h3>زبان : </h3>
+                        <h3>&nbsp;انگلیسی</h3>
+                    </li>
+
+                    <li>
+                        <h3>محصول کشور : </h3>
+                        <h3>&nbsp;آمریکا</h3>
+                    </li>
+
+                    <li>
+                        <h3>سال انتشار : </h3>
+                        <h3>&nbsp;2014</h3>
+                    </li>
+
+                    <li>
+                        <h3>کارگردان : </h3>
+                        <h3> &nbsp;دیوید فینچر</h3>
+                    </li>
+
+                    <li>
+                        <h3>بازیگران : </h3>
+                        <h3>&nbsp; Shailene Woodley, Ansel Elgort, Nat Wolff</h3>
+                    </li>
+
+                </ul>
+                <footer class="details_description">
+                    <div class="description">
+                        <h3>خلاصه داستان  : </h3>
+                        <p>فیلمی رمانتیک درام آمریکایی به کارگردانی جاش بون، برگرفته از رمانی به همین نام به قلم جان گرین است. در این فیلم شیلین وودلی، انسل الگورت، لورا درن، سام ترمل، نات وولف و ویلم دفو نقش‌آفرینی می‌کنند. فیلم‌برداری بخت پریشان در پیتسبورگ
+                            و آمستردام صورت گرفته‌است و در تاریخ ۶ ژوئن ۲۰۱۴ روی پرده سینما اکران شد.</p>
+                    </div>
+                    <div class="download">
+                        <a href="#">
+                            <h3>توضیحات + دانلود</h3>
+                        </a>
+                    </div>
+                </footer>
+            </section>
+
+        </article>
+        <aside class="left-sidebar">
+            <section class="sidebox">
+
+            </section>
+        </aside>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- finish -->
     </div>
+
+
+
+
+
+
+
+
+
+
 
     <!-- script Swiper -->
     <script>

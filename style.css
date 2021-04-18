@@ -187,7 +187,7 @@ select {
 
 body {
     color: #444;
-    background: #fdfdfd;
+    background: #ecedee;
     font: 12px Tahoma, 'sam';
     direction: rtl;
     /*overflow-x: hidden;*/
@@ -239,55 +239,57 @@ a {
 
 /*  */
 
-.masthead {
-    width: 100%;
-    height: 70px;
-    background: #fdfdfd;
-    position: relative;
-}
 
-.main_masthead {
+/* header */
+
+#header-nav {
     width: 100%;
     margin: 0 auto;
 }
 
-.main_masthead ul li {
+#header-nav ul {
+    width: 60%;
     float: right;
-    position: relative;
+    margin-top: -32px;
 }
 
-.main_masthead ul li a {
-    color: #707070;
-    display: block;
+#header-nav ul li {
+    float: right;
+    position: relative;
     padding: 10px 15px;
-    font: 20px/2 'poori';
     margin: 5px 30px 0 0;
 }
 
-.main_masthead img {
+#header-nav ul li a {
+    color: #707070;
+    display: block;
+    font: 20px/2 'poori';
+    text-align: center;
+}
+
+#header-nav #logo {
     width: 100px;
     height: 73px;
-    margin: 0 100px 13px 20px;
-    ;
+    margin: 0 70px 13px 20px;
     float: right;
     object-fit: fill;
 }
 
-.main_masthead ul li a:hover {
+#header-nav ul li a:hover {
     color: #cc0033;
 }
 
 
 /* sign in & sin up*/
 
-.sign_in {
+#header-nav .sign_in {
     width: 120px;
     height: 38px;
     float: left;
     margin: 15px 0 0 100px;
 }
 
-.sign_in a {
+#header-nav .sign_in a {
     width: 120px;
     height: 38px;
     float: left;
@@ -297,11 +299,11 @@ a {
     border: 1px solid #cc0033;
 }
 
-.sign_in h3 {
+#header-nav .sign_in h3 {
     margin: 10px 16px;
 }
 
-.sign_in a:hover {
+#header-nav .sign_in a:hover {
     background: #fdfdfd;
     color: #cc0033;
     transition: .6s;
@@ -310,14 +312,14 @@ a {
 
 /* search */
 
-.search {
+#header-nav .search {
     width: 300px;
     height: 32px;
     float: left;
     margin: 1px 0 0 10px;
 }
 
-.search img {
+#header-nav .search img {
     float: left;
     width: 25px;
     height: 25px;
@@ -325,7 +327,7 @@ a {
     cursor: pointer;
 }
 
-.search form {
+#header-nav .search form {
     width: 240px;
     height: 32px;
     float: left;
@@ -336,7 +338,7 @@ a {
     background: #707070;
 }
 
-.search input {
+#header-nav .search input {
     width: 90%;
     height: 100%;
     float: right;
@@ -372,7 +374,7 @@ a {
 
 #main {
     width: 100%;
-    height: auto;
+    height: 100%;
     background: #ecedee;
 }
 
@@ -426,14 +428,13 @@ a {
 /* relative */
 
 .relative {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    margin: 20px 76px;
+    float: right;
 }
 
 .relheader {
     width: 92%;
-    height: 100px;
-    margin: 0 20px;
     position: absolute;
 }
 
@@ -489,7 +490,7 @@ a {
 /* .Drawing_types */
 
 .Drawing_types {
-    width: 134px;
+    width: 99%;
     border: 1px solid #530808;
     background: #0101020a;
     float: right;
@@ -521,4 +522,195 @@ a {
     color: #2C3E50;
     transition: .5s;
     transform: scale(1.2);
+}
+
+
+/* relative_post */
+
+.relative_post {
+    width: 89%;
+    height: 350px;
+    float: right;
+    margin: 20px 50px 0 20px;
+    margin-top: 100px;
+    background: #fdfdfd;
+    border-radius: 8px;
+}
+
+.relative_post h1 {
+    float: right;
+    font: 20px 'sam';
+    margin: 25px 35px 0 0;
+    border-bottom: 1px solid #333;
+    padding-left: 30px;
+    padding-right: 10px;
+}
+
+.relative_post #relative_pic {
+    width: 100%;
+    height: auto;
+    float: right;
+    margin: 0 30px;
+}
+
+#relative_pic li {
+    width: 13%;
+    height: 210px;
+    float: right;
+    margin: 30px 15px;
+}
+
+#relative_pic li a {
+    width: 100%;
+    height: 100%;
+    float: right;
+}
+
+#relative_pic li a img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#relative_pic li a img:hover {
+    transition: .5s;
+    transform: scale(1.2);
+    box-shadow: 112px #000;
+}
+
+
+/* post */
+
+.post {
+    width: 48%;
+    height: auto;
+    float: right;
+    margin: 0 127px 30px 127px;
+    background: #fdfdfd;
+    border-radius: 8px;
+    padding-bottom: 20px;
+}
+
+
+/* post header */
+
+.post header {
+    width: 100%;
+    float: right;
+    border-bottom: 1px solid #333;
+    margin-top: 8px;
+    padding-bottom: 8px;
+}
+
+.post header img {
+    width: 25px;
+    height: 25px;
+    float: right;
+    margin: 10px;
+}
+
+.post header h1 {
+    float: right;
+    font: 20px 'poori', tahoma;
+    margin: 10px 0 10px 10px;
+}
+
+.post header .star_imdb {
+    float: left;
+}
+
+.post header h3 {
+    float: left;
+    margin-top: 10px;
+    font: 14px 'sam', tahoma;
+}
+
+
+/* details_movie*/
+
+.post .details_movie {
+    width: 100%;
+    height: auto;
+    float: right;
+}
+
+.post .details_movie a {
+    width: 120px;
+    height: 180px;
+    float: left;
+    margin: 30px 25px;
+}
+
+.post .details_movie a img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.post .details_movie ul {
+    width: 70%;
+    float: right;
+    margin: 10px 7px 0 0;
+}
+
+.post .details_movie ul li {
+    width: 100%;
+    float: right;
+}
+
+.post .details_movie ul li h3 {
+    font: 13px 'sam', tahoma;
+    float: right;
+}
+
+
+/* footer_details */
+
+.post .details_movie .details_description {
+    width: 100%;
+    height: auto;
+    float: right;
+}
+
+.details_description .description {
+    width: 75%;
+    height: auto;
+    float: right;
+    font: 12px 'sam', tahoma;
+}
+
+.details_description .description h3 {
+    float: right;
+    margin-right: 7px;
+}
+
+.details_description .description p {
+    float: right;
+    line-height: 1.5;
+    margin-right: 7px;
+}
+
+.details_description .download {
+    float: left;
+    margin: 30px 0 0 27px;
+}
+
+.details_description .download a {
+    width: 100px;
+    height: 30px;
+    float: left;
+    font: 14px 'sam', tahoma;
+    border-radius: 6px;
+    padding: 2px 7px 4px 8px;
+    margin: 0 0 0 3px;
+    background: #E74C3C;
+    color: #fdfdfd;
+    border: 1px solid #fdfdfd;
+}
+
+.details_description .download a:hover {
+    background: #fdfdfd;
+    color: #E74C3C;
+    border: 1px solid #E74C3C;
+    transition: .4s;
 }
