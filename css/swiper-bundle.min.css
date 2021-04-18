@@ -160,7 +160,7 @@
 }
 
 :root {
-    --swiper-navigation-size: 25px
+    --swiper-navigation-size: 45px
 }
 
 .swiper-button-next,
@@ -176,30 +176,18 @@
     align-items: center;
     justify-content: center;
     /* color: var(--swiper-navigation-color, var(--swiper-theme-color)) */
-    background: #fdfdfd;
     border-radius: 50px;
-    color: none;
-    border: .5px solid #fdfdfd;
-}
-
-.swiper-button-next {
-    padding: 7px 8px 7px 7px;
-}
-
-.swiper-button-prev {
-    padding: 7px 7px 7px 8px;
+    color: #fdfdfd;
 }
 
 .swiper-button-prev:hover {
     color: #fdfdfd;
     background: none;
-    border: .5px solid #fdfdfd;
 }
 
 .swiper-button-next:hover {
     color: #fdfdfd;
     background: none;
-    border: .5px solid #fdfdfd;
     transition: .4s;
 }
 

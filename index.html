@@ -2,23 +2,196 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>Swiper demo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta charset="utf-8" />
+    <title>poori</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <!-- link CSS Style -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- Swiper JS -->
     <script src="js/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
+</head>
+
+<body>
+    <div class="masthead">
+        <div class="main_masthead">
+            <div class="sign_in">
+                <a href="#">
+                    <h3>ورود / ثبت نام</h3>
+                </a>
+            </div>
+            <div class="search" role="search">
+                <img src="icon/search.svg" alt="" onclick="show_hide(this)" />
+
+                <form action="" method="" id="hide_form" style="display: none">
+                    <input type="text" name="" value="" placeholder="جستجوی کلمه مورد نظر" onfocus="this.placeholder=''" onblur="this.placeholder='جستجوی کلمه مورد نظر'" />
+                </form>
+            </div>
+
+            <a href="#"><img src="img/filmbazz.png" alt="" /></a>
+            <ul>
+                <!-- <li><a href="#" class="name_site"><b>فیلم باز</b></a></li> -->
+                <li>
+                    <a href="#"><b>صفحه اصلی</b></a>
+                </li>
+                <li>
+                    <a href="#"><b>فیلم</b></a>
+                </li>
+                <li>
+                    <a href="#"><b>سریال</b></a>
+                </li>
+                <li>
+                    <a href="#"><b>دسته بندی</b></a>
+                </li>
+                <li>
+                    <a href="#"><b>تماس ما</b></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="main">
+        <!-- Swiper -->
+        <div class="swiper-container" onclick="show_hide2()">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/film baz.png" alt="" /></a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/The Godfather11.jpg" alt="" /></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/lord of ring.jpg" alt="" /></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/morgan.jpg" alt="" /></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/the-joker.jpg" alt="" /></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/godfather2.jpg" alt="" /></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/The Good, the Bad and the Ugly.jpg" alt="" /></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/pulp.jpg" alt="" /></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/schindler.jpg" alt="" /></a>
+                </div>
+            </div>
+
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div class="clear"></div>
+        <!-- relative post -->
+        <div class="relative">
+            <!-- header relative post -->
+            <header class="relheader">
+                <div class="types" onclick="category(this)" onmouseover="hover(this)" onmouseout="hoverOff(this)">
+                    <h3>نوع</h3>
+                    <img src="icon/down1.svg" alt="" />
+                    <ul class="Drawing_types">
+                        <li><a href="#"> سینمایی </a></li>
+
+                        <li><a href="#"> سریال ایرانی </a></li>
+
+                        <li><a href="#"> انیمیشن </a></li>
+
+                        <li><a href="#"> سریال خارجی </a></li>
+                    </ul>
+                </div>
+                <div class="types" onclick="category(this)" onmouseover="hover(this)" onmouseout="hoverOff(this)">
+                    <h3>ژانر</h3>
+                    <img src="icon/down1.svg" alt="" />
+                    <ul class="Drawing_types">
+                        <li><a href="#"> جنایی </a></li>
+
+                        <li><a href="#"> کمدی </a></li>
+
+                        <li><a href="#"> تخیلی </a></li>
+
+                        <li><a href="#"> اکشن </a></li>
+
+                        <li><a href="#"> علمی </a></li>
+                    </ul>
+                </div>
+                <div class="types" onclick="category(this)" onmouseover="hover(this)" onmouseout="hoverOff(this)">
+                    <h3>کشور</h3>
+                    <img src="icon/down1.svg" alt="" />
+                    <ul class="Drawing_types">
+                        <li><a href="#"> آمریکا </a></li>
+
+                        <li><a href="#"> ایران </a></li>
+
+                        <li><a href="#"> چین </a></li>
+
+                        <li><a href="#"> فرانسه </a></li>
+
+                        <li><a href="#"> هند </a></li>
+                    </ul>
+                </div>
+                <div class="types" onclick="category(this)" onmouseover="hover(this)" onmouseout="hoverOff(this)">
+                    <h3>سال ساخت</h3>
+                    <img src="icon/down1.svg" alt="" />
+                    <ul class="Drawing_types">
+                        <li><a href="#"> 1900-1950 </a></li>
+
+                        <li><a href="#"> 1950-1980 </a></li>
+
+                        <li><a href="#"> 1980-2000 </a></li>
+
+                        <li><a href="#"> 2000-2010 </a></li>
+
+                        <li><a href="#"> 2010-2021 </a></li>
+                    </ul>
+                </div>
+                <div class="types" onclick="category(this)" onmouseover="hover(this)" onmouseout="hoverOff(this)">
+                    <h3>امتیاز IMDB</h3>
+
+                    <img src="icon/down1.svg" alt="" />
+                    <ul class="Drawing_types">
+                        <li><a href="#" id="date"> 7.0 - 5.0 </a></li>
+
+                        <li><a href="#"> 8.0 - 7.0 </a></li>
+
+                        <li><a href="#"> 9.0 - 8.0 </a></li>
+
+                        <li><a href="#"> 9.2 - 9.0 </a></li>
+                    </ul>
+                </div>
+                <div class="filter" onclick="category(this)">
+                    <h5>اعمال فیلتر ها</h5>
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <!-- script Swiper -->
+    <script>
+        var swiper = new Swiper(".swiper-container", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            // autoplay: {
+            //     delay: 2500,
+            //     disableOnInteraction: false,
+            // },
+        });
+    </script>
     <script>
         function show_hide() {
             if (document.getElementById("hide_form").style.display === "none") {
                 document.getElementById("hide_form").style.display = "block";
                 document.getElementById("hide_form").style.transition = ".9s";
-
             }
         }
 
@@ -28,110 +201,55 @@
                 y.style.display = "none";
             }
         }
-    </script>
-</head>
 
-<body>
+        function hover(th) {
+            th.style.transition = ".5s";
+            th.style.color = "#cc0e00";
+            th.style.backgroundColor = "#fdfdfd";
+            th.style.border = "1px solid #cc0e00";
+            if (!cnt) {
+                th.getElementsByTagName("img")[0].src = "icon/down2.svg";
 
-    <div class="masthead">
-        <div class="main_masthead">
-            <div class="sign_in">
-                <a href="#">
-                    <h3>ورود / ثبت نام</h3>
-                </a>
-            </div>
-            <div class="search" role="search">
+            } else if (cnt) {
+                if (th.getElementsByTagName("img")[0].src = "icon/down1.svg")
+                    th.getElementsByTagName("img")[0].src = "icon/down2.svg";
+                else if (th.getElementsByTagName("img")[0].src = "icon/up1.svg")
+                    th.getElementsByTagName("img")[0].src = "icon/up2.svg";
 
-                <img src="icon/search.svg" alt="" onclick="show_hide(this)">
-                <a href="#">
-                    <form action="" method="" id="hide_form" style="display: none;">
-                        <input type="text" name="" value="" placeholder="جستجوی کلمه مورد نظر" onfocus="this.placeholder=''" onblur="this.placeholder='جستجوی کلمه مورد نظر'">
-                    </form>
-                </a>
-            </div>
+            }
+        }
 
+        function hoverOff(th) {
+            th.style.transition = ".5s";
+            th.style.color = "#fdfdfd";
+            th.style.backgroundColor = "#cc0e00";
+            th.style.border = "1px solid #fdfdfd";
+            if (!cnt) {
+                th.getElementsByTagName("img")[0].src = "icon/down1.svg";
 
-            <ul>
-                <li><a href="#" class="name_site"><b>فیلم باز</b></a></li>
-                <li><a href="#"><b>صفحه اصلی</b></a></li>
-                <li><a href="#"><b>فیلم</b></a></li>
-                <li><a href="#"><b>سریال</b></a></li>
-                <li><a href="#"><b>دسته بندی</b></a></li>
-                <li><a href="#"><b>تماس ما</b></a></li>
+            } else if (cnt) {
+                if (th.getElementsByTagName("img")[0].src = "icon/down2.svg")
+                    th.getElementsByTagName("img")[0].src = "icon/down1.svg";
+                else if (th.getElementsByTagName("img")[0].src = "icon/up2.svg")
+                    th.getElementsByTagName("img")[0].src = "icon/up1.svg";
+            }
 
-            </ul>
-        </div>
-    </div>
-    <div id="main">
-        <!-- Swiper -->
-        <div class="swiper-container" onclick="show_hide2()">
-            <div class="swiper-wrapper">
+        }
+        var cnt = 0;
+        var cnt2 = 0;
 
-                <div class="swiper-slide">
-                    <a href="#"><img src="img/film baz.png" alt=""></a>
-                </div>
-
-                <div class="swiper-slide">
-                    <a href="#"><img src="img/The Godfather11.jpg" alt=""></a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#"><img src="img/lord of ring.jpg" alt=""></a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#"><img src="img/morgan.jpg" alt=""></a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#"><img src="img/the-joker.jpg" alt=""></a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#"><img src="img/godfather2.jpg" alt=""></a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#"><img src="img/The Good, the Bad and the Ugly.jpg" alt=""></a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#"><img src="img/pulp.jpg" alt=""></a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#"><img src="img/schindler.jpg" alt=""></a>
-                </div>
-            </div>
-
-            <!-- Add Arrows -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-        <div class="clear"></div>
-        <div class="relative">
-            <header class="relheader">
-                <button type="button" class="types" onclick="category(this)"> نوع
-                    <!-- <ul >
-                        <li><a href="#"> 
-                            سینمایی
-                        </a></li>
-                    </ul> -->
-                    <img src="icon/direction1.svg" alt="">as
-                </button>
-            </header>
-        </div>
-    </div>
-
-
-
-
-    <!-- script Swiper -->
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            // autoplay: {
-            //     delay: 2500,
-            //     disableOnInteraction: false,
-            // },
-
-        });
+        function category(ph) {
+            ph.getElementsByTagName("ul")[0].style.transition = ".9s";
+            if (!cnt) {
+                ph.getElementsByTagName("ul")[0].style.display = "block";
+                ph.getElementsByTagName("img")[0].src = "icon/up2.svg";
+                cnt = 1;
+            } else {
+                ph.getElementsByTagName("ul")[0].style.display = "none";
+                ph.getElementsByTagName("img")[0].src = "icon/down2.svg";
+                cnt = 0;
+            }
+        }
     </script>
 </body>
 

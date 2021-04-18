@@ -264,11 +264,13 @@ a {
     margin: 5px 30px 0 0;
 }
 
-.name_site {
-    margin: -6px 100px 13px 20px !important;
-    font: 28px 'poori'!important;
-    color: #e22c2c !important;
-    margin-top: 0 !important
+.main_masthead img {
+    width: 100px;
+    height: 73px;
+    margin: 0 100px 13px 20px;
+    ;
+    float: right;
+    object-fit: fill;
 }
 
 .main_masthead ul li a:hover {
@@ -282,14 +284,27 @@ a {
     width: 120px;
     height: 38px;
     float: left;
-    background: #cc0033;
     margin: 15px 0 0 100px;
+}
+
+.sign_in a {
+    width: 120px;
+    height: 38px;
+    float: left;
+    background: #cc0033;
+    color: #fdfdfd;
     border-radius: 5px;
+    border: 1px solid #cc0033;
 }
 
 .sign_in h3 {
-    color: #fdfdfd;
     margin: 10px 16px;
+}
+
+.sign_in a:hover {
+    background: #fdfdfd;
+    color: #cc0033;
+    transition: .6s;
 }
 
 
@@ -322,6 +337,7 @@ a {
 }
 
 .search input {
+    width: 90%;
     height: 100%;
     float: right;
     /* padding: 8px 10px 8px 70px; */
@@ -368,6 +384,7 @@ a {
     height: 700px;
     float: left;
     overflow: hidden;
+    margin-top: -14px;
 }
 
 .swiper-slide {
@@ -414,17 +431,94 @@ a {
 }
 
 .relheader {
-    width: 90%;
+    width: 92%;
     height: 100px;
+    margin: 0 20px;
+    position: absolute;
 }
 
-.relheader button {
-    width: 150px;
-    height: 50px;
-    background: #8fcc00;
+.relheader .types {
+    width: 11%;
+    height: 30px;
+    background: #cc0e00;
     cursor: pointer;
+    margin: 10px 50px 0 0;
+    border-radius: 3px;
+    float: right;
+    border: .5px solid #fdfdfd;
+    color: #fdfdfd;
+}
+
+.relheader .types h3 {
+    float: right;
+    margin: 1px 7px 0 0;
+    font: 12px 'sam';
 }
 
 .relheader .types img {
+    width: 18px;
+    height: 17px;
     float: left;
+    margin: 7px 0 0 3px;
+}
+
+.relheader .filter {
+    width: 11%;
+    height: 30px;
+    background: #cc0e00;
+    cursor: pointer;
+    margin: 10px 50px 0 0;
+    border-radius: 3px;
+    float: right;
+    border: .5px solid #fdfdfd;
+    color: #fdfdfd;
+}
+
+.relheader .filter h5 {
+    float: right;
+    margin: 1px 16px 0 0;
+    font: 12px 'sam';
+}
+
+.relheader .filter:hover {
+    background: #7F8C8D;
+    transition: .4s;
+}
+
+
+/* .Drawing_types */
+
+.Drawing_types {
+    width: 100px;
+    border: 1px solid #530808;
+    background: #0101020a;
+    float: right;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    display: none;
+    margin-top: 6px;
+}
+
+.Drawing_types li {
+    width: 100%;
+    float: right;
+    clear: both;
+    text-align: center;
+    margin-top: 5px;
+    border: none;
+}
+
+.Drawing_types li a {
+    width: 100%;
+    border: none;
+    color: #2C3E50;
+    font: 12px 'sam';
+}
+
+.Drawing_types li a:hover {
+    color: #2C3E50;
+    transition: .5s;
+    transform: scale(1.2);
 }
