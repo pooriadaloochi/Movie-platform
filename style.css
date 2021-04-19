@@ -585,7 +585,7 @@ a {
     width: 48%;
     height: auto;
     float: right;
-    margin: 0 127px 30px 127px;
+    margin: 0 127px 30px 0;
     background: #fdfdfd;
     border-radius: 8px;
     padding-bottom: 20px;
@@ -703,7 +703,7 @@ a {
     border-radius: 6px;
     padding: 2px 7px 4px 8px;
     margin: 0 0 0 3px;
-    background: #E74C3C;
+    background: #C0392B;
     color: #fdfdfd;
     border: 1px solid #fdfdfd;
 }
@@ -713,4 +713,87 @@ a {
     color: #E74C3C;
     border: 1px solid #E74C3C;
     transition: .4s;
+}
+
+
+/*icon color  #2e3a47 */
+
+
+/* left-sidebar */
+
+.left-sidebar {
+    width: 30%;
+    height: 750px;
+    float: right;
+    margin-top: -1337px;
+    margin-right: 28px;
+}
+
+.left-sidebar .sidebox {
+    width: 100%;
+    height: 300px;
+    background: #fdfdfd;
+    border-radius: 8px;
+}
+
+.left-sidebar .sidebox header {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #333;
+    font: 20px 'sam', tahoma;
+}
+
+.left-sidebar .sidebox header img {
+    width: 25px;
+    height: 25px;
+    float: right;
+    margin: 15px 10px;
+}
+
+.left-sidebar .sidebox header h1 {
+    float: right;
+    margin-top: 5px;
+    color: #333;
+}
+
+.left-sidebar .sidebox header h3 {
+    float: left;
+    margin: 13px 1px 10px 20px;
+    border-radius: 18px;
+    padding: 3px 20px 5px 20px;
+    font-size: 15px;
+    background: #C0392B;
+    color: #fdfdfd;
+    border: 1px solid #fdfdfd;
+    cursor: pointer;
+}
+
+.left-sidebar .sidebox header h3:hover {
+    background: #fdfdfd;
+    color: #C0392B;
+    border: 1px solid #C0392B;
+    transition: .4s;
+}
+
+.left-sidebar .sidebox .sidbox_genre {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.left-sidebar .sidebox .sidbox_genre a {
+    color: #333;
+    font: 16px 'sam', tahoma;
+}
+
+.left-sidebar .sidebox .sidbox_genre li {
+    width: 40%;
+    list-style: disc;
+    float: right;
+    color: #333;
+    margin-right: 40px;
+}
+
+.left-sidebar .sidebox .sidbox_genre li h3 {
+    float: right;
 }
