@@ -372,7 +372,7 @@ a {
 
 /* main */
 
-#main {
+#container-fluid {
     width: 100%;
     height: 100%;
     background: #ecedee;
@@ -579,19 +579,26 @@ a {
 }
 
 
-/* post */
+/* all_posts */
 
-.post {
-    width: 48%;
-    height: 423px;
+.all_posts {
+    width: 685px;
+    height: auto;
     float: right;
-    margin: 10px 127px 30px 0;
-    background: #fdfdfd;
-    border-radius: 8px;
+    margin: 12px 127px 0 0;
 }
 
 
-/* post header */
+/* post*/
+
+.post {
+    width: 100%;
+    height: 423px;
+    float: right;
+    background: #fdfdfd;
+    border-radius: 8px;
+    margin-bottom: 39px;
+}
 
 .post header {
     width: 100%;
@@ -716,11 +723,12 @@ a {
 
 .wp-pagenavi {
     width: 80%;
-    height: 50px;
+    height: 70px;
     float: right;
     margin-right: 126px;
     background: #fdfdfd;
     border-radius: 8px;
+    margin-top: -20px;
 }
 
 .wp-pagenavi a,
@@ -729,7 +737,7 @@ a {
     float: right;
     color: #FDFDFD;
     margin-right: 21px;
-    margin-top: 11px;
+    margin-top: 20px;
     padding: 10px 20px;
     border-radius: 8px;
 }
@@ -753,7 +761,7 @@ a {
     width: 30%;
     height: auto;
     float: left;
-    margin-top: -1892px;
+    margin-top: 13px;
     margin-left: 158px;
 }
 
@@ -973,4 +981,88 @@ a {
 .sidebox#sidebox_newss li {
     width: 100%;
     margin-top: 10px;
+}
+
+
+/* footer-nav */
+
+.footer-nav {
+    width: 80%;
+    margin: 50px 127px 10px 50px;
+    float: right;
+}
+
+.main-footer {
+    background: #fdfdfd;
+    float: right;
+    border-radius: 8px;
+    padding: 40px 0;
+}
+
+.footer-nav .about {
+    width: 25%;
+    height: 100%;
+    float: right;
+    margin-right: 65px;
+}
+
+.footer-nav .about h5 {
+    float: right;
+    font: 20px 'poori', tahoma;
+    color: #C0392B;
+    margin-bottom: 25px;
+}
+
+.footer-nav .about p {
+    float: right;
+    font: 13px 'poori', tahoma;
+    color: #707070;
+}
+
+.footer-nav .about a {
+    width: 100%;
+    float: right;
+    font: 13px 'poori', tahoma;
+    color: #707070;
+}
+
+.footer-nav .about a:hover {
+    color: #C0392B;
+}
+
+.support {
+    float: right;
+    margin-top: 100px;
+    margin-right: -40px;
+}
+
+.support img {
+    width: 120px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.social {
+    width: 20%;
+    height: 100%;
+    float: left;
+    margin-top: 165px;
+    margin-left: 30px;
+}
+
+.social img {
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+
+.footer-bot {
+    width: 100%;
+    float: right;
+    margin-top: 10px;
+    margin-right: 280px;
+}
+
+.footer-bot .copyright {
+    float: right;
 }
