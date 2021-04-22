@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>poori</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
@@ -18,46 +18,45 @@
 
 <body>
 
-    <header>
-        <nav id="header-nav" role="navigation">
-            <div class="sign_in">
-                <a href="#">
-                    <h3>ورود / ثبت نام</h3>
-                </a>
-            </div>
-            <div class="search" role="search">
-                <img src="icon/search.svg" alt="" onclick="show_hide(this)" />
+    <header class="header-nav">
 
-                <form action="" method="" id="hide_form" style="display: none">
-                    <input type="text" name="" value="" placeholder="جستجوی کلمه مورد نظر" onfocus="this.placeholder=''" onblur="this.placeholder='جستجوی کلمه مورد نظر'" />
-                </form>
-            </div>
+        <div class="sign_in">
+            <a href="#">
+                <h3>ورود / ثبت نام</h3>
+            </a>
+        </div>
+        <div class="search" role="search">
+            <img src="icon/search.svg" alt="" onclick="show_hide(this)" />
 
-            <a href="#"><img src="img/filmbazz.png" alt="" id="logo" /></a>
-            <ul>
-                <!-- <li><a href="#" class="name_site"><b>فیلم باز</b></a></li> -->
-                <li>
-                    <a href="#"><b>صفحه اصلی</b></a>
-                </li>
-                <li>
-                    <a href="#"><b>فیلم</b></a>
-                </li>
-                <li>
-                    <a href="#"><b>سریال</b></a>
-                </li>
-                <li>
-                    <a href="#"><b>دسته بندی</b></a>
-                </li>
-                <li>
-                    <a href="#"><b>تماس ما</b></a>
-                </li>
-            </ul>
-        </nav>
+            <form action="" method="" id="hide_form" style="display: none">
+                <input type="text" name="" value="" placeholder="جستجوی کلمه مورد نظر" onfocus="this.placeholder=''" onblur="this.placeholder='جستجوی کلمه مورد نظر'" />
+            </form>
+        </div>
+
+        <a href="#"><img src="img/filmbazz.png" alt="" id="logo" /></a>
+        <ul onclick="show_hide2()">
+            <li>
+                <a href="#"><b>صفحه اصلی</b></a>
+            </li>
+            <li>
+                <a href="#"><b>فیلم</b></a>
+            </li>
+            <li>
+                <a href="#"><b>سریال</b></a>
+            </li>
+            <li>
+                <a href="#"><b>دسته بندی</b></a>
+            </li>
+            <li>
+                <a href="#"><b>تماس ما</b></a>
+            </li>
+        </ul>
+
     </header>
     <!-- container -->
-    <div class="container-fluid">
+    <div class="container-fluid container">
         <!-- Swiper -->
-        <div class="swiper-container" onclick="show_hide2()">
+        <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <a href="#"><img src="img/film baz.png" alt="" /></a>
@@ -183,7 +182,14 @@
                 <ul id="relative_pic">
                     <li>
                         <a href="#">
-                            <img src="img/walking dead.jpg" alt="">
+                            <img src="img/the-walking-dead-season-10.jpg" alt="">
+                        </a>
+                        <a href="#">
+                            <div class="details_relative">
+                                <h3>اکشن _ ترسناک</h3>
+                                <h4>آمریکا _ 2010</h4>
+                                <h5>IMDb : 8.5</h5>
+                            </div>
                         </a>
                     </li>
 
@@ -191,25 +197,60 @@
                         <a href="#">
                             <img src="img/jonathan.jpg" alt="">
                         </a>
+                        <a href="#">
+                            <div class="details_relative">
+                                <h3>اکشن _ ترسناک</h3>
+                                <h4>آمریکا _ 2010</h4>
+                                <h5>IMDb : 8.5</h5>
+                            </div>
+                        </a>
                     </li>
                     <li>
                         <a href="#">
                             <img src="img/1917.jpg" alt="">
+                        </a>
+                        <a href="#">
+                            <div class="details_relative">
+                                <h3>اکشن _ ترسناک</h3>
+                                <h4>آمریکا _ 2010</h4>
+                                <h5>IMDb : 8.5</h5>
+                            </div>
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <img src="img/Fantastic_Beasts.png" alt="">
                         </a>
+                        <a href="#">
+                            <div class="details_relative">
+                                <h3>اکشن _ ترسناک</h3>
+                                <h4>آمریکا _ 2010</h4>
+                                <h5>IMDb : 8.5</h5>
+                            </div>
+                        </a>
                     </li>
                     <li>
                         <a href="#">
                             <img src="img/dynasties.jpg" alt="">
                         </a>
+                        <a href="#">
+                            <div class="details_relative">
+                                <h3>اکشن _ ترسناک</h3>
+                                <h4>آمریکا _ 2010</h4>
+                                <h5>IMDb : 8.5</h5>
+                            </div>
+                        </a>
                     </li>
                     <li>
                         <a href="#">
                             <img src="img/unhinged.jpeg" alt="">
+                        </a>
+                        <a href="#">
+                            <div class="details_relative">
+                                <h3>اکشن _ ترسناک</h3>
+                                <h4>آمریکا _ 2010</h4>
+                                <h5>IMDb : 8.5</h5>
+                            </div>
                         </a>
                     </li>
 
@@ -228,7 +269,7 @@
                 </header>
                 <ul class="sidbox_genre">
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>اجتماعی &nbsp;</h2>
                             <h3> (1249)</h3>
@@ -236,7 +277,7 @@
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>اکشن &nbsp;</h2>
                             <h3>(1249)</h3>
@@ -244,7 +285,7 @@
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>تاریخی &nbsp;</h2>
                             <h3>(1249)</h3>
@@ -252,7 +293,7 @@
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>ترسناک &nbsp;</h2>
                             <h3>(1249)</h3>
@@ -260,7 +301,7 @@
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>جنایی &nbsp;</h2>
                             <h3> (1249)</h3>
@@ -268,7 +309,7 @@
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>جنگی &nbsp;</h2>
                             <h3>(1249)</h3>
@@ -276,7 +317,7 @@
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>خانوادگی &nbsp;</h2>
                             <h3>(1249)</h3>
@@ -284,7 +325,7 @@
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>درام &nbsp;</h2>
                             <h3>(1249)</h3>
@@ -292,7 +333,7 @@
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>تخیلی &nbsp;</h2>
                             <h3> (1249)</h3>
@@ -300,7 +341,7 @@
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>فانتزی &nbsp;</h2>
                             <h3>(1249)</h3>
@@ -308,7 +349,7 @@
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>کمدی &nbsp;</h2>
                             <h3>(1249)</h3>
@@ -316,7 +357,7 @@
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>ماجراجویی &nbsp;</h2>
                             <h3>(1249)</h3>
@@ -324,7 +365,7 @@
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>معمایی &nbsp;</h2>
                             <h3> (1249)</h3>
@@ -332,7 +373,7 @@
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>هیجانی &nbsp;</h2>
                             <h3>(1249)</h3>
@@ -340,7 +381,7 @@
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>وسترون &nbsp;</h2>
                             <h3>(1249)</h3>
@@ -348,14 +389,14 @@
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>ترسناک &nbsp;</h2>
                             <h3>(1249)</h3>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>اجتماعی &nbsp;</h2>
                             <h3> (1249)</h3>
@@ -363,7 +404,7 @@
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>اکشن &nbsp;</h2>
                             <h3>(1249)</h3>
@@ -371,7 +412,7 @@
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>تاریخی &nbsp;</h2>
                             <h3>(1249)</h3>
@@ -379,7 +420,7 @@
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>ترسناک &nbsp;</h2>
                             <h3>(1249)</h3>
@@ -402,7 +443,7 @@
 
                 <ul class="sidbox_genre">
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>2000</h2>
 
@@ -410,147 +451,147 @@
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>2001</h2>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>2002</h2>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>2003</h2>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>2004</h2>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>2005</h2>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>2006</h2>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>2007</h2>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>2008</h2>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>2009</h2>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>2010</h2>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>2011</h2>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>2012</h2>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>2013</h2>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>2014</h2>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>2015</h2>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>2016</h2>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>2017</h2>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>2018</h2>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>2019</h2>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>2020</h2>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
                             <h2>2021</h2>
                         </a>
@@ -565,65 +606,67 @@
                     <img src="icon/trailer.svg" alt="">
                     <h1>آخرین تریلرها</h1>
                 </header>
-                <ul class="rand">
-                    <li>
-                        <a href="#">
+                <nav>
+                    <div class="rand nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">
                             <h2>جدیدترین</h2>
                         </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            <h2>پربازدیدترین ها</h2>
+                        <a class="nav-item nav-link active" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">
+                            <h2>پربازدیدترین</h2>
                         </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
+                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">
                             <h2>تصادفی</h2>
                         </a>
-                    </li>
+                    </div>
 
-                </ul>
+                </nav>
 
-                <ul class="rand_pic">
-                    <li>
+                <div class="rand_pic tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                         <a href="#">
-                            <img src="img/The Godfather11.jpg" alt="">
+                            <img src="img/jonathan.jpg" alt="">
                         </a>
-                    </li>
+                    </div>
 
-                    <li>
+                    <div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                         <a href="#">
                             <img src="img/the-joker.jpg" alt="">
                         </a>
-                    </li>
+                    </div>
 
-                    <li>
+                    <div class="tab-pane fade  " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                         <a href="#">
                             <img src="img/walking dead.jpg" alt="">
                         </a>
-                    </li>
+                    </div>
 
-                    <li>
+                    <div class="tab-pane fade  " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                         <a href="#">
                             <img src="img/schindler.jpg" alt="">
                         </a>
-                    </li>
+                    </div>
 
-                    <li>
+                    <div class="tab-pane fade  " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                         <a href="#">
                             <img src="img/dynasties.jpg" alt="">
                         </a>
-                    </li>
+                    </div>
 
-                    <li>
+                    <div class="tab-pane fade  " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                         <a href="#">
                             <img src="img/Fantastic_Beasts.png" alt="">
                         </a>
-                    </li>
+                    </div>
 
-                </ul>
+                    <!-- tab22222 -->
+                    <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        Tab 22222222222222222
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        tab 33333333333333333
+                    </div>
+                </div>
             </section>
 
             <!-- Dubbed sidebox -->
@@ -739,39 +782,64 @@
                 <ul class="sidbox_genre">
                     <li>
                         <a href="#">
-                            <h2> قسمت 8 فصل 5 سریال ما با هم هستیم اضافه شد</h2>
+                            <img src="img/newsssss.png" alt="" id="newsss">
+                            <h6> قسمت 8 فصل 5 سریال ما با هم هستیم اضافه شد</h6>
+                            <div>
+                                <h4>دسته : </h4>
+                                <h5>فیلم</h5>
+                            </div>
+                            <span>4 ساعت قبل</span>
                         </a>
                     </li>
+
                     <li>
                         <a href="#">
-                            <h2> قسمت 8 فصل 5 سریال ما با هم هستیم اضافه شد</h2>
+                            <img src="img/newsssss.png" alt="" id="newsss">
+                            <h6> قسمت 8 فصل 5 سریال ما با هم هستیم اضافه شد</h6>
+                            <div>
+                                <h4>دسته : </h4>
+                                <h5>فیلم</h5>
+                            </div>
+                            <span>4 ساعت قبل</span>
                         </a>
                     </li>
+
                     <li>
                         <a href="#">
-                            <h2> قسمت 8 فصل 5 سریال ما با هم هستیم اضافه شد</h2>
+                            <img src="img/newsssss.png" alt="" id="newsss">
+                            <h6> قسمت 8 فصل 5 سریال ما با هم هستیم اضافه شد</h6>
+                            <div>
+                                <h4>دسته : </h4>
+                                <h5>فیلم</h5>
+                            </div>
+                            <span>4 ساعت قبل</span>
                         </a>
                     </li>
+
                     <li>
                         <a href="#">
-                            <h2> قسمت 8 فصل 5 سریال ما با هم هستیم اضافه شد</h2>
+                            <img src="img/newsssss.png" alt="" id="newsss">
+                            <h6> قسمت 8 فصل 5 سریال ما با هم هستیم اضافه شد</h6>
+                            <div>
+                                <h4>دسته : </h4>
+                                <h5>فیلم</h5>
+                            </div>
+                            <span>4 ساعت قبل</span>
                         </a>
                     </li>
+
                     <li>
                         <a href="#">
-                            <h2> قسمت 8 فصل 5 سریال ما با هم هستیم اضافه شد</h2>
+                            <img src="img/newsssss.png" alt="" id="newsss">
+                            <h6> قسمت 8 فصل 5 سریال ما با هم هستیم اضافه شد</h6>
+                            <div>
+                                <h4>دسته : </h4>
+                                <h5>فیلم</h5>
+                            </div>
+                            <span>4 ساعت قبل</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
-                            <h2> قسمت 8 فصل 5 سریال ما با هم هستیم اضافه شد</h2>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <h2> قسمت 8 فصل 5 سریال ما با هم هستیم اضافه شد</h2>
-                        </a>
-                    </li>
+
                 </ul>
             </section>
 
@@ -783,7 +851,7 @@
                 <header>
                     <img src="icon/movie.svg" alt="">
                     <h1>دانلود فیلم</h1>
-                    <h1>The Fault in Our Stars</h1>
+                    <h2>The Fault in Our Stars</h2>
                     <div class="star_imdb"> <img src="icon/star.svg" alt=""></div>
                     <h3> : IMDB </h3>
                     <h3> 7.6&nbsp; </h3>
@@ -852,7 +920,7 @@
                 <header>
                     <img src="icon/movie.svg" alt="">
                     <h1>دانلود فیلم</h1>
-                    <h1>The Fault in Our Stars</h1>
+                    <h2>The Fault in Our Stars</h2>
                     <div class="star_imdb"> <img src="icon/star.svg" alt=""></div>
                     <h3> : IMDB </h3>
                     <h3> 7.6&nbsp; </h3>
@@ -921,7 +989,7 @@
                 <header>
                     <img src="icon/movie.svg" alt="">
                     <h1>دانلود فیلم</h1>
-                    <h1>The Fault in Our Stars</h1>
+                    <h2>The Fault in Our Stars</h2>
                     <div class="star_imdb"> <img src="icon/star.svg" alt=""></div>
                     <h3> : IMDB </h3>
                     <h3> 7.6&nbsp; </h3>
@@ -990,7 +1058,7 @@
                 <header>
                     <img src="icon/movie.svg" alt="">
                     <h1>دانلود فیلم</h1>
-                    <h1>The Fault in Our Stars</h1>
+                    <h2>The Fault in Our Stars</h2>
                     <div class="star_imdb"> <img src="icon/star.svg" alt=""></div>
                     <h3> : IMDB </h3>
                     <h3> 7.6&nbsp; </h3>
@@ -1060,7 +1128,7 @@
                 <header>
                     <img src="icon/movie.svg" alt="">
                     <h1>دانلود فیلم</h1>
-                    <h1>The Fault in Our Stars</h1>
+                    <h2>The Fault in Our Stars</h2>
                     <div class="star_imdb"> <img src="icon/star.svg" alt=""></div>
                     <h3> : IMDB </h3>
                     <h3> 7.6&nbsp; </h3>
@@ -1129,7 +1197,7 @@
                 <header>
                     <img src="icon/movie.svg" alt="">
                     <h1>دانلود فیلم</h1>
-                    <h1>The Fault in Our Stars</h1>
+                    <h2>The Fault in Our Stars</h2>
                     <div class="star_imdb"> <img src="icon/star.svg" alt=""></div>
                     <h3> : IMDB </h3>
                     <h3> 7.6&nbsp; </h3>
@@ -1166,6 +1234,7 @@
                             <h3>سال انتشار : </h3>
                             <h3>&nbsp;2014</h3>
                         </li>
+
 
                         <li>
                             <h3>کارگردان : </h3>
@@ -1272,9 +1341,6 @@
 
 
 
-
-
-
         <!-- finish -->
     </div>
 
@@ -1363,6 +1429,29 @@
                 ph.getElementsByTagName("img")[0].src = "icon/down2.svg";
                 cnt = 0;
             }
+        }
+
+        function hover_sidebox(mk) {
+            mk.style.color = '#C0392B'
+            mk.getElementsByTagName("img")[0].src = "icon/circle2.svg"
+            mk.transition = "4s"
+        }
+
+        function off_hover_sidebox(is) {
+            is.style.color = '#707070'
+            is.getElementsByTagName("img")[0].src = "icon/circle.svg"
+        }
+    </script>
+    <script>
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("nav-tab");
+        var btns = header.getElementsByClassName("rand");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
         }
     </script>
 </body>
