@@ -709,7 +709,6 @@ a {
     width: 100%;
     height: auto;
     float: right;
-    text-align: justify;
 }
 
 .details_description .description {
@@ -804,7 +803,7 @@ a {
 
 #single_all_post .details_movie video {
     width: 430px;
-    margin: 28px 25px 18px 0;
+    margin: 20px 15px;
     border-radius: 5px;
     display: none;
 }
@@ -813,7 +812,7 @@ a {
     width: 430px;
     height: 215px;
     float: right;
-    margin: 28px 25px 18px 0;
+    margin: 20px 15px;
     display: block;
 }
 
@@ -824,43 +823,10 @@ a {
     border-radius: 5px;
 }
 
-#single_all_post .details_movie .trailer_post button {
-    width: 430px;
-    height: 215px;
-    position: absolute;
-    margin: 0;
-    background: rgba(34, 34, 34, 0.466);
-    cursor: pointer;
-}
-
 #single_all_post .details_movie .trailer_post .play_trailer {
     width: 40px;
     height: 40px;
-    margin: -15px;
-    position: absolute;
-    cursor: pointer;
 }
-
-.trailer_post .play_trailer:hover {
-    content: url("icon/play2.svg");
-    width: 30px;
-    height: 30px;
-    margin-right: 195px;
-    margin-top: 100px;
-}
-
-#single_all_post .details_movie .trailer_post button:hover {
-    background: none;
-}
-
-#single_all_post .details_movie .trailer_post button:focus+.trailer_post {
-    display: none;
-}
-
-
-/* #single_all_post .details_movie .trailer_post:focus .details_movie video {
-    display: block;
-} */
 
 
 /*icon color  #2e3a47 */
