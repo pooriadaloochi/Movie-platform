@@ -3,91 +3,97 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Film Baz</title>
+    <title>Swiper demo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <meta name="Film Baz" content="Download High Quality Movies Ans Series">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="canonical" href="https://yourwebsite.com/">
+
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <!-- link CSS Style -->
     <link rel="stylesheet" href="style.css">
-    <!-- Bootstrap -->
-    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        function show_hide() {
+            if (document.getElementById("hide_form").style.display === "none") {
+                document.getElementById("hide_form").style.display = "block";
+                document.getElementById("hide_form").style.transition = ".9s";
 
-    <!-- navicons -->
-    <link href="images/LogoTop.svg" rel="icon">
-    <link href="images/LogoTop.svg" rel="apple-touch-icon">
+            }
+        }
+
+        function show_hide2() {
+            var y = document.getElementById("hide_form");
+            if (y.style.display === "block") {
+                y.style.display = "none";
+            }
+        }
+    </script>
 </head>
 
 <body>
 
-    <header>
-
-        <div class="masthead">
-            <div class="main_masthead">
-                <div class="sign_in">
-                    <a href="#">
-                        <h3>ورود / ثبت نام</h3>
-                    </a>
-                </div>
-                <div class="search" role="search">
-
-                    <img src="icon/search.svg" alt="" onclick="show_hide(this)">
-                    <a href="#">
-                        <form action="" method="" id="hide_form" style="display: none;">
-                            <input type="text" name="" value="" placeholder="جستجوی کلمه مورد نظر" onfocus="this.placeholder=''" onblur="this.placeholder='جستجوی کلمه مورد نظر'">
-                        </form>
-                    </a>
-                </div>
-
-                <nav>
-
-                    <ul>
-                        <li><a href="#" class="name_site"><b>فیلم باز</b></a></li>
-                        <li><a href="#"><b>صفحه اصلی</b></a></li>
-                        <li><a href="#"><b>فیلم</b></a></li>
-                        <li><a href="#"><b>سریال</b></a></li>
-                        <li><a href="#"><b>دسته بندی</b></a></li>
-                        <li><a href="#"><b>تماس ما</b></a></li>
-
-                    </ul>
-                </nav>
+    <div class="masthead">
+        <div class="main_masthead">
+            <div class="sign_in">
+                <a href="#">
+                    <h3>ورود / ثبت نام</h3>
+                </a>
             </div>
+            <div class="search" role="search">
+
+                <img src="icon/search.svg" alt="" onclick="show_hide(this)">
+                <a href="#">
+                    <form action="" method="" id="hide_form" style="display: none;">
+                        <input type="text" name="" value="" placeholder="جستجوی کلمه مورد نظر" onfocus="this.placeholder=''" onblur="this.placeholder='جستجوی کلمه مورد نظر'">
+                    </form>
+                </a>
+            </div>
+
+
+            <ul>
+                <li><a href="#" class="name_site"><b>فیلم باز</b></a></li>
+                <li><a href="#"><b>صفحه اصلی</b></a></li>
+                <li><a href="#"><b>فیلم</b></a></li>
+                <li><a href="#"><b>سریال</b></a></li>
+                <li><a href="#"><b>دسته بندی</b></a></li>
+                <li><a href="#"><b>تماس ما</b></a></li>
+
+            </ul>
         </div>
-    </header>
+    </div>
     <div id="main">
         <!-- Swiper -->
         <div class="swiper-container" onclick="show_hide2()">
             <div class="swiper-wrapper">
 
                 <div class="swiper-slide">
-                    <a href="#"><img src="images/film baz.png" alt=""></a>
+                    <a href="#"><img src="img/film baz.png" alt=""></a>
                 </div>
 
                 <div class="swiper-slide">
-                    <a href="#"><img src="images/The Godfather11.jpg" alt=""></a>
+                    <a href="#"><img src="img/The Godfather11.jpg" alt=""></a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="#"><img src="images/lord of ring.jpg" alt=""></a>
+                    <a href="#"><img src="img/lord of ring.jpg" alt=""></a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="#"><img src="images/morgan.jpg" alt=""></a>
+                    <a href="#"><img src="img/morgan.jpg" alt=""></a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="#"><img src="images/the-joker.jpg" alt=""></a>
+                    <a href="#"><img src="img/the-joker.jpg" alt=""></a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="#"><img src="images/godfather2.jpg" alt=""></a>
+                    <a href="#"><img src="img/godfather2.jpg" alt=""></a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="#"><img src="images/The Good, the Bad and the Ugly.jpg" alt=""></a>
+                    <a href="#"><img src="img/The Good, the Bad and the Ugly.jpg" alt=""></a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="#"><img src="images/pulp.jpg" alt=""></a>
+                    <a href="#"><img src="img/pulp.jpg" alt=""></a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="#"><img src="images/schindler.jpg" alt=""></a>
+                    <a href="#"><img src="img/schindler.jpg" alt=""></a>
                 </div>
             </div>
 
@@ -110,31 +116,9 @@
         </div>
     </div>
 
-    <footer></footer>
 
-    <!-- Jquery -->
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Swiper JS -->
-    <script src="js/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->
-    <script>
-        function show_hide() {
-            if (document.getElementById("hide_form").style.display === "none") {
-                document.getElementById("hide_form").style.display = "block";
-                document.getElementById("hide_form").style.transition = ".9s";
 
-            }
-        }
 
-        function show_hide2() {
-            var y = document.getElementById("hide_form");
-            if (y.style.display === "block") {
-                y.style.display = "none";
-            }
-        }
-    </script>
     <!-- script Swiper -->
     <script>
         var swiper = new Swiper('.swiper-container', {

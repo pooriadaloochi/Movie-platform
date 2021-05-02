@@ -11,7 +11,7 @@
 }
 
 
-/* CSS RESET */
+/* Default CSS */
 
 html,
 body,
@@ -138,7 +138,7 @@ a {
 /* change colours to suit your needs */
 
 ins {
-    background-color: #ff9;
+    background-color: #fdf;
     color: #000;
     text-decoration: none;
 }
@@ -186,41 +186,42 @@ select {
 }
 
 body {
-    background: #e1e1e1!important;
-    font-family: 'poori'!important;
+    color: #444;
+    background: #fdfdfd;
+    font: 12px Tahoma, 'sam';
     direction: rtl;
-}
-
-a {
-    text-decoration: none!important;
-    transition: .2s ease-out;
-    -webkit-transition: .2s ease-out;
-    -moz-transition: .2s ease-out;
-    -o-transition: .2s ease-out;
+    /*overflow-x: hidden;*/
 }
 
 li {
     list-style: none;
 }
 
- :focus {
-    outline: none;
+:focus {
+    outline: 0;
 }
 
 .clear {
     clear: both;
 }
 
-.p0 {
-    padding: 0!important;
+::selection {
+    background: #222;
+    color: #FDFDFD;
 }
 
-.fr {
-    float: right;
+::-moz-selection {
+    background: #222;
+    color: #FDFDFD;
 }
 
-.fl {
-    float: left;
+a {
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    color: #2ecc71;
 }
 
 
@@ -427,64 +428,3 @@ li {
 .relheader .types img {
     float: left;
 }
-
-
-/*------------ media_screen ---------------*/
-
-@media only screen and (max-width: 250px) {}
-
-@media only screen and (max-width: 300px) and (min-width: 250px) {}
-
-@media only screen and (max-width: 350px) and (min-width: 300px) {}
-
-@media only screen and (max-width: 400px) and (min-width: 350px) {}
-
-@media only screen and (max-width: 450px) and (min-width: 400px) {}
-
-@media only screen and (max-width: 500px) and (min-width: 450px) {}
-
-@media only screen and (max-width: 550px) and (min-width: 500px) {}
-
-@media only screen and (max-width: 600px) and (min-width: 550px) {}
-
-@media only screen and (max-width: 650px) and (min-width: 600px) {}
-
-
-/* Extra small devices (phones, 600px and down) */
-
-@media (min-width: 600px) {}
-
-@media (max-width: 535px) {}
-
-@media (max-width: 600px) {}
-
-
-/* sm */
-
-@media (min-width: 768px) {}
-
-@media (max-width: 765px) {}
-
-
-/* md */
-
-@media (min-width: 992px) {}
-
-@media (max-width: 992px) {}
-
-
-/* lg */
-
-@media (max-width: 1200px) {}
-
-@media (min-width: 1200px) {}
-
-@media (min-width: 1320px) {}
-
-@media (min-width: 320px) and (max-width: 350px) {}
-
-@media (min-width: 350px) and (max-width: 375px) {}
-
-@media (min-width: 375px) and (max-width: 400px) {}
-
-@media (min-width: 400px) and (max-width: 536px) {}
