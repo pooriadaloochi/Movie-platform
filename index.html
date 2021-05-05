@@ -1,1462 +1,1429 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>Film Baz</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Download High Quality Movies Ans Series">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="canonical" href="https://yourwebsite.com/">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Download High Quality Movies Ans Series"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="canonical" href="https://yourwebsite.com/" />
 
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="css/swiper.css" />
     <!-- link CSS Style -->
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/hover-min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/hover-min.css" />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- container -->
     <header class="col-lg-12 header_nav">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-2 logo">
-                    <a href="#"><img src="img/filmbazz.png" alt="" id="logo" /></a>
-                </div>
-                <div class="col-lg-6 menu_top">
-                    <ul onclick="show_hide2()">
-                        <li>
-                            <a href="#" class="gray_cr hvr_red_cr fo_he"><b>صفحه اصلی</b></a>
-                        </li>
-                        <li>
-                            <a href="#" class="gray_cr hvr_red_cr fo_he"><b>فیلم</b></a>
-                        </li>
-                        <li>
-                            <a href="#" class="gray_cr hvr_red_cr fo_he"><b>سریال</b></a>
-                        </li>
-                        <li>
-                            <a href="#" class="gray_cr hvr_red_cr fo_he"><b>دسته بندی</b></a>
-                        </li>
-                        <li>
-                            <a href="#" class="gray_cr hvr_red_cr fo_he"><b>تماس ما</b></a>
-                        </li>
-                        <div class="sign_in">
-                            <a href="#" class="white_cr red_bg hvr_white_bg hvr_red_cr fo_he2">
-                                <h3>ورود / ثبت نام</h3>
-                            </a>
-                        </div>
-                    </ul>
-                </div>
-                <div class="col-lg-4 search_DayAndNight">
-                    <div class="center">
-                        <input type="checkbox" name="">
-                    </div>
-                    <div class="search" role="search">
-                        <form action="/action_page.php">
-                            <input class="white_cr fo_pa" type="text" placeholder="جستجوی کلمه مورد نظر" name="search" onfocus="this.placeholder=''" onblur="this.placeholder='جستجوی کلمه مورد نظر'">
-                            <button type="submit">
-                            <img src="icon/search.svg" alt=""  /></button>
-                        </form>
-                    </div>
-                </div>
-
-
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 logo">
+            <a href="#"> <h1><img src="img/filmbazz.png" alt="" id="logo" /></h1></a>
+          </div>
+          <div class="col-lg-6 menu_top">
+            <ul onclick="show_hide2()">
+              <li>
+                <a href="#" class="gray_cr red_cr"><h3 class="fo_he"> صفحه اصلی</h3></a>
+              </li>
+              <li>
+                <a href="#" class="gray_cr red_cr"><h3 class="fo_he">فیلم</h3></a>
+              </li>
+              <li>
+                <a href="#" class="gray_cr red_cr"><h3 class="fo_he">سریال</h3></a>
+              </li>
+              <li>
+                <a href="#" class="gray_cr red_cr"><h3 class="fo_he">دسته بندی</h3></a>
+              </li>
+              <li>
+                <a href="#" class="gray_cr red_cr"><h3 class="fo_he">تماس ما</h3></a>
+              </li>
+              <div class="sign_in">
+                <a href="#" class="white_cr red_bg">
+                  <h3 class="fo_he">ورود / ثبت نام</h3>
+                </a>
+              </div>
+            </ul>
+          </div>
+          <div class="col-lg-4 search_DayAndNight">
+            <div class="center">
+              <input type="checkbox" name="" />
             </div>
+            <div class="search" role="search">
+              <form action="/action_page.php">
+                <input
+                  class="white_cr fo_pa"
+                  type="text"
+                  placeholder="جستجوی کلمه مورد نظر"
+                  name="search"
+                  onfocus="this.placeholder=''"
+                  onblur="this.placeholder='جستجوی کلمه مورد نظر'"
+                />
+                <button type="submit">
+                  <img src="icon/search.svg" alt="" />
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
+      </div>
     </header>
 
     <!-- Swiper -->
     <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <a href="#"><img src="img/film baz.png" alt="" /></a>
-            </div>
-
-            <div class="swiper-slide">
-                <a href="#"><img src="img/The Godfather11.jpg" alt="" /></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="#"><img src="img/lord of ring.jpg" alt="" /></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="#"><img src="img/morgan.jpg" alt="" /></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="#"><img src="img/the-joker.jpg" alt="" /></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="#"><img src="img/godfather2.jpg" alt="" /></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="#"><img src="img/The Good, the Bad and the Ugly.jpg" alt="" /></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="#"><img src="img/pulp.jpg" alt="" /></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="#"><img src="img/schindler.jpg" alt="" /></a>
-            </div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="#"><img src="img/film baz.png" alt="" /></a>
         </div>
 
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <div class="swiper-slide">
+          <a href="#"><img src="img/The Godfather11.jpg" alt="" /></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#"><img src="img/lord of ring.jpg" alt="" /></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#"><img src="img/morgan.jpg" alt="" /></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#"><img src="img/the-joker.jpg" alt="" /></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#"><img src="img/godfather2.jpg" alt="" /></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#"
+            ><img src="img/The Good, the Bad and the Ugly.jpg" alt=""
+          /></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#"><img src="img/pulp.jpg" alt="" /></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#"><img src="img/schindler.jpg" alt="" /></a>
+        </div>
+      </div>
+
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
 
     <div class="clear"></div>
 
     <!-- container -->
     <div class="container" id="container_main">
-        <!-- relative post -->
-        <div class="relative">
-            <!-- header relative post -->
-            <header class="relheader">
-                <div class="types white_cr red_bg" onclick="category(this)" onmouseover="hover(this)" onmouseout="hoverOff(this)">
-                    <h3 class="fo_pa">نوع</h3>
-                    <img src="icon/down1.svg" alt="" />
-                    <ul class="Drawing_types ">
-                        <li><a href="#" class="white_cr hvr_gray_cr fo_pa"> سینمایی </a></li>
+      <!-- relative post -->
+      <div class="relative">
+        <!-- header relative post -->
+        <header class="relheader">
+          <div class="types white_cr red_bg" onclick="category(this)" >
+            <h3 class="fo_pa">نوع</h3>
+            <img src="icon/down1.svg" alt="" />
+            <ul class="Drawing_types">
+              <li><a href="#" class="white_cr fo_pa"> سینمایی </a></li>
 
-                        <li><a href="#" class="white_cr hvr_gray_cr fo_pa"> سریال ایرانی </a></li>
+              <li><a href="#" class="white_cr fo_pa"> سریال ایرانی </a></li>
 
-                        <li><a href="#" class="white_cr hvr_gray_cr fo_pa"> انیمیشن </a></li>
+              <li><a href="#" class="white_cr fo_pa"> انیمیشن </a></li>
 
-                        <li><a href="#" class="white_cr hvr_gray_cr fo_pa"> سریال خارجی </a></li>
-                    </ul>
+              <li><a href="#" class="white_cr fo_pa"> سریال خارجی </a></li>
+            </ul>
+          </div>
+          <div class="types white_cr red_bg" onclick="category(this)" >
+            <h3 class="fo_pa">ژانر</h3>
+            <img src="icon/down1.svg" alt="" />
+            <ul class="Drawing_types">
+              <li><a href="#" class="white_cr fo_pa"> جنایی </a></li>
+
+              <li><a href="#" class="white_cr fo_pa"> کمدی </a></li>
+
+              <li><a href="#" class="white_cr fo_pa"> اکشن </a></li>
+
+              <li><a href="#" class="white_cr fo_pa"> علمی </a></li>
+            </ul>
+          </div>
+          <div class="types white_cr red_bg" onclick="category(this)" >
+            <h3 class="fo_pa">کشور</h3>
+            <img src="icon/down1.svg" alt="" />
+            <ul class="Drawing_types">
+              <li><a href="#" class="white_cr fo_pa"> آمریکا </a></li>
+
+              <li><a href="#" class="white_cr fo_pa"> ایران </a></li>
+
+              <li><a href="#" class="white_cr fo_pa"> فرانسه </a></li>
+
+              <li><a href="#" class="white_cr fo_pa"> هند </a></li>
+            </ul>
+          </div>
+          <div class="types white_cr red_bg" onclick="category(this)" >
+            <h3 class="fo_pa">سال ساخت</h3>
+            <img src="icon/down1.svg" alt="" />
+            <ul class="Drawing_types">
+              <li><a href="#" class="white_cr fo_pa"> 1900-1980 </a></li>
+
+              <li><a href="#" class="white_cr fo_pa"> 1980-2000 </a></li>
+
+              <li><a href="#" class="white_cr fo_pa"> 2000-2010 </a></li>
+
+              <li><a href="#" class="white_cr fo_pa"> 2010-2021 </a></li>
+            </ul>
+          </div>
+          <div class="types white_cr red_bg" onclick="category(this)" >
+            <h3 class="fo_pa">امتیاز IMDB</h3>
+
+            <img src="icon/down1.svg" alt="" />
+            <ul class="Drawing_types">
+              <li><a href="#" id="date" class="white_cr"> 7.0 - 5.0 </a></li>
+
+              <li><a href="#" class="white_cr fo_pa"> 8.0 - 7.0 </a></li>
+
+              <li><a href="#" class="white_cr fo_pa"> 9.0 - 8.0 </a></li>
+
+              <li><a href="#" class="white_cr fo_pa"> 9.2 - 9.0 </a></li>
+            </ul>
+          </div>
+          <div class="filter white_cr red_bg red_bg" onclick="category(this)">
+            <h5 class="fo_pa">اعمال فیلتر ها</h5>
+          </div>
+        </header>
+        <div class="clear"></div>
+        <!-- relative_post -->
+        <section class="relative_post white_bg">
+          <h2 class="gray_cr fo_big"><b>جدیدترین فیلم ها</b></h2>
+          <ul class="relative_pic">
+            <li>
+              <a href="#">
+                <img src="img/the-walking-dead-season-10.jpg" alt="" />
+              </a>
+              <a href="#">
+                <div class="details_relative white_cr">
+                  <h3 class="fo_he2_b">اکشن _ ترسناک</h3>
+                  <h4 class="fo_he2_b">آمریکا _ 2010</h4>
+                  <h5 class="red_bg fo_he2">IMDB : 8.5</h5>
                 </div>
-                <div class="types white_cr red_bg" onclick="category(this)" onmouseover="hover(this)" onmouseout="hoverOff(this)">
-                    <h3 class="fo_pa">ژانر</h3>
-                    <img src="icon/down1.svg" alt="" />
-                    <ul class="Drawing_types">
-                        <li><a href="#" class="white_cr hvr_gray_cr fo_pa"> جنایی </a></li>
+              </a>
+            </li>
 
-                        <li><a href="#" class="white_cr hvr_gray_cr fo_pa"> کمدی </a></li>
-
-                        <li><a href="#" class="white_cr hvr_gray_cr fo_pa"> اکشن </a></li>
-
-                        <li><a href="#" class="white_cr hvr_gray_cr fo_pa"> علمی </a></li>
-                    </ul>
+            <li>
+              <a href="#">
+                <img src="img/jonathan.jpg" alt="" />
+              </a>
+              <a href="#">
+                <div class="details_relative white_cr">
+                  <h3 class="fo_he2_b">اکشن _ ترسناک</h3>
+                  <h4 class="fo_he2_b">آمریکا _ 2010</h4>
+                  <h5 class="red_bg fo_he2">IMDB : 8.5</h5>
                 </div>
-                <div class="types white_cr red_bg" onclick="category(this)" onmouseover="hover(this)" onmouseout="hoverOff(this)">
-                    <h3 class="fo_pa">کشور</h3>
-                    <img src="icon/down1.svg" alt="" />
-                    <ul class="Drawing_types">
-                        <li><a href="#" class="white_cr hvr_gray_cr fo_pa"> آمریکا </a></li>
-
-                        <li><a href="#" class="white_cr hvr_gray_cr fo_pa"> ایران </a></li>
-
-                        <li><a href="#" class="white_cr hvr_gray_cr fo_pa"> فرانسه </a></li>
-
-                        <li><a href="#" class="white_cr hvr_gray_cr fo_pa"> هند </a></li>
-                    </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/1917.jpg" alt="" />
+              </a>
+              <a href="#">
+                <div class="details_relative white_cr">
+                  <h3 class="fo_he2_b">اکشن _ ترسناک</h3>
+                  <h4 class="fo_he2_b">آمریکا _ 2010</h4>
+                  <h5 class="red_bg fo_he2">IMDB : 8.5</h5>
                 </div>
-                <div class="types white_cr red_bg" onclick="category(this)" onmouseover="hover(this)" onmouseout="hoverOff(this)">
-                    <h3 class="fo_pa">سال ساخت</h3>
-                    <img src="icon/down1.svg" alt="" />
-                    <ul class="Drawing_types">
-                        <li><a href="#" class="white_cr hvr_gray_cr fo_pa"> 1900-1980 </a></li>
-
-                        <li><a href="#" class="white_cr hvr_gray_cr fo_pa"> 1980-2000 </a></li>
-
-                        <li><a href="#" class="white_cr hvr_gray_cr fo_pa"> 2000-2010 </a></li>
-
-                        <li><a href="#" class="white_cr hvr_gray_cr fo_pa"> 2010-2021 </a></li>
-                    </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/Fantastic_Beasts.png" alt="" />
+              </a>
+              <a href="#">
+                <div class="details_relative white_cr">
+                  <h3 class="fo_he2_b">اکشن _ ترسناک</h3>
+                  <h4 class="fo_he2_b">آمریکا _ 2010</h4>
+                  <h5 class="red_bg fo_he2">IMDB : 8.5</h5>
                 </div>
-                <div class="types white_cr red_bg" onclick="category(this)" onmouseover="hover(this)" onmouseout="hoverOff(this)">
-                    <h3 class="fo_pa">امتیاز IMDB</h3>
-
-                    <img src="icon/down1.svg" alt="" />
-                    <ul class="Drawing_types">
-                        <li><a href="#" id="date" class="white_cr hvr_gray_cr"> 7.0 - 5.0 </a></li>
-
-                        <li><a href="#" class="white_cr hvr_gray_cr fo_pa"> 8.0 - 7.0 </a></li>
-
-                        <li><a href="#" class="white_cr hvr_gray_cr fo_pa"> 9.0 - 8.0 </a></li>
-
-                        <li><a href="#" class="white_cr hvr_gray_cr fo_pa"> 9.2 - 9.0 </a></li>
-                    </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/dynasties.jpg" alt="" />
+              </a>
+              <a href="#">
+                <div class="details_relative white_cr">
+                  <h3 class="fo_he2_b">اکشن _ ترسناک</h3>
+                  <h4 class="fo_he2_b">آمریکا _ 2010</h4>
+                  <h5 class="red_bg fo_he2">IMDB : 8.5</h5>
                 </div>
-                <div class="filter white_cr red_bg hvr_gray_bg" onclick="category(this)">
-                    <h5 class="fo_pa">اعمال فیلتر ها</h5>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/unhinged.jpeg" alt="" />
+              </a>
+              <a href="#">
+                <div class="details_relative white_cr">
+                  <h3 class="fo_he2_b">اکشن _ ترسناک</h3>
+                  <h4 class="fo_he2_b">آمریکا _ 2010</h4>
+                  <h5 class="red_bg fo_he2">IMDB : 8.5</h5>
                 </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <!-- left-sidebar -->
+      <aside class="left-sidebar">
+        <section class="sidebox white_bg">
+          <header>
+            <img src="icon/movie tape.svg" alt="" />
+            <h2 class="gray_cr fo_big">براساس ژانر</h2>
+            <h4 class="white_cr red_bg fo_he2">سریال</h4>
+            <h4 class="white_cr red_bg fo_he2">فیلم</h4>
+          </header>
+          <ul class="sidbox_genre">
+            <li>
+              <a href="#" class="gray_cr" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
+                <img src="icon/circle.svg" alt="" />
+                <h3 class="fo_he">اجتماعی  (1249)</h3>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="gray_cr" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
+                <img src="icon/circle.svg" alt="" />
+                <h3 class="fo_he">کمدی  (1249)</h3>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="gray_cr" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
+                <img src="icon/circle.svg" alt="" />
+                <h3 class="fo_he">فانتزی  (1249)</h3>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="gray_cr" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
+                <img src="icon/circle.svg" alt="" />
+                <h3 class="fo_he">تخیلی  (1249)</h3>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="gray_cr" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
+                <img src="icon/circle.svg" alt="" />
+                <h3 class="fo_he">فانتزی  (1249)</h3>
+              </a>
+            </li>
+        
+            <li>
+              <a href="#" class="gray_cr" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
+                <img src="icon/circle.svg" alt="" />
+                <h3 class="fo_he">جنایی  (1249)</h3>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="gray_cr" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
+                <img src="icon/circle.svg" alt="" />
+                <h3 class="fo_he">درام  (1249)</h3>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="gray_cr" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
+                <img src="icon/circle.svg" alt="" />
+                <h3 class="fo_he">خانوادگی  (1249)</h3>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="gray_cr" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
+                <img src="icon/circle.svg" alt="" />
+                <h3 class="fo_he">ترسناک  (1249)</h3>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="gray_cr" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
+                <img src="icon/circle.svg" alt="" />
+                <h3 class="fo_he">معمایی  (1249)</h3>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="gray_cr" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
+                <img src="icon/circle.svg" alt="" />
+                <h3 class="fo_he">ماجراجویی  (1249)</h3>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="gray_cr" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
+                <img src="icon/circle.svg" alt="" />
+                <h3 class="fo_he">کمدی  (1249)</h3>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="gray_cr" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
+                <img src="icon/circle.svg" alt="" />
+                <h3 class="fo_he">وسترون  (1249)</h3>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="gray_cr" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
+                <img src="icon/circle.svg" alt="" />
+                <h3 class="fo_he">هیجانی  (1249)</h3>
+              </a>
+            </li>
+            <li>
+                <a href="#" class="gray_cr" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
+                  <img src="icon/circle.svg" alt="" />
+                  <h3 class="fo_he">اجتماعی  (1249)</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="gray_cr" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
+                  <img src="icon/circle.svg" alt="" />
+                  <h3 class="fo_he">کمدی  (1249)</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="gray_cr" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
+                  <img src="icon/circle.svg" alt="" />
+                  <h3 class="fo_he">فانتزی  (1249)</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="gray_cr" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
+                  <img src="icon/circle.svg" alt="" />
+                  <h3 class="fo_he">تخیلی  (1249)</h3>
+                </a>
+              </li>
+  
+ 
+          </ul>
+        </section>
+
+        <!-- born sidebox -->
+
+        <section class="sidebox gray_cr white_bg">
+          <header>
+            <img src="icon/date.svg" alt="" />
+            <h2 class="fo_big">براساس سال تولید</h2>
+            <h4 class="white_cr red_bg fo_he2">سریال</h4>
+            <h4 class="white_cr red_bg fo_he2">فیلم</h4>
+          </header>
+
+          <ul class="sidbox_genre">
+           
+
+            <li>
+                <a href="#" class="gray_cr" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)" >
+                <img src="icon/circle.svg" alt="" />
+                <h3 class="fo_he">2004</h3>
+              </a>
+            </li>
+
+            <li>
+                <a href="#" class="gray_cr" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)" >
+                <img src="icon/circle.svg" alt="" />
+                <h3 class="fo_he">2005</h3>
+              </a>
+            </li>
+
+            <li>
+                <a href="#" class="gray_cr" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)" >
+                <img src="icon/circle.svg" alt="" />
+                <h3 class="fo_he">2006</h3>
+              </a>
+            </li>
+
+            <li>
+                <a href="#" class="gray_cr" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)" >
+                <img src="icon/circle.svg" alt="" />
+                <h3 class="fo_he">2007</h3>
+              </a>
+            </li>
+
+            <li>
+                <a href="#" class="gray_cr" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)" >
+                <img src="icon/circle.svg" alt="" />
+                <h3 class="fo_he">2008</h3>
+              </a>
+            </li>
+
+            <li>
+                <a href="#" class="gray_cr" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)" >
+                <img src="icon/circle.svg" alt="" />
+                <h3 class="fo_he">2009</h3>
+              </a>
+            </li>
+
+            <li>
+                <a href="#" class="gray_cr" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)" >
+                <img src="icon/circle.svg" alt="" />
+                <h3 class="fo_he">2010</h3>
+              </a>
+            </li>
+
+            <li>
+                <a href="#" class="gray_cr" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)" >
+                <img src="icon/circle.svg" alt="" />
+                <h3 class="fo_he">2011</h3>
+              </a>
+            </li>
+
+            <li>
+                <a href="#" class="gray_cr" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)" >
+                <img src="icon/circle.svg" alt="" />
+                <h3 class="fo_he">2012</h3>
+              </a>
+            </li>
+
+            <li>
+                <a href="#" class="gray_cr" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)" >
+                <img src="icon/circle.svg" alt="" />
+                <h3 class="fo_he">2013</h3>
+              </a>
+            </li>
+
+            <li>
+                <a href="#" class="gray_cr" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)" >
+                <img src="icon/circle.svg" alt="" />
+                <h3 class="fo_he">2014</h3>
+              </a>
+            </li>
+
+            <li>
+                <a href="#" class="gray_cr" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)" >
+                <img src="icon/circle.svg" alt="" />
+                <h3 class="fo_he">2015</h3>
+              </a>
+            </li>
+
+            <li>
+                <a href="#" class="gray_cr" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)" >
+                <img src="icon/circle.svg" alt="" />
+                <h3 class="fo_he">2016</h3>
+              </a>
+            </li>
+
+            <li>
+                <a href="#" class="gray_cr" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)" >
+                <img src="icon/circle.svg" alt="" />
+                <h3 class="fo_he">2017</h3>
+              </a>
+            </li>
+
+            <li>
+                <a href="#" class="gray_cr" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)" >
+                <img src="icon/circle.svg" alt="" />
+                <h3 class="fo_he">2018</h3>
+              </a>
+            </li>
+
+            <li>
+                <a href="#" class="gray_cr" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)" >
+                <img src="icon/circle.svg" alt="" />
+                <h3 class="fo_he">2019</h3>
+              </a>
+            </li>
+
+            <li>
+                <a href="#" class="gray_cr" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)" >
+                <img src="icon/circle.svg" alt="" />
+                <h3 class="fo_he">2020</h3>
+              </a>
+            </li>
+
+            <li>
+                <a href="#" class="gray_cr" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)" >
+                <img src="icon/circle.svg" alt="" />
+                <h3 class="fo_he">2021</h3>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <!-- random sidebox -->
+        <section class="sidebox_random_movie white_bg">
+          <header>
+            <img src="icon/trailer.svg" alt="" />
+            <h2 class="gray_cr fo_big"><b>آخرین تریلرها</b></h2>
+          </header>
+          <nav>
+            <div class="rand nav nav-tabs" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link gray_cr" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"  aria-controls="nav-home" aria-selected="true"  >
+                <h2 class="fo_he2">جدیدترین</h2>
+              </a>
+              <a class="nav-item nav-link gray_cr active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"  aria-controls="nav-home" aria-selected="true"  >
+                <h2 class="fo_he2">پربازدیدترین</h2>
+              </a>
+              <a class="nav-item nav-link gray_cr" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"  aria-controls="nav-home" aria-selected="true"  >
+                <h2 class="fo_he2">تصادفی</h2>
+              </a>
+            </div>
+          </nav>
+
+          <div class="rand_pic tab-content" id="nav-tabContent">
+            <div class="tab-pane" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" >
+              <a href="#">
+                <img src="img/jonathan.jpg" alt="" />
+              </a>
+            </div>
+
+            <div class="tab-pane" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" >
+              <a href="#">
+                <img src="img/the-joker.jpg" alt="" />
+              </a>
+            </div>
+
+            <div class="tab-pane" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" >
+              <a href="#">
+                <img src="img/walking dead.jpg" alt="" />
+              </a>
+            </div>
+
+            <div class="tab-pane" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" >
+              <a href="#">
+                <img src="img/schindler.jpg" alt="" />
+              </a>
+            </div>
+            <div class="tab-pane" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" >
+              <a href="#">
+                <img src="img/dynasties.jpg" alt="" />
+              </a>
+            </div>
+
+            <div class="tab-pane" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" >
+              <a href="#">
+                <img src="img/Fantastic_Beasts.png" alt="" />
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Dubbed sidebox -->
+        <section class="sidebox white_bg">
+          <header>
+            <img src="icon/Dubbed.svg" alt="" />
+            <h2 class="gray_cr fo_big"><b> فیلم های دوبله</b></h2>
+            <h4 class="white_cr red_bg fo_he2">سریال</h4>
+            <h4 class="white_cr red_bg fo_he2">فیلم</h4>
+          </header>
+          <ul class="dubbed_pic">
+            <li>
+              <a href="#">
+                <img src="img/The Godfather11.jpg" alt="" />
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="img/the-joker.jpg" alt="" />
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="img/walking dead.jpg" alt="" />
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="img/schindler.jpg" alt="" />
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="img/dynasties.jpg" alt="" />
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="img/Fantastic_Beasts.png" alt="" />
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- new serial sidebox -->
+
+        <section class="sidebox_news white_bg">
+          <header>
+            <img src="icon/new.svg" alt="" />
+            <h2 class="gray_cr fo_big"><b> جدیدترین فیلم و سریال ها</b></h2>
+          </header>
+          <ul class="sidbox_news_ul">
+            <li>
+              <img src="img/Riverdale-Overview-Wikinaghd.jpg" alt="" />
+              <a href="#">
+                <h3 class="white_cr fo_he2_b">سریال ریوردیل</h3>
+                <h4 class="white_cr fo_he2_b">قسمت 2 فصل 5 اضافه شد</h4>
+              </a>
+            </li>
+
+            <li>
+              <img src=" img/this-is-us.jpg " alt=" " />
+              <a href="#">
+                <h3 class="white_cr fo_he2_b">سریال این ما هستیم</h3>
+                <h4 class="white_cr fo_he2_b">قسمت 2 فصل 5 اضافه شد</h4>
+              </a>
+            </li>
+
+            <li>
+              <img src="img/seriyal paperly.jpg " alt=" " />
+              <a href="#">
+                <h3 class="white_cr fo_he2_b">سریال خانه کاغذی</h3>
+                <h4 class="white_cr fo_he2_b">قسمت 2 فصل 5 اضافه شد</h4>
+              </a>
+            </li>
+
+            <li>
+              <img src="img/kimcheshe.jpg " alt=" " />
+              <a href="#">
+                <h3 class="white_cr fo_he2_b">سریال منشی کیم چشه</h3>
+                <h4 class="white_cr fo_he2_b">قسمت 2 فصل 5 اضافه شد</h4>
+              </a>
+            </li>
+
+            <li>
+              <img src="img/frog.jpg " alt=" " />
+              <a href="#">
+                <h3 class="white_cr fo_he2_b">سریال قورباغه</h3>
+                <h4 class="white_cr fo_he2_b">قسمت 2 فصل 5 اضافه شد</h4>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <!-- born sidebox -->
+
+        <section class="sidebox white_bg" id="sidebox_newss">
+          <header>
+            <img src="icon/news.svg " alt="" />
+            <h2 class="gray_cr fo_big"> اخبار سایت</h2>
+          </header>
+          <ul class="sidbox_genre" id="genre_newss">
+            <li>
+              <a href="#">
+                <img src="img/newsssss.png " alt=" " id="newsss" />
+                <h3 class="gray_cr fo_he2_b">
+                  قسمت 8 فصل 5 سریال ما با هم هستیم اضافه شد
+                </h3>
+                <div>
+                  <h4 class="gray_cr fo_pa">دسته :</h4>
+                  <h5 class="gray_cr fo_pa">فیلم</h5>
+                </div>
+                <span class="red2_cr fo_pa"> 4 ساعت قبل</span>
+              </a>
+            </li>
+        
+            <li>
+              <a href="#">
+                <img src="img/newsssss.png " alt=" " id="newsss" />
+                <h3 class="gray_cr fo_he2_b">
+                  قسمت 8 فصل 5 سریال ما با هم هستیم اضافه شد
+                </h3>
+                <div>
+                  <h4 class="gray_cr fo_pa">دسته :</h4>
+                  <h5 class="gray_cr fo_pa">فیلم</h5>
+                </div>
+                <span class="red2_cr fo_pa"> 4 ساعت قبل</span>
+              </a>
+            </li>
+        
+            <li>
+              <a href="#">
+                <img src="img/newsssss.png " alt=" " id="newsss" />
+                <h3 class="gray_cr fo_he2_b">
+                  قسمت 8 فصل 5 سریال ما با هم هستیم اضافه شد
+                </h3>
+                <div>
+                  <h4 class="gray_cr fo_pa">دسته :</h4>
+                  <h5 class="gray_cr fo_pa">فیلم</h5>
+                </div>
+                <span class="red2_cr fo_pa"> 4 ساعت قبل</span>
+              </a>
+            </li>
+        
+            <li>
+              <a href="#">
+                <img src="img/newsssss.png " alt=" " id="newsss" />
+                <h3 class="gray_cr fo_he2_b">
+                  قسمت 8 فصل 5 سریال ما با هم هستیم اضافه شد
+                </h3>
+                <div>
+                  <h4 class="gray_cr fo_pa">دسته :</h4>
+                  <h5 class="gray_cr fo_pa">فیلم</h5>
+                </div>
+                <span class="red2_cr fo_pa"> 4 ساعت قبل</span>
+              </a>
+            </li>
+        
+            <li>
+              <a href="#">
+                <img src="img/newsssss.png " alt=" " id="newsss" />
+                <h3 class="gray_cr fo_he2_b">
+                  قسمت 8 فصل 5 سریال ما با هم هستیم اضافه شد
+                </h3>
+                <div>
+                  <h4 class="gray_cr fo_pa">دسته :</h4>
+                  <h5 class="gray_cr fo_pa">فیلم</h5>
+                </div>
+                <span class="red2_cr fo_pa"> 4 ساعت قبل</span>
+              </a>
+            </li>
+        
+          </ul>
+        </section>
+      </aside>
+
+      <!-- posts -->
+      <div class="all_posts">
+        <!-- arritcle posts -->
+        <article class="post white_bg">
+          <header class="gray_cr">
+            <img src="icon/movie.svg " alt=" " />
+            <h2 class="fo_he">دانلود فیلم</h2>
+            <h2 class="fo_he">The Fault in Our Stars</h2>
+            <div class="star_imdb"><img src="icon/star.svg " alt=" " /></div>
+            <h3 class="fo_he2_b">: IMDB</h3>
+            <h3 class="fo_he2_b"> 7.6</h3>
+          </header>
+          <section class="details_movie">
+            <a href="#">
+                <img src="img/The Fault in Our Stars.jpg" alt=" "/>
+            </a>
+            <ul class="gray_cr">
+              <li>
+                <h3 class="fo_he2">نام فیلم :</h3>
+                <h3 class="fo_he2">The Fault in Our Stars</h3>
+              </li>
+
+              <li>
+                <h3 class="fo_he2">ژانر :</h3>
+                <h3 class="fo_he2">خانوادگی و درام</h3>
+              </li>
+
+              <li>
+                <h3 class="fo_he2">امتیاز :</h3>
+                <h3 class="fo_he2">&nbsp;7.8 در IMDB</h3>
+              </li>
+
+              <li>
+                <h3 class="fo_he2">زبان :</h3>
+                <h3 class="fo_he2">&nbsp;انگلیسی</h3>
+              </li>
+
+              <li>
+                <h3 class="fo_he2">محصول کشور :</h3>
+                <h3 class="fo_he2">&nbsp;آمریکا</h3>
+              </li>
+
+              <li>
+                <h3 class="fo_he2">سال انتشار :</h3>
+                <h3 class="fo_he2">&nbsp;2014</h3>
+              </li>
+
+              <li>
+                <h3 class="fo_he2">کارگردان :</h3>
+                <h3 class="fo_he2">&nbsp;دیوید فینچر</h3>
+              </li>
+
+              <li>
+                <h3 class="fo_he2">بازیگران :</h3>
+                <h3 class="fo_he2">
+                  &nbsp; Shailene Woodley, Ansel Elgort, Nat Wolff
+                </h3>
+              </li>
+            </ul>
+            <footer class="details_description">
+              <div class="description gray_cr">
+                <h3 class="fo_he2_b">خلاصه داستان  :</h3>
+                <p class="fo_pa">
+                  فیلمی رمانتیک درام آمریکایی به کارگردانی جاش بون، برگرفته از
+                  رمانی به همین نام به قلم جان گرین است. در این فیلم شیلین
+                  وودلی، انسل الگورت، لورا درن، سام ترمل، نات وولف و ویلم دفو
+                  نقش‌آفرینی می‌کنند. فیلم‌برداری بخت پریشان در پیتسبورگ و
+                  آمستردام صورت گرفته‌است و در تاریخ ۶ ژوئن ۲۰۱۴ روی پرده .
+                </p>
+              </div>
+              <div class="download">
+                <a href="# " class="red_bg white_cr">
+                  <h3 class="fo_he2">توضیحات + دانلود</h3>
+                </a>
+              </div>
+            </footer>
+          </section>
+        </article>
+
+        <!-- arritcle posts -->
+        <article class="post white_bg">
+            <header class="gray_cr">
+              <img src="icon/movie.svg " alt=" " />
+              <h2 class="fo_he">دانلود فیلم</h2>
+              <h2 class="fo_he">The Fault in Our Stars</h2>
+              <div class="star_imdb"><img src="icon/star.svg " alt=" " /></div>
+              <h3 class="fo_he2_b">: IMDB</h3>
+              <h3 class="fo_he2_b"> 7.6</h3>
             </header>
+            <section class="details_movie">
+              <a href="#">
+                  <img src="img/The Fault in Our Stars.jpg" alt=" "/>
+              </a>
+              <ul class="gray_cr">
+                <li>
+                  <h3 class="fo_he2">نام فیلم :</h3>
+                  <h3 class="fo_he2">The Fault in Our Stars</h3>
+                </li>
+  
+                <li>
+                  <h3 class="fo_he2">ژانر :</h3>
+                  <h3 class="fo_he2">خانوادگی و درام</h3>
+                </li>
+  
+                <li>
+                  <h3 class="fo_he2">امتیاز :</h3>
+                  <h3 class="fo_he2">&nbsp;7.8 در IMDB</h3>
+                </li>
+  
+                <li>
+                  <h3 class="fo_he2">زبان :</h3>
+                  <h3 class="fo_he2">&nbsp;انگلیسی</h3>
+                </li>
+  
+                <li>
+                  <h3 class="fo_he2">محصول کشور :</h3>
+                  <h3 class="fo_he2">&nbsp;آمریکا</h3>
+                </li>
+  
+                <li>
+                  <h3 class="fo_he2">سال انتشار :</h3>
+                  <h3 class="fo_he2">&nbsp;2014</h3>
+                </li>
+  
+                <li>
+                  <h3 class="fo_he2">کارگردان :</h3>
+                  <h3 class="fo_he2">&nbsp;دیوید فینچر</h3>
+                </li>
+  
+                <li>
+                  <h3 class="fo_he2">بازیگران :</h3>
+                  <h3 class="fo_he2">
+                    &nbsp; Shailene Woodley, Ansel Elgort, Nat Wolff
+                  </h3>
+                </li>
+              </ul>
+              <footer class="details_description">
+                <div class="description gray_cr">
+                  <h3 class="fo_he2_b">خلاصه داستان  :</h3>
+                  <p class="fo_pa">
+                    فیلمی رمانتیک درام آمریکایی به کارگردانی جاش بون، برگرفته از
+                    رمانی به همین نام به قلم جان گرین است. در این فیلم شیلین
+                    وودلی، انسل الگورت، لورا درن، سام ترمل، نات وولف و ویلم دفو
+                    نقش‌آفرینی می‌کنند. فیلم‌برداری بخت پریشان در پیتسبورگ و
+                    آمستردام صورت گرفته‌است و در تاریخ ۶ ژوئن ۲۰۱۴ روی پرده .
+                  </p>
+                </div>
+                <div class="download">
+                  <a href="# " class="red_bg white_cr">
+                    <h3 class="fo_he2">توضیحات + دانلود</h3>
+                  </a>
+                </div>
+              </footer>
+            </section>
+          </article>
+               <!-- arritcle posts -->
+               <article class="post white_bg">
+                <header class="gray_cr">
+                  <img src="icon/movie.svg " alt=" " />
+                  <h2 class="fo_he">دانلود فیلم</h2>
+                  <h2 class="fo_he">The Fault in Our Stars</h2>
+                  <div class="star_imdb"><img src="icon/star.svg " alt=" " /></div>
+                  <h3 class="fo_he2_b">: IMDB</h3>
+                  <h3 class="fo_he2_b"> 7.6</h3>
+                </header>
+                <section class="details_movie">
+                  <a href="#">
+                      <img src="img/The Fault in Our Stars.jpg" alt=" "/>
+                  </a>
+                  <ul class="gray_cr">
+                    <li>
+                      <h3 class="fo_he2">نام فیلم :</h3>
+                      <h3 class="fo_he2">The Fault in Our Stars</h3>
+                    </li>
+      
+                    <li>
+                      <h3 class="fo_he2">ژانر :</h3>
+                      <h3 class="fo_he2">خانوادگی و درام</h3>
+                    </li>
+      
+                    <li>
+                      <h3 class="fo_he2">امتیاز :</h3>
+                      <h3 class="fo_he2">&nbsp;7.8 در IMDB</h3>
+                    </li>
+      
+                    <li>
+                      <h3 class="fo_he2">زبان :</h3>
+                      <h3 class="fo_he2">&nbsp;انگلیسی</h3>
+                    </li>
+      
+                    <li>
+                      <h3 class="fo_he2">محصول کشور :</h3>
+                      <h3 class="fo_he2">&nbsp;آمریکا</h3>
+                    </li>
+      
+                    <li>
+                      <h3 class="fo_he2">سال انتشار :</h3>
+                      <h3 class="fo_he2">&nbsp;2014</h3>
+                    </li>
+      
+                    <li>
+                      <h3 class="fo_he2">کارگردان :</h3>
+                      <h3 class="fo_he2">&nbsp;دیوید فینچر</h3>
+                    </li>
+      
+                    <li>
+                      <h3 class="fo_he2">بازیگران :</h3>
+                      <h3 class="fo_he2">
+                        &nbsp; Shailene Woodley, Ansel Elgort, Nat Wolff
+                      </h3>
+                    </li>
+                  </ul>
+                  <footer class="details_description">
+                    <div class="description gray_cr">
+                      <h3 class="fo_he2_b">خلاصه داستان  :</h3>
+                      <p class="fo_pa">
+                        فیلمی رمانتیک درام آمریکایی به کارگردانی جاش بون، برگرفته از
+                        رمانی به همین نام به قلم جان گرین است. در این فیلم شیلین
+                        وودلی، انسل الگورت، لورا درن، سام ترمل، نات وولف و ویلم دفو
+                        نقش‌آفرینی می‌کنند. فیلم‌برداری بخت پریشان در پیتسبورگ و
+                        آمستردام صورت گرفته‌است و در تاریخ ۶ ژوئن ۲۰۱۴ روی پرده .
+                      </p>
+                    </div>
+                    <div class="download">
+                      <a href="# " class="red_bg white_cr">
+                        <h3 class="fo_he2">توضیحات + دانلود</h3>
+                      </a>
+                    </div>
+                  </footer>
+                </section>
+              </article>
+               <!-- arritcle posts -->
+               <article class="post white_bg">
+                <header class="gray_cr">
+                  <img src="icon/movie.svg " alt=" " />
+                  <h2 class="fo_he">دانلود فیلم</h2>
+                  <h2 class="fo_he">The Fault in Our Stars</h2>
+                  <div class="star_imdb"><img src="icon/star.svg " alt=" " /></div>
+                  <h3 class="fo_he2_b">: IMDB</h3>
+                  <h3 class="fo_he2_b"> 7.6</h3>
+                </header>
+                <section class="details_movie">
+                  <a href="#">
+                      <img src="img/The Fault in Our Stars.jpg" alt=" "/>
+                  </a>
+                  <ul class="gray_cr">
+                    <li>
+                      <h3 class="fo_he2">نام فیلم :</h3>
+                      <h3 class="fo_he2">The Fault in Our Stars</h3>
+                    </li>
+      
+                    <li>
+                      <h3 class="fo_he2">ژانر :</h3>
+                      <h3 class="fo_he2">خانوادگی و درام</h3>
+                    </li>
+      
+                    <li>
+                      <h3 class="fo_he2">امتیاز :</h3>
+                      <h3 class="fo_he2">&nbsp;7.8 در IMDB</h3>
+                    </li>
+      
+                    <li>
+                      <h3 class="fo_he2">زبان :</h3>
+                      <h3 class="fo_he2">&nbsp;انگلیسی</h3>
+                    </li>
+      
+                    <li>
+                      <h3 class="fo_he2">محصول کشور :</h3>
+                      <h3 class="fo_he2">&nbsp;آمریکا</h3>
+                    </li>
+      
+                    <li>
+                      <h3 class="fo_he2">سال انتشار :</h3>
+                      <h3 class="fo_he2">&nbsp;2014</h3>
+                    </li>
+      
+                    <li>
+                      <h3 class="fo_he2">کارگردان :</h3>
+                      <h3 class="fo_he2">&nbsp;دیوید فینچر</h3>
+                    </li>
+      
+                    <li>
+                      <h3 class="fo_he2">بازیگران :</h3>
+                      <h3 class="fo_he2">
+                        &nbsp; Shailene Woodley, Ansel Elgort, Nat Wolff
+                      </h3>
+                    </li>
+                  </ul>
+                  <footer class="details_description">
+                    <div class="description gray_cr">
+                      <h3 class="fo_he2_b">خلاصه داستان  :</h3>
+                      <p class="fo_pa">
+                        فیلمی رمانتیک درام آمریکایی به کارگردانی جاش بون، برگرفته از
+                        رمانی به همین نام به قلم جان گرین است. در این فیلم شیلین
+                        وودلی، انسل الگورت، لورا درن، سام ترمل، نات وولف و ویلم دفو
+                        نقش‌آفرینی می‌کنند. فیلم‌برداری بخت پریشان در پیتسبورگ و
+                        آمستردام صورت گرفته‌است و در تاریخ ۶ ژوئن ۲۰۱۴ روی پرده .
+                      </p>
+                    </div>
+                    <div class="download">
+                      <a href="# " class="red_bg white_cr">
+                        <h3 class="fo_he2">توضیحات + دانلود</h3>
+                      </a>
+                    </div>
+                  </footer>
+                </section>
+              </article>
+               <!-- arritcle posts -->
+               <article class="post white_bg">
+                <header class="gray_cr">
+                  <img src="icon/movie.svg " alt=" " />
+                  <h2 class="fo_he">دانلود فیلم</h2>
+                  <h2 class="fo_he">The Fault in Our Stars</h2>
+                  <div class="star_imdb"><img src="icon/star.svg " alt=" " /></div>
+                  <h3 class="fo_he2_b">: IMDB</h3>
+                  <h3 class="fo_he2_b"> 7.6</h3>
+                </header>
+                <section class="details_movie">
+                  <a href="#">
+                      <img src="img/The Fault in Our Stars.jpg" alt=" "/>
+                  </a>
+                  <ul class="gray_cr">
+                    <li>
+                      <h3 class="fo_he2">نام فیلم :</h3>
+                      <h3 class="fo_he2">The Fault in Our Stars</h3>
+                    </li>
+      
+                    <li>
+                      <h3 class="fo_he2">ژانر :</h3>
+                      <h3 class="fo_he2">خانوادگی و درام</h3>
+                    </li>
+      
+                    <li>
+                      <h3 class="fo_he2">امتیاز :</h3>
+                      <h3 class="fo_he2">&nbsp;7.8 در IMDB</h3>
+                    </li>
+      
+                    <li>
+                      <h3 class="fo_he2">زبان :</h3>
+                      <h3 class="fo_he2">&nbsp;انگلیسی</h3>
+                    </li>
+      
+                    <li>
+                      <h3 class="fo_he2">محصول کشور :</h3>
+                      <h3 class="fo_he2">&nbsp;آمریکا</h3>
+                    </li>
+      
+                    <li>
+                      <h3 class="fo_he2">سال انتشار :</h3>
+                      <h3 class="fo_he2">&nbsp;2014</h3>
+                    </li>
+      
+                    <li>
+                      <h3 class="fo_he2">کارگردان :</h3>
+                      <h3 class="fo_he2">&nbsp;دیوید فینچر</h3>
+                    </li>
+      
+                    <li>
+                      <h3 class="fo_he2">بازیگران :</h3>
+                      <h3 class="fo_he2">
+                        &nbsp; Shailene Woodley, Ansel Elgort, Nat Wolff
+                      </h3>
+                    </li>
+                  </ul>
+                  <footer class="details_description">
+                    <div class="description gray_cr">
+                      <h3 class="fo_he2_b">خلاصه داستان  :</h3>
+                      <p class="fo_pa">
+                        فیلمی رمانتیک درام آمریکایی به کارگردانی جاش بون، برگرفته از
+                        رمانی به همین نام به قلم جان گرین است. در این فیلم شیلین
+                        وودلی، انسل الگورت، لورا درن، سام ترمل، نات وولف و ویلم دفو
+                        نقش‌آفرینی می‌کنند. فیلم‌برداری بخت پریشان در پیتسبورگ و
+                        آمستردام صورت گرفته‌است و در تاریخ ۶ ژوئن ۲۰۱۴ روی پرده .
+                      </p>
+                    </div>
+                    <div class="download">
+                      <a href="# " class="red_bg white_cr">
+                        <h3 class="fo_he2">توضیحات + دانلود</h3>
+                      </a>
+                    </div>
+                  </footer>
+                </section>
+              </article>
+               <!-- arritcle posts -->
+               <article class="post white_bg">
+                <header class="gray_cr">
+                  <img src="icon/movie.svg " alt=" " />
+                  <h2 class="fo_he">دانلود فیلم</h2>
+                  <h2 class="fo_he">The Fault in Our Stars</h2>
+                  <div class="star_imdb"><img src="icon/star.svg " alt=" " /></div>
+                  <h3 class="fo_he2_b">: IMDB</h3>
+                  <h3 class="fo_he2_b"> 7.6</h3>
+                </header>
+                <section class="details_movie">
+                  <a href="#">
+                      <img src="img/The Fault in Our Stars.jpg" alt=" "/>
+                  </a>
+                  <ul class="gray_cr">
+                    <li>
+                      <h3 class="fo_he2">نام فیلم :</h3>
+                      <h3 class="fo_he2">The Fault in Our Stars</h3>
+                    </li>
+      
+                    <li>
+                      <h3 class="fo_he2">ژانر :</h3>
+                      <h3 class="fo_he2">خانوادگی و درام</h3>
+                    </li>
+      
+                    <li>
+                      <h3 class="fo_he2">امتیاز :</h3>
+                      <h3 class="fo_he2">&nbsp;7.8 در IMDB</h3>
+                    </li>
+      
+                    <li>
+                      <h3 class="fo_he2">زبان :</h3>
+                      <h3 class="fo_he2">&nbsp;انگلیسی</h3>
+                    </li>
+      
+                    <li>
+                      <h3 class="fo_he2">محصول کشور :</h3>
+                      <h3 class="fo_he2">&nbsp;آمریکا</h3>
+                    </li>
+      
+                    <li>
+                      <h3 class="fo_he2">سال انتشار :</h3>
+                      <h3 class="fo_he2">&nbsp;2014</h3>
+                    </li>
+      
+                    <li>
+                      <h3 class="fo_he2">کارگردان :</h3>
+                      <h3 class="fo_he2">&nbsp;دیوید فینچر</h3>
+                    </li>
+      
+                    <li>
+                      <h3 class="fo_he2">بازیگران :</h3>
+                      <h3 class="fo_he2">
+                        &nbsp; Shailene Woodley, Ansel Elgort, Nat Wolff
+                      </h3>
+                    </li>
+                  </ul>
+                  <footer class="details_description">
+                    <div class="description gray_cr">
+                      <h3 class="fo_he2_b">خلاصه داستان  :</h3>
+                      <p class="fo_pa">
+                        فیلمی رمانتیک درام آمریکایی به کارگردانی جاش بون، برگرفته از
+                        رمانی به همین نام به قلم جان گرین است. در این فیلم شیلین
+                        وودلی، انسل الگورت، لورا درن، سام ترمل، نات وولف و ویلم دفو
+                        نقش‌آفرینی می‌کنند. فیلم‌برداری بخت پریشان در پیتسبورگ و
+                        آمستردام صورت گرفته‌است و در تاریخ ۶ ژوئن ۲۰۱۴ روی پرده .
+                      </p>
+                    </div>
+                    <div class="download">
+                      <a href="# " class="red_bg white_cr">
+                        <h3 class="fo_he2">توضیحات + دانلود</h3>
+                      </a>
+                    </div>
+                  </footer>
+                </section>
+              </article>
+                                  
+      </div>
+      <!-- wp-pagenavi -->
+      <div class="wp-pagenavi white_bg">
+        <span class="white_cr fo_he2">صفحه 1 از 100</span>
+        <span class="current white_cr fo_he2">1</span>
+        <a href="# " class="white_cr fo_he2">1</a>
+        <a href="# " class="white_cr fo_he2">2</a>
+        <a href="# " class="white_cr fo_he2">3</a>
+        <a href="# " class="white_cr fo_he2">4</a>
+        <a href="# " class="white_cr fo_he2">5</a>
+        <a href="# " class="white_cr fo_he2">...</a>
+        <a href="# " class="white_cr fo_he2">10</a>
+        <a href="# " class="white_cr fo_he2">20</a>
+        <a href="# " class="white_cr fo_he2">30</a>
+        <a href="# " class="white_cr fo_he2">...</a>
+        <a href="# " class="white_cr fo_he2" id="nexti">بعدی</a>
+        <a href="# " class="white_cr fo_he2" id="previ">قبلی</a>
+      </div>
+
+      <footer class="footer-nav">
+        <div class="main-footer white_bg">
+          <div class="about">
+            <h2 class="red2_cr fo_big">فیلم باز</h2>
+            <p class="gray_cr fo_pa">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+              استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+              نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+            </p>
+          </div>
+          <div class="about">
+            <h2 class="red2_cr fo_big">دسترسی سریع</h2>
             <div class="clear"></div>
-            <!-- relative_post -->
-            <section class="relative_post white_bg">
 
-                <h1 class="gray_cr fo_big"><b>جدیدترین فیلم ها</b></h1>
-                <ul class="relative_pic">
-                    <li>
-                        <a href="#">
-                            <img src="img/the-walking-dead-season-10.jpg" alt="">
-                        </a>
-                        <a href="#">
-                            <div class="details_relative white_cr fo_he2">
-                                <h3>اکشن _ ترسناک</h3>
-                                <h4>آمریکا _ 2010</h4>
-                                <h5 class="red_bg fo_he2">IMDb : 8.5</h5>
-                            </div>
-                        </a>
-                    </li>
+            <a href="#">
+              <h3 class="gray_cr fo_he2_b">فیلم ها</h3>
+            </a>
+            <a href="#">
+              <h3 class="gray_cr fo_he2_b">سریال ها</h3>
+            </a>
+            <a href="#">
+              <h3 class="gray_cr fo_he2_b">درباره ما</h3>
+            </a>
+            <a href="#">
+              <h3 class="gray_cr fo_he2_b">سوالات متداول</h3>
+            </a>
+            <a href="#">
+              <h3 class="gray_cr fo_he2_b">تماس با ما</h3>
+            </a>
+          </div>
+          <div class="support">
+            <img src="img/digital.jpg " alt=" " class="hvr-grow-rotate" />
+          </div>
+          <div class="social">
+            <ul>
+              <li>
+                <a href="# "
+                  ><img src="icon/instagram.svg " alt=" " class="hvr-backward"
+                /></a>
+              </li>
 
-                    <li>
-                        <a href="#">
-                            <img src="img/jonathan.jpg" alt="">
-                        </a>
-                        <a href="#">
-                            <div class="details_relative white_cr fo_he2">
-                                <h3>اکشن _ ترسناک</h3>
-                                <h4>آمریکا _ 2010</h4>
-                                <h5 class="red_bg fo_he2">IMDb : 8.5</h5>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="img/1917.jpg" alt="">
-                        </a>
-                        <a href="#">
-                            <div class="details_relative white_cr fo_he2">
-                                <h3>اکشن _ ترسناک</h3>
-                                <h4>آمریکا _ 2010</h4>
-                                <h5 class="red_bg fo_he2">IMDb : 8.5</h5>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="img/Fantastic_Beasts.png" alt="">
-                        </a>
-                        <a href="#">
-                            <div class="details_relative white_cr fo_he2">
-                                <h3>اکشن _ ترسناک</h3>
-                                <h4>آمریکا _ 2010</h4>
-                                <h5 class="red_bg fo_he2">IMDb : 8.5</h5>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="img/dynasties.jpg" alt="">
-                        </a>
-                        <a href="#">
-                            <div class="details_relative white_cr fo_he2">
-                                <h3>اکشن _ ترسناک</h3>
-                                <h4>آمریکا _ 2010</h4>
-                                <h5 class="red_bg fo_he2">IMDb : 8.5</h5>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="img/unhinged.jpeg" alt="">
-                        </a>
-                        <a href="#">
-                            <div class="details_relative white_cr fo_he2">
-                                <h3>اکشن _ ترسناک</h3>
-                                <h4>آمریکا _ 2010</h4>
-                                <h5 class="red_bg fo_he2">IMDb : 8.5</h5>
-                            </div>
-                        </a>
-                    </li>
+              <li>
+                <a href="# "
+                  ><img src="icon/telegramm.svg " alt=" " class="hvr-buzz-out"
+                /></a>
+              </li>
 
-                </ul>
-
-            </section>
+              <li>
+                <a href="# "
+                  ><img src="icon/twiterr.svg " alt=" " class="hvr-forward"
+                /></a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <!-- left-sidebar -->
-        <aside class="left-sidebar">
-            <section class="sidebox white_bg">
-                <header>
-                    <img src="icon/movie tape.svg" alt="">
-                    <h1 class="gray_cr fo_big"><b> براساس ژانر</b></h1>
-                    <h3 class="white_cr red_bg hvr_red_cr hvr_white_bg fo_he2">سریال</h3>
-                    <h3 class="white_cr red_bg hvr_red_cr hvr_white_bg fo_he2">فیلم</h3>
-                </header>
-                <ul class="sidbox_genre">
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he2" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>اجتماعی &nbsp;</h2>
-                            <h3> (1249)</h3>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he2" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>اکشن &nbsp;</h2>
-                            <h3>(1249)</h3>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he2" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>تاریخی &nbsp;</h2>
-                            <h3>(1249)</h3>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he2" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>ترسناک &nbsp;</h2>
-                            <h3>(1249)</h3>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he2" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>جنایی &nbsp;</h2>
-                            <h3> (1249)</h3>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he2" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>جنگی &nbsp;</h2>
-                            <h3>(1249)</h3>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he2" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>خانوادگی &nbsp;</h2>
-                            <h3>(1249)</h3>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he2" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>درام &nbsp;</h2>
-                            <h3>(1249)</h3>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he2" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>تخیلی &nbsp;</h2>
-                            <h3> (1249)</h3>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he2" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>فانتزی &nbsp;</h2>
-                            <h3>(1249)</h3>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he2" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>کمدی &nbsp;</h2>
-                            <h3>(1249)</h3>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he2" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>ماجراجویی &nbsp;</h2>
-                            <h3>(1249)</h3>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he2" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>معمایی &nbsp;</h2>
-                            <h3> (1249)</h3>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he2" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>هیجانی &nbsp;</h2>
-                            <h3>(1249)</h3>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he2" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>وسترون &nbsp;</h2>
-                            <h3>(1249)</h3>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he2" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>ترسناک &nbsp;</h2>
-                            <h3>(1249)</h3>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he2" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>اجتماعی &nbsp;</h2>
-                            <h3> (1249)</h3>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he2" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>اکشن &nbsp;</h2>
-                            <h3>(1249)</h3>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he2" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>تاریخی &nbsp;</h2>
-                            <h3>(1249)</h3>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he2" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>ترسناک &nbsp;</h2>
-                            <h3>(1249)</h3>
-                        </a>
-                    </li>
-
-                </ul>
-            </section>
-
-
-            <!-- born sidebox -->
-
-            <section class="sidebox white_bg">
-                <header>
-                    <img src="icon/date.svg" alt="">
-                    <h1 class="fo_big"><b> براساس سال تولید</b></h1>
-                    <h3 class="white_cr red_bg hvr_red_cr hvr_white_bg fo_he2">سریال</h3>
-                    <h3 class="white_cr red_bg hvr_red_cr hvr_white_bg fo_he2">فیلم</h3>
-                </header>
-
-                <ul class="sidbox_genre">
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>2002</h2>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>2003</h2>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>2004</h2>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>2005</h2>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>2006</h2>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>2007</h2>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>2008</h2>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>2009</h2>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>2010</h2>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>2011</h2>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>2012</h2>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>2013</h2>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>2014</h2>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>2015</h2>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>2016</h2>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>2017</h2>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>2018</h2>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>2019</h2>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>2020</h2>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="gray_cr hvr_red_cr fo_he" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
-                            <img src="icon/circle.svg" alt="">
-                            <h2>2021</h2>
-                        </a>
-                    </li>
-
-
-                </ul>
-            </section>
-            <!-- random sidebox -->
-            <section class="sidebox_random_movie white_bg">
-                <header>
-                    <img src="icon/trailer.svg" alt="">
-                    <h1 class="gray_cr fo_big"><b>آخرین تریلرها</b> </h1>
-                </header>
-                <nav>
-                    <div class="rand nav nav-tabs" id="nav-tab" role="tablist">
-                        <a class="nav-item nav-link gray_cr hvr_red_bg hvr_white_cr fo_he2" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">
-                            <h2>جدیدترین</h2>
-                        </a>
-                        <a class="nav-item nav-link active fo_he2" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">
-                            <h2>پربازدیدترین</h2>
-                        </a>
-                        <a class="nav-item nav-link gray_cr hvr_red_bg hvr_white_cr fo_he2" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">
-                            <h2>تصادفی</h2>
-                        </a>
-                    </div>
-
-                </nav>
-
-                <div class="rand_pic tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                        <a href="#">
-                            <img src="img/jonathan.jpg" alt="">
-                        </a>
-                    </div>
-
-                    <div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                        <a href="#">
-                            <img src="img/the-joker.jpg" alt="">
-                        </a>
-                    </div>
-
-                    <div class="tab-pane fade  " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                        <a href="#">
-                            <img src="img/walking dead.jpg" alt="">
-                        </a>
-                    </div>
-
-                    <div class="tab-pane fade  " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                        <a href="#">
-                            <img src="img/schindler.jpg" alt="">
-                        </a>
-                    </div>
-
-                    <div class="tab-pane fade  " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                        <a href="#">
-                            <img src="img/dynasties.jpg" alt="">
-                        </a>
-                    </div>
-
-                    <div class="tab-pane fade  " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                        <a href="#">
-                            <img src="img/Fantastic_Beasts.png" alt="">
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Dubbed sidebox -->
-            <section class="sidebox white_bg">
-                <header>
-                    <img src="icon/Dubbed.svg" alt="">
-                    <h1 class="gray_cr fo_big"><b> فیلم های دوبله</b></h1>
-                    <h3 class="white_cr red_bg hvr_red_cr hvr_white_bg fo_he2">سریال</h3>
-                    <h3 class="white_cr red_bg hvr_red_cr hvr_white_bg fo_he2">فیلم</h3>
-                </header>
-                <ul class="dubbed_pic">
-                    <li>
-                        <a href="#">
-                            <img src="img/The Godfather11.jpg" alt="">
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            <img src="img/the-joker.jpg" alt="">
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            <img src="img/walking dead.jpg" alt="">
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            <img src="img/schindler.jpg" alt="">
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            <img src="img/dynasties.jpg" alt="">
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            <img src="img/Fantastic_Beasts.png" alt="">
-                        </a>
-                    </li>
-
-                </ul>
-            </section>
-
-            <!-- new serial sidebox -->
-
-            <section class="sidebox_news white_bg">
-                <header>
-                    <img src="icon/new.svg" alt="">
-                    <h1 class="gray_cr fo_big"><b> جدیدترین فیلم و سریال ها</b></h1>
-
-                </header>
-                <ul class="sidbox_news_ul">
-                    <li>
-                        <img src="img/Riverdale-Overview-Wikinaghd.jpg" alt="">
-                        <a href="#" class="white_cr hvr_red_cr fo_pa">
-                            <h3>سریال ریوردیل</h3>
-                            <h4> قسمت 2 فصل 5 اضافه شد</h4>
-                        </a>
-                    </li>
-
-                    <li>
-                        <img src=" img/this-is-us.jpg " alt=" ">
-                        <a href="#" class="white_cr hvr_red_cr fo_pa">
-                            <h3>سریال این ما هستیم </h3>
-                            <h4> قسمت 2 فصل 5 اضافه شد</h4>
-                        </a>
-
-                    </li>
-
-                    <li>
-                        <img src="img/seriyal paperly.jpg " alt=" ">
-                        <a href="#" class="white_cr hvr_red_cr fo_pa">
-                            <h3>سریال خانه کاغذی </h3>
-                            <h4> قسمت 2 فصل 5 اضافه شد</h4>
-                        </a>
-                    </li>
-
-                    <li>
-                        <img src="img/kimcheshe.jpg " alt=" ">
-                        <a href="#" class="white_cr hvr_red_cr fo_pa">
-                            <h3>سریال منشی کیم چشه </h3>
-                            <h4> قسمت 2 فصل 5 اضافه شد</h4>
-                        </a>
-                    </li>
-
-                    <li>
-                        <img src="img/frog.jpg " alt=" ">
-                        <a href="#" class="white_cr hvr_red_cr fo_pa">
-                            <h3>سریال قورباغه </h3>
-                            <h4> قسمت 2 فصل 5 اضافه شد</h4>
-                        </a>
-                    </li>
-
-                </ul>
-            </section>
-            <!-- born sidebox -->
-
-            <section class="sidebox white_bg" id="sidebox_newss">
-                <header>
-                    <img src="icon/news.svg " alt="">
-                    <h1 class="gray_cr fo_big"><b> اخبار سایت</b></h1>
-
-                </header>
-                <ul class="sidbox_genre ">
-                    <li>
-                        <a href="# ">
-                            <img src="img/newsssss.png " alt=" " id="newsss ">
-                            <h6 class="gray_cr hvr_red_cr fo_he"> قسمت 8 فصل 5 سریال ما با هم هستیم اضافه شد</h6>
-                            <div>
-                                <h4 class="gray_cr fo_pa">دسته : </h4>
-                                <h5 class="gray_cr fo_pa">فیلم</h5>
-                            </div>
-                            <span class="red2_cr fo_pa"> 4 ساعت قبل</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="# ">
-                            <img src="img/newsssss.png " alt=" " id="newsss ">
-                            <h6 class="gray_cr hvr_red_cr fo_he"> قسمت 8 فصل 5 سریال ما با هم هستیم اضافه شد</h6>
-                            <div>
-                                <h4 class="gray_cr fo_pa">دسته : </h4>
-                                <h5 class="gray_cr fo_pa">فیلم</h5>
-                            </div>
-                            <span class="red2_cr fo_pa"> 4 ساعت قبل</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="# ">
-                            <img src="img/newsssss.png " alt=" " id="newsss ">
-                            <h6 class="gray_cr hvr_red_cr fo_he"> قسمت 8 فصل 5 سریال ما با هم هستیم اضافه شد</h6>
-                            <div>
-                                <h4 class="gray_cr fo_pa">دسته : </h4>
-                                <h5 class="gray_cr fo_pa">فیلم</h5>
-                            </div>
-                            <span class="red2_cr fo_pa"> 4 ساعت قبل</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="# ">
-                            <img src="img/newsssss.png " alt=" " id="newsss ">
-                            <h6 class="gray_cr hvr_red_cr fo_he"> قسمت 8 فصل 5 سریال ما با هم هستیم اضافه شد</h6>
-                            <div>
-                                <h4 class="gray_cr fo_pa">دسته : </h4>
-                                <h5 class="gray_cr fo_pa">فیلم</h5>
-                            </div>
-                            <span class="red2_cr fo_pa"> 4 ساعت قبل</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="# ">
-                            <img src="img/newsssss.png " alt=" " id="newsss ">
-                            <h6 class="gray_cr hvr_red_cr fo_he"> قسمت 8 فصل 5 سریال ما با هم هستیم اضافه شد</h6>
-                            <div>
-                                <h4 class="gray_cr fo_pa">دسته : </h4>
-                                <h5 class="gray_cr fo_pa">فیلم</h5>
-                            </div>
-                            <span class="red2_cr fo_pa"> 4 ساعت قبل</span>
-                        </a>
-                    </li>
-
-                </ul>
-            </section>
-
-        </aside>
-
-        <!-- posts -->
-        <div class="all_posts ">
-            <!-- arritcle posts -->
-            <article class="post white_bg ">
-                <header class="gray_cr ">
-                    <img src="icon/movie.svg " alt=" ">
-                    <h1 class="fo_he"><b> دانلود فیلم</b></h1>
-                    <h2 class="fo_he"><b>The Fault in Our Stars</b></h2>
-                    <div class="star_imdb "> <img src="icon/star.svg " alt=" "></div>
-                    <h3 class="fo_he2"> : IMDB </h3>
-                    <h3 class="fo_he2"> 7.6&nbsp; </h3>
-                </header>
-                <section class="details_movie ">
-                    <a href="# "><img src="img/The Fault in Our Stars.jpg " alt=" "></a>
-                    <ul class="gray_cr ">
-                        <li>
-                            <h3 class="fo_he2"> نام فیلم : </h3>
-                            <h3 class="fo_he2">The Fault in Our Stars</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2"> ژانر : </h3>
-                            <h3 class="fo_he2">خانوادگی و درام</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2">امتیاز : </h3>
-                            <h3 class="fo_he2"> &nbsp;7.8 در IMDB</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2">زبان : </h3>
-                            <h3 class="fo_he2">&nbsp;انگلیسی</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2">محصول کشور : </h3>
-                            <h3 class="fo_he2">&nbsp;آمریکا</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2">سال انتشار : </h3>
-                            <h3 class="fo_he2">&nbsp;2014</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2">کارگردان : </h3>
-                            <h3 class="fo_he2"> &nbsp;دیوید فینچر</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2">بازیگران : </h3>
-                            <h3 class="fo_he2">&nbsp; Shailene Woodley, Ansel Elgort, Nat Wolff</h3>
-                        </li>
-
-                    </ul>
-                    <footer class="details_description ">
-                        <div class="description gray_cr fo_pa">
-                            <h3>خلاصه داستان  : </h3>
-                            <p>فیلمی رمانتیک درام آمریکایی به کارگردانی جاش بون، برگرفته از رمانی به همین نام به قلم جان گرین است. در این فیلم شیلین وودلی، انسل الگورت، لورا درن، سام ترمل، نات وولف و ویلم دفو نقش‌آفرینی می‌کنند. فیلم‌برداری بخت پریشان در
-                                پیتسبورگ و آمستردام صورت گرفته‌است و در تاریخ ۶ ژوئن ۲۰۱۴ روی پرده .</p>
-                        </div>
-                        <div class="download ">
-                            <a href="# " class="red_bg white_cr hvr_red_cr hvr_white_bg fo_he2">
-                                <h3>توضیحات + دانلود</h3>
-                            </a>
-                        </div>
-                    </footer>
-                </section>
-
-            </article>
-            <!-- arritcle posts -->
-            <article class="post white_bg ">
-                <header class="gray_cr ">
-                    <img src="icon/movie.svg " alt=" ">
-                    <h1 class="fo_he"><b> دانلود فیلم</b></h1>
-                    <h2 class="fo_he"><b>The Fault in Our Stars</b></h2>
-                    <div class="star_imdb "> <img src="icon/star.svg " alt=" "></div>
-                    <h3 class="fo_he2"> : IMDB </h3>
-                    <h3 class="fo_he2"> 7.6&nbsp; </h3>
-                </header>
-                <section class="details_movie ">
-                    <a href="# "><img src="img/The Fault in Our Stars.jpg " alt=" "></a>
-                    <ul class="gray_cr ">
-                        <li>
-                            <h3 class="fo_he2"> نام فیلم : </h3>
-                            <h3 class="fo_he2">The Fault in Our Stars</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2"> ژانر : </h3>
-                            <h3 class="fo_he2">خانوادگی و درام</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2">امتیاز : </h3>
-                            <h3 class="fo_he2"> &nbsp;7.8 در IMDB</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2">زبان : </h3>
-                            <h3 class="fo_he2">&nbsp;انگلیسی</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2">محصول کشور : </h3>
-                            <h3 class="fo_he2">&nbsp;آمریکا</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2">سال انتشار : </h3>
-                            <h3 class="fo_he2">&nbsp;2014</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2">کارگردان : </h3>
-                            <h3 class="fo_he2"> &nbsp;دیوید فینچر</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2">بازیگران : </h3>
-                            <h3 class="fo_he2">&nbsp; Shailene Woodley, Ansel Elgort, Nat Wolff</h3>
-                        </li>
-
-                    </ul>
-                    <footer class="details_description ">
-                        <div class="description gray_cr fo_pa">
-                            <h3>خلاصه داستان  : </h3>
-                            <p>فیلمی رمانتیک درام آمریکایی به کارگردانی جاش بون، برگرفته از رمانی به همین نام به قلم جان گرین است. در این فیلم شیلین وودلی، انسل الگورت، لورا درن، سام ترمل، نات وولف و ویلم دفو نقش‌آفرینی می‌کنند. فیلم‌برداری بخت پریشان در
-                                پیتسبورگ و آمستردام صورت گرفته‌است و در تاریخ ۶ ژوئن ۲۰۱۴ روی پرده .</p>
-                        </div>
-                        <div class="download ">
-                            <a href="# " class="red_bg white_cr hvr_red_cr hvr_white_bg fo_he2">
-                                <h3>توضیحات + دانلود</h3>
-                            </a>
-                        </div>
-                    </footer>
-                </section>
-
-            </article>
-            <!-- arritcle posts -->
-            <article class="post white_bg ">
-                <header class="gray_cr ">
-                    <img src="icon/movie.svg " alt=" ">
-                    <h1 class="fo_he"><b> دانلود فیلم</b></h1>
-                    <h2 class="fo_he"><b>The Fault in Our Stars</b></h2>
-                    <div class="star_imdb "> <img src="icon/star.svg " alt=" "></div>
-                    <h3 class="fo_he2"> : IMDB </h3>
-                    <h3 class="fo_he2"> 7.6&nbsp; </h3>
-                </header>
-                <section class="details_movie ">
-                    <a href="# "><img src="img/The Fault in Our Stars.jpg " alt=" "></a>
-                    <ul class="gray_cr ">
-                        <li>
-                            <h3 class="fo_he2"> نام فیلم : </h3>
-                            <h3 class="fo_he2">The Fault in Our Stars</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2"> ژانر : </h3>
-                            <h3 class="fo_he2">خانوادگی و درام</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2">امتیاز : </h3>
-                            <h3 class="fo_he2"> &nbsp;7.8 در IMDB</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2">زبان : </h3>
-                            <h3 class="fo_he2">&nbsp;انگلیسی</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2">محصول کشور : </h3>
-                            <h3 class="fo_he2">&nbsp;آمریکا</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2">سال انتشار : </h3>
-                            <h3 class="fo_he2">&nbsp;2014</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2">کارگردان : </h3>
-                            <h3 class="fo_he2"> &nbsp;دیوید فینچر</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2">بازیگران : </h3>
-                            <h3 class="fo_he2">&nbsp; Shailene Woodley, Ansel Elgort, Nat Wolff</h3>
-                        </li>
-
-                    </ul>
-                    <footer class="details_description ">
-                        <div class="description gray_cr fo_pa">
-                            <h3>خلاصه داستان  : </h3>
-                            <p>فیلمی رمانتیک درام آمریکایی به کارگردانی جاش بون، برگرفته از رمانی به همین نام به قلم جان گرین است. در این فیلم شیلین وودلی، انسل الگورت، لورا درن، سام ترمل، نات وولف و ویلم دفو نقش‌آفرینی می‌کنند. فیلم‌برداری بخت پریشان در
-                                پیتسبورگ و آمستردام صورت گرفته‌است و در تاریخ ۶ ژوئن ۲۰۱۴ روی پرده .</p>
-                        </div>
-                        <div class="download ">
-                            <a href="# " class="red_bg white_cr hvr_red_cr hvr_white_bg fo_he2">
-                                <h3>توضیحات + دانلود</h3>
-                            </a>
-                        </div>
-                    </footer>
-                </section>
-
-            </article>
-            <!-- arritcle posts -->
-            <article class="post white_bg ">
-                <header class="gray_cr ">
-                    <img src="icon/movie.svg " alt=" ">
-                    <h1 class="fo_he"><b> دانلود فیلم</b></h1>
-                    <h2 class="fo_he"><b>The Fault in Our Stars</b></h2>
-                    <div class="star_imdb "> <img src="icon/star.svg " alt=" "></div>
-                    <h3 class="fo_he2"> : IMDB </h3>
-                    <h3 class="fo_he2"> 7.6&nbsp; </h3>
-                </header>
-                <section class="details_movie ">
-                    <a href="# "><img src="img/The Fault in Our Stars.jpg " alt=" "></a>
-                    <ul class="gray_cr ">
-                        <li>
-                            <h3 class="fo_he2"> نام فیلم : </h3>
-                            <h3 class="fo_he2">The Fault in Our Stars</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2"> ژانر : </h3>
-                            <h3 class="fo_he2">خانوادگی و درام</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2">امتیاز : </h3>
-                            <h3 class="fo_he2"> &nbsp;7.8 در IMDB</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2">زبان : </h3>
-                            <h3 class="fo_he2">&nbsp;انگلیسی</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2">محصول کشور : </h3>
-                            <h3 class="fo_he2">&nbsp;آمریکا</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2">سال انتشار : </h3>
-                            <h3 class="fo_he2">&nbsp;2014</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2">کارگردان : </h3>
-                            <h3 class="fo_he2"> &nbsp;دیوید فینچر</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2">بازیگران : </h3>
-                            <h3 class="fo_he2">&nbsp; Shailene Woodley, Ansel Elgort, Nat Wolff</h3>
-                        </li>
-
-                    </ul>
-                    <footer class="details_description ">
-                        <div class="description gray_cr fo_pa">
-                            <h3>خلاصه داستان  : </h3>
-                            <p>فیلمی رمانتیک درام آمریکایی به کارگردانی جاش بون، برگرفته از رمانی به همین نام به قلم جان گرین است. در این فیلم شیلین وودلی، انسل الگورت، لورا درن، سام ترمل، نات وولف و ویلم دفو نقش‌آفرینی می‌کنند. فیلم‌برداری بخت پریشان در
-                                پیتسبورگ و آمستردام صورت گرفته‌است و در تاریخ ۶ ژوئن ۲۰۱۴ روی پرده .</p>
-                        </div>
-                        <div class="download ">
-                            <a href="# " class="red_bg white_cr hvr_red_cr hvr_white_bg fo_he2">
-                                <h3>توضیحات + دانلود</h3>
-                            </a>
-                        </div>
-                    </footer>
-                </section>
-
-            </article>
-            <!-- arritcle posts -->
-            <article class="post white_bg ">
-                <header class="gray_cr ">
-                    <img src="icon/movie.svg " alt=" ">
-                    <h1 class="fo_he"><b> دانلود فیلم</b></h1>
-                    <h2 class="fo_he"><b>The Fault in Our Stars</b></h2>
-                    <div class="star_imdb "> <img src="icon/star.svg " alt=" "></div>
-                    <h3 class="fo_he2"> : IMDB </h3>
-                    <h3 class="fo_he2"> 7.6&nbsp; </h3>
-                </header>
-                <section class="details_movie ">
-                    <a href="# "><img src="img/The Fault in Our Stars.jpg " alt=" "></a>
-                    <ul class="gray_cr ">
-                        <li>
-                            <h3 class="fo_he2"> نام فیلم : </h3>
-                            <h3 class="fo_he2">The Fault in Our Stars</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2"> ژانر : </h3>
-                            <h3 class="fo_he2">خانوادگی و درام</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2">امتیاز : </h3>
-                            <h3 class="fo_he2"> &nbsp;7.8 در IMDB</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2">زبان : </h3>
-                            <h3 class="fo_he2">&nbsp;انگلیسی</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2">محصول کشور : </h3>
-                            <h3 class="fo_he2">&nbsp;آمریکا</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2">سال انتشار : </h3>
-                            <h3 class="fo_he2">&nbsp;2014</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2">کارگردان : </h3>
-                            <h3 class="fo_he2"> &nbsp;دیوید فینچر</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2">بازیگران : </h3>
-                            <h3 class="fo_he2">&nbsp; Shailene Woodley, Ansel Elgort, Nat Wolff</h3>
-                        </li>
-
-                    </ul>
-                    <footer class="details_description ">
-                        <div class="description gray_cr fo_pa">
-                            <h3>خلاصه داستان  : </h3>
-                            <p>فیلمی رمانتیک درام آمریکایی به کارگردانی جاش بون، برگرفته از رمانی به همین نام به قلم جان گرین است. در این فیلم شیلین وودلی، انسل الگورت، لورا درن، سام ترمل، نات وولف و ویلم دفو نقش‌آفرینی می‌کنند. فیلم‌برداری بخت پریشان در
-                                پیتسبورگ و آمستردام صورت گرفته‌است و در تاریخ ۶ ژوئن ۲۰۱۴ روی پرده .</p>
-                        </div>
-                        <div class="download ">
-                            <a href="# " class="red_bg white_cr hvr_red_cr hvr_white_bg fo_he2">
-                                <h3>توضیحات + دانلود</h3>
-                            </a>
-                        </div>
-                    </footer>
-                </section>
-
-            </article>
-            <!-- arritcle posts -->
-            <article class="post white_bg ">
-                <header class="gray_cr ">
-                    <img src="icon/movie.svg " alt=" ">
-                    <h1 class="fo_he"><b> دانلود فیلم</b></h1>
-                    <h2 class="fo_he"><b>The Fault in Our Stars</b></h2>
-                    <div class="star_imdb "> <img src="icon/star.svg " alt=" "></div>
-                    <h3 class="fo_he2"> : IMDB </h3>
-                    <h3 class="fo_he2"> 7.6&nbsp; </h3>
-                </header>
-                <section class="details_movie ">
-                    <a href="# "><img src="img/The Fault in Our Stars.jpg " alt=" "></a>
-                    <ul class="gray_cr ">
-                        <li>
-                            <h3 class="fo_he2"> نام فیلم : </h3>
-                            <h3 class="fo_he2">The Fault in Our Stars</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2"> ژانر : </h3>
-                            <h3 class="fo_he2">خانوادگی و درام</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2">امتیاز : </h3>
-                            <h3 class="fo_he2"> &nbsp;7.8 در IMDB</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2">زبان : </h3>
-                            <h3 class="fo_he2">&nbsp;انگلیسی</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2">محصول کشور : </h3>
-                            <h3 class="fo_he2">&nbsp;آمریکا</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2">سال انتشار : </h3>
-                            <h3 class="fo_he2">&nbsp;2014</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2">کارگردان : </h3>
-                            <h3 class="fo_he2"> &nbsp;دیوید فینچر</h3>
-                        </li>
-
-                        <li>
-                            <h3 class="fo_he2">بازیگران : </h3>
-                            <h3 class="fo_he2">&nbsp; Shailene Woodley, Ansel Elgort, Nat Wolff</h3>
-                        </li>
-
-                    </ul>
-                    <footer class="details_description ">
-                        <div class="description gray_cr fo_pa">
-                            <h3>خلاصه داستان  : </h3>
-                            <p>فیلمی رمانتیک درام آمریکایی به کارگردانی جاش بون، برگرفته از رمانی به همین نام به قلم جان گرین است. در این فیلم شیلین وودلی، انسل الگورت، لورا درن، سام ترمل، نات وولف و ویلم دفو نقش‌آفرینی می‌کنند. فیلم‌برداری بخت پریشان در
-                                پیتسبورگ و آمستردام صورت گرفته‌است و در تاریخ ۶ ژوئن ۲۰۱۴ روی پرده .</p>
-                        </div>
-                        <div class="download ">
-                            <a href="# " class="red_bg white_cr hvr_red_cr hvr_white_bg fo_he2">
-                                <h3>توضیحات + دانلود</h3>
-                            </a>
-                        </div>
-                    </footer>
-                </section>
-
-            </article>
-
+        <div class="footer-bot" role="contentinfo ">
+          <div class="copyright">
+            <p class="gray_cr fo_he2_b">
+              تمامی حقوق مطالب و قالب برای فیلم باز محفوظ است و هرگونه کپی
+              برداری بدون ذکر منبع ممنوع می باشد
+            </p>
+          </div>
         </div>
-        <!-- wp-pagenavi -->
-        <div class="wp-pagenavi white_bg">
-            <span class="white_cr fo_pa">صفحه 1 از 100</span>
-            <span class="current white_cr fo_pa">1</span>
-            <a href="# " class="white_cr fo_pa">1</a>
-            <a href="# " class="white_cr fo_pa">2</a>
-            <a href="# " class="white_cr fo_pa">3</a>
-            <a href="# " class="white_cr fo_pa">4</a>
-            <a href="# " class="white_cr fo_pa">5</a>
-            <a href="# " class="white_cr fo_pa">...</a>
-            <a href="# " class="white_cr fo_pa">10</a>
-            <a href="# " class="white_cr fo_pa">20</a>
-            <a href="# " class="white_cr fo_pa">30</a>
-            <a href="# " class="white_cr fo_pa">...</a>
-            <a href="# " class="white_cr fo_pa" id="nexti">بعدی</a>
-            <a href="# " class="white_cr fo_pa" id="previ">قبلی</a>
-        </div>
+      </footer>
 
-        <footer class="footer-nav ">
-            <div class="main-footer white_bg">
-                <div class="about ">
-                    <h5 class="red2_cr fo_big">فیلم باز</h5>
-                    <p class="gray_cr fo_pa"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود
-                        ابزارهای کاربردی
-                    </p>
-                </div>
-                <div class="about">
-                    <h5 class="red2_cr fo_big">دسترسی سریع</h5>
-                    <div class="clear "></div>
-
-                    <a href="#" class="gray_cr hvr_red_cr fo_he">
-                        <h3>فیلم ها</h3>
-
-                    </a>
-                    <div class="clear "></div>
-                    <a href="#" class="gray_cr hvr_red_cr fo_he">
-                        <h3>سریال ها</h3>
-
-                    </a>
-                    <div class="clear "></div>
-                    <a href="#" class="gray_cr hvr_red_cr fo_he">
-                        <h3>درباره ما</h3>
-
-                    </a>
-                    <div class="clear "></div>
-                    <a href="#" class="gray_cr hvr_red_cr fo_he">
-                        <h3>سوالات متداول</h3>
-
-                    </a>
-                    <div class="clear "></div>
-                    <a href="#" class="gray_cr hvr_red_cr fo_he">
-                        <h3>تماس با ما</h3>
-
-                    </a>
-                    <div class="clear "></div>
-
-                </div>
-                <div class="support ">
-                    <img src="img/digital.jpg " alt=" " class="hvr-grow-rotate ">
-                </div>
-                <div class="social ">
-                    <ul>
-                        <li>
-                            <a href="# "><img src="icon/instagram.svg " alt=" " class="hvr-backward "></a>
-                        </li>
-
-                        <li>
-                            <a href="# "><img src="icon/telegramm.svg " alt=" " class="hvr-buzz-out "></a>
-                        </li>
-
-                        <li>
-                            <a href="# "><img src="icon/twiterr.svg " alt=" " class="hvr-forward "></a>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bot " role="contentinfo ">
-                <div class="copyright ">
-                    <p>تمامی حقوق مطالب و قالب برای فیلم باز محفوظ است و هرگونه کپی برداری بدون ذکر منبع ممنوع می باشد</p>
-                </div>
-            </div>
-        </footer>
-
-
-
-        <!-- finish -->
+      <!-- finish -->
     </div>
 
     <!-- Swiper JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
     <script src="js/swiper.min.js"></script>
 
     <!-- script Swiper -->
     <script>
-        var swiper = new Swiper(".swiper-container ", {
+      var swiper = new Swiper(".swiper-container ", {
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        loop: true,
+      });
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script>
+      function show_hide() {
+        if (document.getElementById("hide_form").style.display === "none") {
+          document.getElementById("hide_form").style.display = "block";
+          document.getElementById("hide_form").style.transition = ".9s ";
+        }
+      }
 
-            centeredSlides: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            loop: true,
+      function show_hide2() {
+        var y = document.getElementById("hide_form");
+        if (y.style.display === "block") {
+          y.style.display = "none";
+        }
+      }
+    </script>
+    <script>
+        let cnt = 0
+      function category(ph) {
+        ph.getElementsByTagName("ul")[0].style.transition = ".9s";
+        if (!cnt) {
+          ph.getElementsByTagName("ul")[0].style.display = "block";
+          ph.getElementsByTagName("img")[0].src = "icon/up1.svg";
+          cnt = 1;
+        } else {
+          ph.getElementsByTagName("ul")[0].style.display = "none";
+          ph.getElementsByTagName("img")[0].src = "icon/down1.svg";
+          cnt = 0;
+        }
+      }
+
+      function hover_sidebox(mk) {
+        mk.getElementsByTagName("img")[0].src = "icon/circle2.svg";
+        mk.transition = "4s";
+      }
+
+      function off_hover_sidebox(is) {
+        is.getElementsByTagName("img")[0].src = "icon/circle.svg";
+      }
+    </script>
+    <script>
+      // Add active class to the current button (highlight it)
+      var header = document.getElementById("nav-tab");
+      var btns = header.getElementsByClassName("rand");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace("active", "");
+          this.className += "active";
         });
-        var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
+      }
     </script>
-    <script>
-        function show_hide() {
-            if (document.getElementById("hide_form").style.display === "none") {
-                document.getElementById("hide_form").style.display = "block";
-                document.getElementById("hide_form").style.transition = ".9s ";
-            }
-        }
-
-        function show_hide2() {
-            var y = document.getElementById("hide_form");
-            if (y.style.display === "block") {
-                y.style.display = "none";
-            }
-        }
-    </script>
-    <script>
-        function hover(th) {
-            th.style.transition = ".5s";
-            th.style.color = "#cc0e00";
-            th.style.backgroundColor = "#fdfdfd";
-            th.style.border = "1px solid #cc0e00";
-            if (!cnt) {
-                th.getElementsByTagName("img")[0].src = "icon/down2.svg";
-
-            } else if (cnt) {
-                if (th.getElementsByTagName("img")[0].src = "icon/down1.svg")
-                    th.getElementsByTagName("img")[0].src = "icon/down2.svg";
-                else if (th.getElementsByTagName("img")[0].src = "icon/up1.svg")
-                    th.getElementsByTagName("img")[0].src = "icon/up2.svg";
-
-            }
-        }
-
-        function hoverOff(th) {
-            th.style.transition = ".5s";
-            th.style.color = "#fdfdfd";
-            th.style.backgroundColor = "#cc0e00";
-            th.style.border = "1px solid #fdfdfd";
-            if (!cnt) {
-                th.getElementsByTagName("img")[0].src = "icon/down1.svg";
-
-            } else if (cnt) {
-                if (th.getElementsByTagName("img")[0].src = "icon/down2.svg")
-                    th.getElementsByTagName("img")[0].src = "icon/down1.svg";
-                else if (th.getElementsByTagName("img")[0].src = "icon/up2.svg")
-                    th.getElementsByTagName("img")[0].src = "icon/up1.svg";
-            }
-
-        }
-        var cnt = 0;
-        var cnt2 = 0;
-
-        function category(ph) {
-            ph.getElementsByTagName("ul")[0].style.transition = ".9s";
-            if (!cnt) {
-                ph.getElementsByTagName("ul")[0].style.display = "block";
-                ph.getElementsByTagName("img")[0].src = "icon/up2.svg";
-                cnt = 1;
-            } else {
-                ph.getElementsByTagName("ul")[0].style.display = "none";
-                ph.getElementsByTagName("img")[0].src = "icon/down2.svg";
-                cnt = 0;
-            }
-        }
-
-        function hover_sidebox(mk) {
-
-            mk.getElementsByTagName("img")[0].src = "icon/circle2.svg"
-            mk.transition = "4s"
-        }
-
-        function off_hover_sidebox(is) {
-
-            is.getElementsByTagName("img")[0].src = "icon/circle.svg"
-        }
-    </script>
-    <script>
-        // Add active class to the current button (highlight it)
-        var header = document.getElementById("nav-tab");
-        var btns = header.getElementsByClassName("rand");
-        for (var i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function() {
-                var current = document.getElementsByClassName("active");
-                current[0].className = current[0].className.replace("active", "");
-                this.className += "active";
-            });
-        }
-    </script>
-</body>
-
+  </body>
 </html>
