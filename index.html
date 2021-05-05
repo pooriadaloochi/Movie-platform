@@ -10,50 +10,62 @@
     <link rel="canonical" href="https://yourwebsite.com/">
 
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
     <!-- link CSS Style -->
     <link rel="stylesheet" href="style.css" />
-    <link rel=”stylesheet” href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/hover-min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 </head>
 
 <body>
     <!-- container -->
     <header class="col-lg-12 header_nav">
         <div class="container">
+            <div class="row">
 
-            <div class="search" role="search">
-                <img src="icon/search.svg" alt="" onclick="show_hide(this)" />
-
-                <form action="" method="" id="hide_form" style="display: none">
-                    <input type="text" class="white_cr fo_pa" value="" placeholder="جستجوی کلمه مورد نظر" onfocus="this.placeholder=''" onblur="this.placeholder='جستجوی کلمه مورد نظر'" />
-                </form>
-            </div>
-
-            <a href="#"><img src="img/filmbazz.png" alt="" id="logo" /></a>
-            <ul onclick="show_hide2()">
-                <li>
-                    <a href="#" class="gray_cr hvr_red_cr fo_he"><b>صفحه اصلی</b></a>
-                </li>
-                <li>
-                    <a href="#" class="gray_cr hvr_red_cr fo_he"><b>فیلم</b></a>
-                </li>
-                <li>
-                    <a href="#" class="gray_cr hvr_red_cr fo_he"><b>سریال</b></a>
-                </li>
-                <li>
-                    <a href="#" class="gray_cr hvr_red_cr fo_he"><b>دسته بندی</b></a>
-                </li>
-                <li>
-                    <a href="#" class="gray_cr hvr_red_cr fo_he"><b>تماس ما</b></a>
-                </li>
-                <div class="sign_in">
-                    <a href="#" class="white_cr red_bg hvr_white_bg hvr_red_cr fo_he2">
-                        <h3>ورود / ثبت نام</h3>
-                    </a>
+                <div class="col-lg-2 logo">
+                    <a href="#"><img src="img/filmbazz.png" alt="" id="logo" /></a>
                 </div>
-            </ul>
+                <div class="col-lg-6 menu_top">
+                    <ul onclick="show_hide2()">
+                        <li>
+                            <a href="#" class="gray_cr hvr_red_cr fo_he"><b>صفحه اصلی</b></a>
+                        </li>
+                        <li>
+                            <a href="#" class="gray_cr hvr_red_cr fo_he"><b>فیلم</b></a>
+                        </li>
+                        <li>
+                            <a href="#" class="gray_cr hvr_red_cr fo_he"><b>سریال</b></a>
+                        </li>
+                        <li>
+                            <a href="#" class="gray_cr hvr_red_cr fo_he"><b>دسته بندی</b></a>
+                        </li>
+                        <li>
+                            <a href="#" class="gray_cr hvr_red_cr fo_he"><b>تماس ما</b></a>
+                        </li>
+                        <div class="sign_in">
+                            <a href="#" class="white_cr red_bg hvr_white_bg hvr_red_cr fo_he2">
+                                <h3>ورود / ثبت نام</h3>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+                <div class="col-lg-4 search_DayAndNight">
+                    <div class="center">
+                        <input type="checkbox" name="">
+                    </div>
+                    <div class="search" role="search">
+                        <form action="/action_page.php">
+                            <input class="white_cr fo_pa" type="text" placeholder="جستجوی کلمه مورد نظر" name="search" onfocus="this.placeholder=''" onblur="this.placeholder='جستجوی کلمه مورد نظر'">
+                            <button type="submit">
+                            <img src="icon/search.svg" alt=""  /></button>
+                        </form>
+                    </div>
+                </div>
 
+
+            </div>
         </div>
     </header>
 
@@ -441,7 +453,7 @@
                 </header>
 
                 <ul class="sidbox_genre">
-                   
+
                     <li>
                         <a href="#" class="gray_cr hvr_red_cr fo_he" onmouseover="hover_sidebox(this)" onmouseout="off_hover_sidebox(this)">
                             <img src="icon/circle.svg" alt="">
@@ -1323,21 +1335,38 @@
     </div>
 
     <!-- Swiper JS -->
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+    <script src="js/swiper.min.js"></script>
 
     <!-- script Swiper -->
     <script>
         var swiper = new Swiper(".swiper-container ", {
-            navigation: {
-                nextEl: ".swiper-button-next ",
-                prevEl: ".swiper-button-prev ",
+
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
             },
-            // autoplay: {
-            //     delay: 2500,
-            //     disableOnInteraction: false,
-            // },
             loop: true,
+        });
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
         });
     </script>
     <script>
