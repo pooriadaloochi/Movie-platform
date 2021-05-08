@@ -297,9 +297,6 @@ a:hover {
     color: #cc0033;
 }
 
-.red2_cr {
-    color: #cc0033;
-}
 
 .gray_cr {
     color: #707070;
@@ -329,6 +326,11 @@ a:hover {
 
 .red_bg:hover {
     background: #707070;
+}
+
+.gray_cr:hover {
+    color: #cc0033 !important;
+    transition: .6s;
 }
 
 
@@ -653,22 +655,23 @@ a:hover {
     height: 70px;
     float: right;
     position: absolute;
-    top: 140px;
+    top: 150px;
     display: none;
 }
 
-.relative_pic li a .details_relative h3 {
+.relative_pic li a .details_relative span {
+    float: right;
     margin-right: 5px;
     text-align: right;
 }
 
-.relative_pic li a .details_relative h4 {
+.relative_pic li a .details_relative .details_note2 {
     float: right;
     margin-right: 18px;
     text-align: right;
 }
 
-.relative_pic li a .details_relative h5 {
+.relative_pic li a .details_relative .details_note3 {
     width: 60%;
     float: left;
     border-radius: 7px;
@@ -706,12 +709,13 @@ a:hover {
 
 .post header {
     width: 100%;
-    height: 58px;
+    height: 63px;
     float: right;
     border-bottom: 1px solid #333;
-    margin-top: 3px;
 }
-
+.post header a h2:hover {
+    color: #707070 !important;
+}
 .post header img {
     width: 25px;
     height: 25px;
@@ -727,8 +731,11 @@ a:hover {
 .post header .star_imdb {
     float: left;
 }
+.post header .star_imdb img{
+    float: left;
+}
 
-.post header h3 {
+.post header .star_imdb h3 {
     float: left;
     margin-top: 14px;
 }
@@ -741,7 +748,9 @@ a:hover {
     height: auto;
     float: right;
 }
-
+.post .details_movie ul:hover {
+    color: #707070 !important;
+}
 .post .details_movie a {
     width: 120px;
     height: 180px;
@@ -766,8 +775,9 @@ a:hover {
     clear: both;
 }
 
-.post .details_movie ul li h3 {
+.post .details_movie ul li span {
     float: right;
+    margin-top: 2px;
 }
 
 
@@ -786,8 +796,10 @@ a:hover {
     float: right;
     margin-right: 7px;
 }
-
-.details_description .description h3 {
+.details_description .description:hover {
+    color: #707070 !important;
+}
+.details_description .description span {
     float: right;
 }
 
@@ -809,7 +821,7 @@ a:hover {
     text-align: center;
 }
 
-.details_description .download a h3 {
+.details_description .download a span {
     margin-top: 1.5px;
 }
 
@@ -893,11 +905,6 @@ a:hover {
     margin-top: 15px;
 }
 
-.left-sidebar .sidebox header h3 {
-    float: right;
-    margin-top: 14px;
-}
-
 .left-sidebar .sidebox header h4 {
     float: left;
     margin: 13px 10px;
@@ -928,61 +935,33 @@ a:hover {
 
 .left-sidebar .sidebox .sidbox_genre li {
     width: 50%;
+    height: 35px;
     float: right;
 }
-
-.left-sidebar .sidebox .sidbox_genre li h3 {
+.left-sidebar .sidebox .sidbox_genre li a {
+    width: 100%;
+    height: 100%;
     float: right;
-    margin-right: 10px;
+    background: url("icon/circle.svg") right no-repeat ;
+    background-size: 14px 14px;
 }
 
-.left-sidebar .sidebox .sidbox_genre li h3:hover {
-    color: #cc0033 !important;
+.left-sidebar .sidebox .sidbox_genre li span {
+    float: right;
+    margin-right: 22px;
+    margin-top: 3px;
 }
+
+.left-sidebar .sidebox .sidbox_genre li a:hover {
+    background: url("icon/circle2.svg") right no-repeat ;
+    background-size: 14px 14px;
+}
+
 
 .left-sidebar .sidebox .sidbox_genre li h6 {
     width: 80%;
     float: right;
     margin-right: 12px;
-}
-
-.left-sidebar .sidebox .sidbox_genre li div {
-    float: right;
-    margin-right: 22px;
-    padding: 3px 10px;
-    border-radius: 8px;
-}
-
-.left-sidebar .sidebox .sidbox_genre li div h4 {
-    float: right;
-    margin-right: 3px;
-}
-
-.left-sidebar .sidebox .sidbox_genre li div h5 {
-    float: right;
-    margin-right: 3px;
-}
-
-.left-sidebar .sidebox .sidbox_genre span {
-    float: left;
-    margin-left: 40px;
-}
-
-.left-sidebar .sidebox .sidbox_genre li h3 {
-    float: right;
-}
-
-.left-sidebar .sidebox .sidbox_genre li img {
-    width: 14px;
-    height: 14px;
-    float: right;
-    margin-top: 8px;
-}
-
-.left-sidebar .sidebox .sidbox_genre li img#newsss {
-    width: 30px;
-    height: 30px;
-    border-radius: 8px;
 }
 
 
@@ -1134,12 +1113,12 @@ a:hover {
     width: 40px;
     height: 40px;
     float: right;
-    margin: 15px 10px;
+    margin: 15px 6px;
 }
 
 .sidebox_news header h2 {
     float: right;
-    margin-top: 13px;
+    margin-top: 17px;
 }
 
 .sidebox_news .sidbox_news_ul {
@@ -1164,7 +1143,7 @@ a:hover {
     right: 0;
 }
 
-.sidebox_news .sidbox_news_ul li a {
+.sidebox_news .sidbox_news_ul li .title_newsmovie {
     width: 240px;
     height: 55px;
     right: 0;
@@ -1208,12 +1187,39 @@ a:hover {
 
 .sidebox#sidebox_newss li {
     width: 100%;
+    height: 65px;
     float: right;
+}
+.sidebox#sidebox_newss li a{
+    width: 100%;
+    height: 100%;
+    float: right;
+    background-image: none;
 }
 
 .sidebox#sidebox_newss li a img {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 40px;
+    float: right;
+    margin-top: 2px;
+}
+
+.left-sidebar #sidebox_newss li h3 {
+    float: right;
+    margin-right: 15px;
+    margin-bottom: 0;
+}
+
+.left-sidebar .sidebox#sidebox_newss li span {
+    float: right;
+    margin-right: 30px;
+    margin-top: 0;
+}
+
+
+.left-sidebar .sidebox#sidebox_newss li span.newss_time {
+    float: left;
+    margin-left: 35px;
 }
 
 
@@ -1254,7 +1260,6 @@ a:hover {
 }
 
 .footer-nav .about a:hover h3 {
-    color: #cc0033;
     transition: .4s;
 }
 
