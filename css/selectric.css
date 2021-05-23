@@ -209,8 +209,7 @@
 }
 
 .selectric-items li:hover {
-    background: #fdfdfd;
-    color: #707070;
+    background: #707070;
 }
 
 .selectric-items .disabled {

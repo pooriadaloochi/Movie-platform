@@ -285,30 +285,22 @@ a:hover {
 }
 
 .gray_cr {
-    color: #707070;
+  color: #707070;
 }
 .gray_cr_n {
-    color: #707070;
+  color: #707070;
 }
 
 .white_red {
-    color: #fdfdfd;
-    background: #cc0033;
-}
-
-.white_cr {
-    color: #fdfdfd;
-}
-
-/* background */
-
-.red_bg {
+  color: #fdfdfd;
   background: #cc0033;
 }
 
-.gray_bg {
-  background: #707070;
+.white_cr {
+  color: #fdfdfd;
 }
+
+/* background */
 
 .white_bg {
   background: #fdfdfd;
@@ -316,35 +308,20 @@ a:hover {
 
 /*  hover */
 
-.red_bg:hover {
-  background: #707070;
-}
-
 .gray_cr:hover {
   color: #cc0033 !important;
   transition: 0.6s;
 }
 /*  */
 .white_red:hover {
-    transition: .4s;
+  transition: 0.4s;
   background: #707070;
-} 
-.white_bg:hover {
-  color: #cc0033;
 }
-
 
 /* header */
 
 .header_nav {
   height: 100px;
-}
-
-.logo,
-.menu_top,
-.search_DayAndNight {
-  height: 100px;
-  float: right;
 }
 
 .header_nav ul {
@@ -394,21 +371,30 @@ a:hover {
 }
 
 .header_nav .sign_in h3 {
-    border-radius: 5px;
-    padding:3px 10px;
-    text-align: center;
+  border-radius: 5px;
+  padding: 3px 10px;
+  text-align: center;
 }
 
 .header_nav .sign_in a:hover {
   transition: 0.6s;
 }
 
-/* search */
-
-.header_nav .search {
-  width: 300px;
-  height: 32px;
+/* search & DayAndNight*/
+.logo,
+.menu_top,
+.search_DayAndNight {
+  height: 100px;
   float: left;
+}
+.search_DayAndNight .center {
+  float: left;
+  margin-top: 25px;
+}
+.header_nav .search {
+  width: 260px;
+  float: right;
+  margin-top: 30px;
 }
 
 .header_nav .search img {
@@ -419,10 +405,10 @@ a:hover {
 }
 
 .header_nav .search form {
-  width: 240px;
+  width: 260px;
   height: 32px;
   float: left;
-  border-radius: 18px;
+  border-radius: 8px;
   padding-right: 15px;
   background: #707070;
   border: 5px solid #222;
@@ -699,9 +685,6 @@ a:hover {
   float: right;
   border-bottom: 1px solid #333;
 }
-.post header a h2:hover {
-  color: #707070 !important;
-}
 .post header img {
   width: 25px;
   height: 25px;
@@ -723,7 +706,7 @@ a:hover {
 
 .post header .star_imdb h3 {
   float: left;
-  margin-top: 14px;
+  margin-top: 3px;
 }
 
 /* details_movie*/
@@ -733,10 +716,8 @@ a:hover {
   height: auto;
   float: right;
 }
-.post .details_movie ul:hover {
-  color: #707070 !important;
-}
-.post .details_movie a {
+
+.post .details_movie .pictue_movie {
   width: 120px;
   height: 180px;
   float: left;
@@ -749,20 +730,24 @@ a:hover {
   border-radius: 8px;
 }
 
-.post .details_movie ul {
+.post .details_movie .right_details {
   width: 70%;
   float: right;
   margin: 10px 7px;
 }
 
-.post .details_movie ul li {
+.post .details_movie .right_details li {
   float: right;
   clear: both;
 }
 
-.post .details_movie ul li span {
+.post .details_movie .right_details li span {
   float: right;
   margin-top: 2px;
+}
+.post .details_movie .right_details li span a {
+  float: right;
+  margin: 0 !important;
 }
 
 /* footer_details */
@@ -794,19 +779,15 @@ a:hover {
 
 .details_description .download {
   float: left;
-  margin: 30px 0 30px 25px;
+  margin: 30px 0 30px 33px;
 }
 
 .details_description .download a {
   height: 30px;
   border-radius: 6px;
   margin: 0;
-  padding: 0 5px;
   text-align: center;
-}
-
-.details_description .download a span {
-  margin-top: 1.5px;
+  padding: 2px 10px 9px 10px;
 }
 
 .details_description .download a:hover {
@@ -831,23 +812,15 @@ a:hover {
   padding: 5px 15px;
   border-radius: 8px;
 }
-
+.pages_navi {
+  cursor: default;
+}
 .wp-pagenavi a#nexti,
 .wp-pagenavi a#previ {
   padding: 7px 30px;
 }
 
 .wp-pagenavi span.current {
-  background: #cc0033;
-}
-
-.wp-pagenavi a:hover {
-  transition: 0.4s;
-  background: #cc0033;
-}
-
-.wp-pagenavi span:hover {
-  transition: 0.4s;
   background: #cc0033;
 }
 
@@ -861,6 +834,9 @@ a:hover {
 
 /* sidebox */
 
+.left-sidebar .sidebox#genre {
+  margin-top: 503px;
+}
 .left-sidebar .sidebox {
   width: 100%;
   height: 422px;
@@ -883,7 +859,7 @@ a:hover {
 
 .left-sidebar .sidebox header h2 {
   float: right;
-  margin-top: 15px;
+  margin-top: 14px;
 }
 
 .left-sidebar .sidebox header h4 {
@@ -967,7 +943,7 @@ a:hover {
 
 .sidebox_random_movie header h2 {
   float: right;
-  margin-top: 15px;
+  margin-top: 7px;
 }
 
 .sidebox_random_movie .rand {
@@ -1094,7 +1070,7 @@ a:hover {
 
 .sidebox_news header h2 {
   float: right;
-  margin-top: 17px;
+  margin-top: 7px;
 }
 
 .sidebox_news .sidbox_news_ul {
@@ -1118,7 +1094,11 @@ a:hover {
   position: absolute;
   right: 0;
 }
-
+.sidebox_news .sidbox_news_ul li:hover {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  transition: 0.7s;
+}
 .sidebox_news .sidbox_news_ul li .title_newsmovie {
   width: 240px;
   height: 55px;
@@ -1150,45 +1130,44 @@ a:hover {
   margin-top: 33px;
 }
 
-.sidebox_news .sidbox_news_ul li a:hover h3 {
-  color: #cc0033;
-  transition: 1.7s;
-}
-
-.sidebox_news .sidbox_news_ul li a:hover h4 {
-  color: #cc0033;
-  transition: 0.7s;
-}
-
 /* sidebox_newss */
+.sidebox#sidebox_newss h2 {
+  margin-top: 7px;
+}
 
-.left-sidebar .sidebox#sidebox_newss {
-  margin-top: 503px;
+.sidbox_genre#sidebox_newss_de {
+  margin: 15px 8px;
 }
 
 .sidebox#sidebox_newss li {
-  width: 100%;
+  width: 95%;
   height: 65px;
   float: right;
 }
 .sidebox#sidebox_newss li a {
   width: 100%;
-  height: 100%;
+  height: 90%;
   float: right;
   background-image: none;
+  border-radius: 8px;
+  background: #707070;
 }
-
+.sidebox#sidebox_newss li a:hover h3 {
+  color: #0f0d0e;
+  transition: 0.4s;
+}
 .sidebox#sidebox_newss li a img {
   width: 50px;
   height: 40px;
   float: right;
-  margin-top: 2px;
+  margin: 8px;
+  border-radius: 10px;
 }
 
 .left-sidebar #sidebox_newss li h3 {
   float: right;
-  margin-right: 15px;
   margin-bottom: 0;
+  margin-top: 8px;
 }
 
 .left-sidebar .sidebox#sidebox_newss li span {
@@ -1385,12 +1364,18 @@ option {
 }
 
 .selectric {
-  border: 1px solid #ddd;
   background: #cc0033;
   position: relative;
   border-radius: 8px;
 }
-
+.item:hover .selectric {
+  background: #707070;
+  transition: 0.4s;
+}
+.item:hover .button {
+  background: #595b5e;
+  transition: 0.4s;
+}
 .selectric .label {
   display: block;
   white-space: nowrap;
