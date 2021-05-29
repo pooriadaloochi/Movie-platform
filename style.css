@@ -489,8 +489,7 @@ a:hover {
 
 .relative {
   width: 100%;
-  height: 500px;
-  margin: 20px auto;
+  margin-top: 20px;
 }
 
 .relheader {
@@ -605,10 +604,12 @@ a:hover {
 }
 
 .relative_post .relative_pic {
-  width: 1124px;
-  height: 270px;
+  width: 77%;
+  display: flex;
   position: absolute;
   margin-top: 80px;
+  flex-wrap: wrap;
+  background: #fdfdfd;
 }
 
 .relative_pic li {
@@ -666,47 +667,64 @@ a:hover {
 
 .all_posts {
   width: 60%;
-  height: auto;
+  height: 2310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 /* post*/
 
 .post {
-  width: 100%;
-  height: 424px;
-  float: left;
+  height: 422px;
   border-radius: 8px;
-  margin-bottom: 39px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .post header {
-  width: 100%;
-  height: 63px;
-  float: right;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
   border-bottom: 1px solid #333;
+  align-items: center;
+}
+.post header a {
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  
+}
+.post header a h2{
+  margin: 0;
+
 }
 .post header img {
   width: 25px;
   height: 25px;
-  float: right;
-  margin: 10px;
-}
-
-.post header h2 {
-  float: right;
-  margin: 12px 3px;
+  margin: 0 0.5rem;
 }
 
 .post header .star_imdb {
-  float: left;
+  width: 40%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
 }
-.post header .star_imdb img {
-  float: left;
+.imdb_point {
+  display: flex;
+  align-items: center;
 }
 
 .post header .star_imdb h3 {
-  float: left;
-  margin-top: 3px;
+  margin: 5px 0 0 0 ;
+}
+.post header .star_imdb h3 a{
+  width: 80px;
+  margin: 0;
+  direction: ltr;
 }
 
 /* details_movie*/
@@ -714,72 +732,61 @@ a:hover {
 .post .details_movie {
   width: 100%;
   height: auto;
-  float: right;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  justify-self: stretch;
+
 }
 
 .post .details_movie .pictue_movie {
-  width: 120px;
-  height: 180px;
-  float: left;
-  margin: 30px 25px;
+  width: 25%;
+  height: 208px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+  justify-content: space-around;
 }
 
 .post .details_movie a img {
-  width: 100%;
-  height: 100%;
+  width: 120px;
+  height: 180px;
   border-radius: 8px;
 }
 
 .post .details_movie .right_details {
-  width: 70%;
-  float: right;
-  margin: 10px 7px;
+  display: flex;
+  height: 208px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0.6rem 0.6rem ;
+  flex-grow: 1;
+  align-items: flex-start;
 }
 
-.post .details_movie .right_details li {
-  float: right;
-  clear: both;
-}
-
-.post .details_movie .right_details li span {
-  float: right;
-  margin-top: 2px;
-}
-.post .details_movie .right_details li span a {
-  float: right;
-  margin: 0 !important;
-}
 
 /* footer_details */
 
-.post .details_movie .details_description {
+.post .details_description {
   width: 100%;
-  height: auto;
-  float: right;
+  height: 100px;
   text-align: justify;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-self: center;
 }
 
 .details_description .description {
   width: 75%;
-  height: auto;
-  float: right;
-  margin-right: 7px;
-}
-.details_description .description:hover {
-  color: #707070 !important;
-}
-.details_description .description span {
-  float: right;
-}
-
-.details_description .description p {
-  float: right;
-  line-height: 1.2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .details_description .download {
-  float: left;
-  margin: 30px 0 30px 33px;
+  margin:1.2rem 0 0 1.2rem;
 }
 
 .details_description .download a {
@@ -830,22 +837,23 @@ a:hover {
   width: 36%;
   height: auto;
   float: left;
+  display: flex;
+  flex-direction: column;
+  margin-top: 37px;
 }
 
 /* sidebox */
 
 .left-sidebar .sidebox#genre {
-  margin-top: 503px;
+  margin-top: 462px;
 }
 .left-sidebar .sidebox {
-  width: 100%;
   height: 422px;
   border-radius: 8px;
   margin-bottom: 42px;
 }
 
 .left-sidebar .sidebox header {
-  width: 100%;
   height: 63px;
   border-bottom: 1px solid #333;
 }
@@ -1053,6 +1061,7 @@ a:hover {
   border-radius: 8px;
   margin-bottom: 41px;
   position: absolute;
+  margin-top: 926px;
 }
 
 .sidebox_news header {
