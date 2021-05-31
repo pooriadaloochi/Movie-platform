@@ -92,6 +92,7 @@ video {
 
 body {
   line-height: 1;
+  
 }
 
 article,
@@ -186,8 +187,7 @@ body {
   background: #ecedee !important;
   font: 0.8rem "IRSNSR", tahoma;
   direction: rtl;
-  /* overflow-x: hidden; */
-  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 li {
@@ -240,6 +240,9 @@ a:hover {
 
 .fl {
   float: left;
+}
+ h1, h2, h3, h4, h5, h6 {
+  margin: 0 ;
 }
 
 /*  */
@@ -321,19 +324,12 @@ a:hover {
 /* header */
 
 .header_nav {
-  height: 100px;
-}
-
-.header_nav ul {
-  height: 100px;
   display: flex;
+  flex-wrap: wrap;
+}
+.navbar_all{
   justify-content: center;
   align-items: center;
-}
-
-.header_nav ul li {
-  padding: 0.5rem;
-  margin-top: 7px;
 }
 
 .header_nav ul li a {
@@ -341,15 +337,9 @@ a:hover {
   text-align: center;
 }
 
-.header_nav {
-  margin: 0;
-}
-
 .header_nav #logo {
   width: 100px;
   height: 80px;
-  margin: 2px;
-  float: right;
 }
 
 .header_nav ul li a:hover {
@@ -482,9 +472,12 @@ a:hover {
 
 /* relative */
 
-.container#container_main {
+#container_main {
   width: 79%;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto !important;
 }
 
 .relative {
@@ -591,7 +584,6 @@ a:hover {
 .relative_post {
   width: 100%;
   height: 350px;
-  float: right;
   margin-top: 100px;
   border-radius: 8px;
 }
@@ -605,11 +597,10 @@ a:hover {
 
 .relative_post .relative_pic {
   width: 77%;
-  display: flex;
   position: absolute;
-  margin-top: 80px;
+  margin-top: 90px;
+  display: flex;
   flex-wrap: wrap;
-  background: #fdfdfd;
 }
 
 .relative_pic li {
@@ -662,11 +653,17 @@ a:hover {
 .relative_pic li:hover .details_relative {
   display: block;
 }
-
+.posts_leftsidebar{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start ;
+}
 /* all_posts */
 
 .all_posts {
-  width: 60%;
+  width: 650px; 
   height: 2310px;
   display: flex;
   flex-direction: column;
@@ -741,7 +738,7 @@ a:hover {
 }
 
 .post .details_movie .pictue_movie {
-  width: 25%;
+  width: 200px;
   height: 208px;
   display: flex;
   align-items: flex-end;
@@ -806,16 +803,16 @@ a:hover {
 .wp-pagenavi {
   width: 100%;
   height: 70px;
-  float: right;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
   border-radius: 8px;
 }
 
 .wp-pagenavi a,
 .wp-pagenavi span {
   background: #707070;
-  float: right;
-  margin-right: 24px;
-  margin-top: 20px;
   padding: 5px 15px;
   border-radius: 8px;
 }
@@ -834,12 +831,12 @@ a:hover {
 /* left-sidebar */
 
 .left-sidebar {
-  width: 36%;
-  height: auto;
-  float: left;
+  width: 393px;
+  height: 2310px;
   display: flex;
   flex-direction: column;
-  margin-top: 37px;
+  justify-content: space-evenly;
+
 }
 
 /* sidebox */
@@ -848,35 +845,47 @@ a:hover {
   margin-top: 462px;
 }
 .left-sidebar .sidebox {
-  height: 422px;
   border-radius: 8px;
-  margin-bottom: 42px;
+  /* margin-bottom: 42px; */
+  display: flex;
+  flex-direction: column;
 }
 
 .left-sidebar .sidebox header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 63px;
   border-bottom: 1px solid #333;
 }
-
+.right_header_side {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.left_header_side {
+  width: 180px;
+  display: flex;
+  justify-content: space-evenly  ;
+  align-items: center;
+}
 .left-sidebar .sidebox header img {
   width: 25px;
   height: 25px;
-  float: right;
-  margin: 19px 8px;
+  margin-right: 0.5rem;
 }
 
 .left-sidebar .sidebox header h2 {
-  float: right;
-  margin-top: 14px;
+  margin-right: 0.5rem;
+  display: flex;
 }
 
 .left-sidebar .sidebox header h4 {
-  float: left;
-  margin: 13px 10px;
   border-radius: 20px;
   padding: 5px 20px;
   border: 1px solid #fdfdfd;
   cursor: pointer;
+  justify-self: flex-end;
 }
 
 .left-sidebar .sidebox header h4:hover {
@@ -892,15 +901,16 @@ a:hover {
 
 .left-sidebar .sidebox .sidbox_genre {
   width: 100%;
-  height: auto;
-  margin-top: 20px;
-  margin-right: 20px;
+  height: 332px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 1rem 0.5rem;
 }
 
 .left-sidebar .sidebox .sidbox_genre li {
   width: 50%;
   height: 35px;
-  float: right;
 }
 .left-sidebar .sidebox .sidbox_genre li a {
   width: 100%;
@@ -929,52 +939,44 @@ a:hover {
 
 /* trailer */
 
-.sidebox_random_movie {
-  width: 100%;
-  height: 422px;
-  border-radius: 8px;
-  margin-bottom: 41px;
-}
 
 .sidebox_random_movie header {
-  width: 100%;
-  height: 63px;
+  display: flex;
   border-bottom: 1px solid #333;
+}
+.sidebox_random_movie header h2{
+  margin-top: 0.5rem;
 }
 
 .sidebox_random_movie header img {
   width: 25px;
   height: 25px;
-  float: right;
-  margin: 17px 10px;
 }
 
-.sidebox_random_movie header h2 {
-  float: right;
-  margin-top: 7px;
-}
 
 .sidebox_random_movie .rand {
-  width: 90%;
+  width: 95%;
+  border-radius: 2px;
   height: 50px;
-  border-radius: 8px;
-  margin: 10px auto;
   background: #ecedee;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin:0.6rem;
 }
 
 .rand a {
   width: 32%;
   height: 50px;
-  margin-right: 2px;
-  float: right;
   border-radius: 18px !important;
 }
 
 .rand a h2 {
   width: 100%;
   height: 100%;
-  text-align: center;
-  margin-top: 5px;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
 }
 
 .rand a:hover {
@@ -1012,13 +1014,10 @@ a:hover {
 }
 
 .rand .active {
-  background: #cc0033 !important;
+  background: #cc0033;
   color: #fdfdfd;
 }
 
-.rand .active h2 {
-  color: #fdfdfd;
-}
 
 /*  dubbed_pic*/
 
@@ -1057,11 +1056,8 @@ a:hover {
 
 .left-sidebar .sidebox_news {
   width: 395px;
-  height: 422px;
   border-radius: 8px;
-  margin-bottom: 41px;
   position: absolute;
-  margin-top: 926px;
 }
 
 .sidebox_news header {
@@ -1071,15 +1067,13 @@ a:hover {
 }
 
 .sidebox_news header img {
-  width: 40px;
-  height: 40px;
-  float: right;
-  margin: 15px 6px;
+  width: 40px !important;
+  height: 40px !important;
 }
 
 .sidebox_news header h2 {
-  float: right;
-  margin-top: 7px;
+  margin-bottom: 3px !important;
+  text-align: right;
 }
 
 .sidebox_news .sidbox_news_ul {
@@ -1089,10 +1083,8 @@ a:hover {
 }
 
 .sidebox_news .sidbox_news_ul li {
-  width: 100%;
-  height: 67px;
+  height: 66px;
   margin-top: 3px;
-  float: right;
 }
 
 .sidebox_news .sidbox_news_ul li img {
@@ -1140,13 +1132,6 @@ a:hover {
 }
 
 /* sidebox_newss */
-.sidebox#sidebox_newss h2 {
-  margin-top: 7px;
-}
-
-.sidbox_genre#sidebox_newss_de {
-  margin: 15px 8px;
-}
 
 .sidebox#sidebox_newss li {
   width: 95%;
@@ -1195,35 +1180,27 @@ a:hover {
 .footer-nav {
   width: 100%;
   margin: 40px 0;
-  float: right;
 }
 
 .main-footer {
-  float: right;
   border-radius: 8px;
   padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
 }
 
 .footer-nav .about {
-  width: 20%;
-  height: 100%;
-  float: right;
-  margin-right: 75px;
-}
-
-.footer-nav .about h2 {
-  float: right;
-  margin-bottom: 25px;
+  width: 225px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .footer-nav .about p {
-  float: right;
   text-align: justify;
-}
-
-.footer-nav .about a {
-  float: right;
-  clear: both;
 }
 
 .footer-nav .about a:hover h3 {
@@ -1231,8 +1208,8 @@ a:hover {
 }
 
 .support {
-  float: right;
-  margin-top: 100px;
+  align-self: flex-end;
+  margin-bottom: 1rem;
 }
 
 .support img {
@@ -1241,19 +1218,19 @@ a:hover {
   cursor: pointer;
 }
 
-.social {
-  width: 20%;
-  height: 100%;
-  float: left;
-  margin-top: 165px;
-  margin-left: 30px;
+.social  {
+  align-self: flex-end;
+  margin-bottom: 1rem;
 }
-
+.social ul {
+  display: flex;
+  align-items: center;
+  
+} 
 .social img {
   width: 30px;
   height: 30px;
-  float: left;
-  margin-left: 5px;
+  margin-left: 0.5rem;
 }
 
 .footer-bot {
@@ -1535,3 +1512,22 @@ option {
 
 @media (min-width: 400px) and (max-width: 536px) {
 }
+/*  */
+.fa-1x {
+  font-size: 1.5rem;
+  }
+  .navbar-toggler.toggler-example {
+  cursor: pointer;
+  }
+  .dark-blue-text {
+  color: #0A38F5;
+  }
+  .dark-pink-text {
+  color: #AC003A;
+  }
+  .dark-amber-text {
+  color: #ff6f00;
+  }
+  .dark-teal-text {
+  color: #004d40;
+  }

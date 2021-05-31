@@ -23,60 +23,67 @@
     <!-- container -->
     <header class="col-lg-12 header_nav">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-2 logo">
-                    <a href="#">
-                        <h1><img src="img/filmbazz.png" alt="" id="logo" /></h1>
-                    </a>
-                </div>
-                <div class="col-lg-6 menu_top">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <h3 class="fo_he gray_cr"> صفحه اصلی</h3>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <h3 class="fo_he gray_cr">فیلم</h3>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <h3 class="fo_he gray_cr">سریال</h3>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <h3 class="fo_he gray_cr">دسته بندی</h3>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <h3 class="fo_he gray_cr">تماس ما</h3>
-                            </a>
-                        </li>
-                        <div class="sign_in">
-                            <a href="#">
-                                <h3 class="fo_he white_red">ورود / ثبت نام</h3>
-                            </a>
+            <div class="row navbar_all">        
+              
+                <nav class="col-lg-6 navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+                        <a href="#" class="navbar-brand logo">
+                            <h1><img src="img/filmbazz.png" alt="" id="logo" /></h1>
+                        </a>
+                      
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                        <a href="#" class="nav-link active">
+                                        <h3 class="fo_he gray_cr "> صفحه اصلی</h3>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <h3 class="fo_he gray_cr">فیلم</h3>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <h3 class="fo_he gray_cr">سریال</h3>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <h3 class="fo_he gray_cr">دسته بندی</h3>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <h3 class="fo_he gray_cr">تماس ما</h3>
+                                    </a>
+                                </li>
+                            </ul> 
                         </div>
-
-                    </ul>
-                </div>
+                    
+                    </div> 
+                </nav>   
+                <div class="sign_in">
+                    <a href="#">
+                        <h3 class="fo_he white_red">ورود / ثبت نام</h3>
+                    </a>
+                </div>             
                 <div class="col-lg-4 search_DayAndNight">
                     <div class="center">
                         <input type="checkbox" name="" />
                     </div>
-                    <div class="search" role="search">
+                <div class="search" role="search">
                         <form action="/action_page.php">
                             <input class="white_cr fo_pa" type="text" placeholder="جستجوی کلمه مورد نظر" name="search" onfocus="this.placeholder=''" onblur="this.placeholder='جستجوی کلمه مورد نظر'" />
                             <button type="submit button_search">
                               <img src="icon/searchh.svg" alt="" />
                             </button>
                         </form>
-                    </div>
                 </div>
+                
             </div>
         </div>
     </header>
@@ -282,13 +289,470 @@
                 </ul>
             </section>
         </div>
-        <!-- left-sidebar -->
-        <aside class="left-sidebar">
+            <div class="posts_leftsidebar">
+                <!-- posts -->
+                <div class="all_posts">
+                    <!-- arritcle posts -->
+                    <article class="post white_bg">
+                        <header class="gray_cr_n">
+                            <a href="#">
+                                <img src="icon/movie.svg " alt=" " />
+                                <h2 class="gray_cr fo_he"> دانلود فیلم The Fault in Our Stars</h2>
+                            </a>
+                            <div class="star_imdb">
+                                <img src="icon/star.svg " alt=" " />
+                                <h3>
+                                    <a href="#" class="imdb_point fo_he2_b gray_cr">
+                                        <span> IMDB : </span> <span> 7.6</span>
+                                    </a>
+                                </h3>
+                            </div>
+                        </header>
+                        <section class="details_movie">
+                            <div class="pictue_movie">
+                                <a href="#">
+                                    <img src="img/The Fault in Our Stars.jpg" alt=" " />
+                                </a>
+                            </div>
+                            <ul class="right_details">
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">نام فیلم :</span>
+                                    <span class="fo_he2 gray_cr_n">The Fault in Our Stars</span>
+                                </li>
+        
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">ژانر :</span>
+                                    <a href="#"><span class="fo_he2 gray_cr"> خانوادگی و درام</span></a>
+                                </li>
+        
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">امتیاز :</span>
+                                    <a href="#"><span class="fo_he2 gray_cr">&nbsp;7.8 در IMDB</span></a>
+                                </li>
+        
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">زبان :</span>
+                                    <span class="fo_he2 gray_cr_n">&nbsp;انگلیسی</span>
+                                </li>
+        
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">محصول کشور :</span>
+                                    <a href="#"><span class="fo_he2 gray_cr">&nbsp;آمریکا</span></a>
+                                </li>
+        
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">سال انتشار :</span>
+                                    <a href="#"><span class="fo_he2 gray_cr">&nbsp;2014</span></a>
+                                </li>
+        
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">کارگردان :</span>
+                                    <a href="#"><span class="fo_he2 gray_cr">&nbsp;دیوید فینچر</span></a>
+                                </li>
+        
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">بازیگران :</span>
+                                   <a href="#"> <span class="fo_he2 gray_cr">
+                                        &nbsp; Shailene Woodley ,
+                                    </span></a>
+                                    <a href="#"> <span class="fo_he2 gray_cr">
+                                        &nbsp; Ansel Elgort, 
+                                    </span></a>
+                                    <a href="#"> <span class="fo_he2 gray_cr">
+                                        &nbsp;  Nat Wolff
+                                    </span></a>
+                                </li>
+                            </ul>
+                        </section>
+                            <footer class="details_description">
+                                <div class="description gray_cr_n">
+                                    <span class="fo_he2_b">خلاصه داستان  :</span>
+                                    <p class="fo_pa">
+                                        فیلمی رمانتیک درام آمریکایی به کارگردانی جاش بون، برگرفته از رمانی به همین نام به قلم جان گرین است. در این فیلم شیلین وودلی، انسل الگورت، لورا درن، سام ترمل، نات وولف و ویلم دفو نقش‌آفرینی می‌کنند. فیلم‌برداری بخت پریشان در پیتسبورگ و آمستردام صورت گرفته‌است
+                                        و در تاریخ ۶ ژوئن ۲۰۱۴ روی پرده .
+                                    </p>
+                                </div>
+                                <div class="download">
+                                    <a href="# " class= "white_red">
+                                        <span class="fo_he2">توضیحات + دانلود</span>
+                                    </a>
+                                </div>
+                            </footer>
+                        
+                    </article>
+        
+         
+                    <!-- arritcle posts -->
+                    <article class="post white_bg">
+                        <header class="gray_cr_n">
+                            <a href="#">
+                                <img src="icon/movie.svg " alt=" " />
+                                <h2 class="gray_cr fo_he"> دانلود فیلم The Fault in Our Stars</h2>
+                            </a>
+                            <div class="star_imdb">
+                                <img src="icon/star.svg " alt=" " />
+                                <h3>
+                                    <a href="#" class="imdb_point fo_he2_b gray_cr">
+                                        <span> IMDB : </span> <span> 7.6</span>
+                                    </a>
+                                </h3>
+                            </div>
+                        </header>
+                        <section class="details_movie">
+                            <div class="pictue_movie">
+                                <a href="#">
+                                    <img src="img/The Fault in Our Stars.jpg" alt=" " />
+                                </a>
+                            </div>
+                            <ul class="right_details">
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">نام فیلم :</span>
+                                    <span class="fo_he2 gray_cr_n">The Fault in Our Stars</span>
+                                </li>
+        
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">ژانر :</span>
+                                    <a href="#"><span class="fo_he2 gray_cr"> خانوادگی و درام</span></a>
+                                </li>
+        
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">امتیاز :</span>
+                                    <a href="#"><span class="fo_he2 gray_cr">&nbsp;7.8 در IMDB</span></a>
+                                </li>
+        
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">زبان :</span>
+                                    <span class="fo_he2 gray_cr_n">&nbsp;انگلیسی</span>
+                                </li>
+        
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">محصول کشور :</span>
+                                    <a href="#"><span class="fo_he2 gray_cr">&nbsp;آمریکا</span></a>
+                                </li>
+        
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">سال انتشار :</span>
+                                    <a href="#"><span class="fo_he2 gray_cr">&nbsp;2014</span></a>
+                                </li>
+        
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">کارگردان :</span>
+                                    <a href="#"><span class="fo_he2 gray_cr">&nbsp;دیوید فینچر</span></a>
+                                </li>
+        
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">بازیگران :</span>
+                                   <a href="#"> <span class="fo_he2 gray_cr">
+                                        &nbsp; Shailene Woodley ,
+                                    </span></a>
+                                    <a href="#"> <span class="fo_he2 gray_cr">
+                                        &nbsp; Ansel Elgort, 
+                                    </span></a>
+                                    <a href="#"> <span class="fo_he2 gray_cr">
+                                        &nbsp;  Nat Wolff
+                                    </span></a>
+                                </li>
+                            </ul>
+                        </section>
+                            <footer class="details_description">
+                                <div class="description gray_cr_n">
+                                    <span class="fo_he2_b">خلاصه داستان  :</span>
+                                    <p class="fo_pa">
+                                        فیلمی رمانتیک درام آمریکایی به کارگردانی جاش بون، برگرفته از رمانی به همین نام به قلم جان گرین است. در این فیلم شیلین وودلی، انسل الگورت، لورا درن، سام ترمل، نات وولف و ویلم دفو نقش‌آفرینی می‌کنند. فیلم‌برداری بخت پریشان در پیتسبورگ و آمستردام صورت گرفته‌است
+                                        و در تاریخ ۶ ژوئن ۲۰۱۴ روی پرده .
+                                    </p>
+                                </div>
+                                <div class="download">
+                                    <a href="# " class= "white_red">
+                                        <span class="fo_he2">توضیحات + دانلود</span>
+                                    </a>
+                                </div>
+                            </footer>
+                        
+                    </article>
+        
+         
+                    <!-- arritcle posts -->
+                    <article class="post white_bg">
+                        <header class="gray_cr_n">
+                            <a href="#">
+                                <img src="icon/movie.svg " alt=" " />
+                                <h2 class="gray_cr fo_he"> دانلود فیلم The Fault in Our Stars</h2>
+                            </a>
+                            <div class="star_imdb">
+                                <img src="icon/star.svg " alt=" " />
+                                <h3>
+                                    <a href="#" class="imdb_point fo_he2_b gray_cr">
+                                        <span> IMDB : </span> <span> 7.6</span>
+                                    </a>
+                                </h3>
+                            </div>
+                        </header>
+                        <section class="details_movie">
+                            <div class="pictue_movie">
+                                <a href="#">
+                                    <img src="img/The Fault in Our Stars.jpg" alt=" " />
+                                </a>
+                            </div>
+                            <ul class="right_details">
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">نام فیلم :</span>
+                                    <span class="fo_he2 gray_cr_n">The Fault in Our Stars</span>
+                                </li>
+        
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">ژانر :</span>
+                                    <a href="#"><span class="fo_he2 gray_cr"> خانوادگی و درام</span></a>
+                                </li>
+        
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">امتیاز :</span>
+                                    <a href="#"><span class="fo_he2 gray_cr">&nbsp;7.8 در IMDB</span></a>
+                                </li>
+        
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">زبان :</span>
+                                    <span class="fo_he2 gray_cr_n">&nbsp;انگلیسی</span>
+                                </li>
+        
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">محصول کشور :</span>
+                                    <a href="#"><span class="fo_he2 gray_cr">&nbsp;آمریکا</span></a>
+                                </li>
+        
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">سال انتشار :</span>
+                                    <a href="#"><span class="fo_he2 gray_cr">&nbsp;2014</span></a>
+                                </li>
+        
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">کارگردان :</span>
+                                    <a href="#"><span class="fo_he2 gray_cr">&nbsp;دیوید فینچر</span></a>
+                                </li>
+        
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">بازیگران :</span>
+                                   <a href="#"> <span class="fo_he2 gray_cr">
+                                        &nbsp; Shailene Woodley ,
+                                    </span></a>
+                                    <a href="#"> <span class="fo_he2 gray_cr">
+                                        &nbsp; Ansel Elgort, 
+                                    </span></a>
+                                    <a href="#"> <span class="fo_he2 gray_cr">
+                                        &nbsp;  Nat Wolff
+                                    </span></a>
+                                </li>
+                            </ul>
+                        </section>
+                            <footer class="details_description">
+                                <div class="description gray_cr_n">
+                                    <span class="fo_he2_b">خلاصه داستان  :</span>
+                                    <p class="fo_pa">
+                                        فیلمی رمانتیک درام آمریکایی به کارگردانی جاش بون، برگرفته از رمانی به همین نام به قلم جان گرین است. در این فیلم شیلین وودلی، انسل الگورت، لورا درن، سام ترمل، نات وولف و ویلم دفو نقش‌آفرینی می‌کنند. فیلم‌برداری بخت پریشان در پیتسبورگ و آمستردام صورت گرفته‌است
+                                        و در تاریخ ۶ ژوئن ۲۰۱۴ روی پرده .
+                                    </p>
+                                </div>
+                                <div class="download">
+                                    <a href="# " class= "white_red">
+                                        <span class="fo_he2">توضیحات + دانلود</span>
+                                    </a>
+                                </div>
+                            </footer>
+                        
+                    </article>
+        
+         
+                    <!-- arritcle posts -->
+                    <article class="post white_bg">
+                        <header class="gray_cr_n">
+                            <a href="#">
+                                <img src="icon/movie.svg " alt=" " />
+                                <h2 class="gray_cr fo_he"> دانلود فیلم The Fault in Our Stars</h2>
+                            </a>
+                            <div class="star_imdb">
+                                <img src="icon/star.svg " alt=" " />
+                                <h3>
+                                    <a href="#" class="imdb_point fo_he2_b gray_cr">
+                                        <span> IMDB : </span> <span> 7.6</span>
+                                    </a>
+                                </h3>
+                            </div>
+                        </header>
+                        <section class="details_movie">
+                            <div class="pictue_movie">
+                                <a href="#">
+                                    <img src="img/The Fault in Our Stars.jpg" alt=" " />
+                                </a>
+                            </div>
+                            <ul class="right_details">
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">نام فیلم :</span>
+                                    <span class="fo_he2 gray_cr_n">The Fault in Our Stars</span>
+                                </li>
+        
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">ژانر :</span>
+                                    <a href="#"><span class="fo_he2 gray_cr"> خانوادگی و درام</span></a>
+                                </li>
+        
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">امتیاز :</span>
+                                    <a href="#"><span class="fo_he2 gray_cr">&nbsp;7.8 در IMDB</span></a>
+                                </li>
+        
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">زبان :</span>
+                                    <span class="fo_he2 gray_cr_n">&nbsp;انگلیسی</span>
+                                </li>
+        
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">محصول کشور :</span>
+                                    <a href="#"><span class="fo_he2 gray_cr">&nbsp;آمریکا</span></a>
+                                </li>
+        
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">سال انتشار :</span>
+                                    <a href="#"><span class="fo_he2 gray_cr">&nbsp;2014</span></a>
+                                </li>
+        
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">کارگردان :</span>
+                                    <a href="#"><span class="fo_he2 gray_cr">&nbsp;دیوید فینچر</span></a>
+                                </li>
+        
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">بازیگران :</span>
+                                   <a href="#"> <span class="fo_he2 gray_cr">
+                                        &nbsp; Shailene Woodley ,
+                                    </span></a>
+                                    <a href="#"> <span class="fo_he2 gray_cr">
+                                        &nbsp; Ansel Elgort, 
+                                    </span></a>
+                                    <a href="#"> <span class="fo_he2 gray_cr">
+                                        &nbsp;  Nat Wolff
+                                    </span></a>
+                                </li>
+                            </ul>
+                        </section>
+                            <footer class="details_description">
+                                <div class="description gray_cr_n">
+                                    <span class="fo_he2_b">خلاصه داستان  :</span>
+                                    <p class="fo_pa">
+                                        فیلمی رمانتیک درام آمریکایی به کارگردانی جاش بون، برگرفته از رمانی به همین نام به قلم جان گرین است. در این فیلم شیلین وودلی، انسل الگورت، لورا درن، سام ترمل، نات وولف و ویلم دفو نقش‌آفرینی می‌کنند. فیلم‌برداری بخت پریشان در پیتسبورگ و آمستردام صورت گرفته‌است
+                                        و در تاریخ ۶ ژوئن ۲۰۱۴ روی پرده .
+                                    </p>
+                                </div>
+                                <div class="download">
+                                    <a href="# " class= "white_red">
+                                        <span class="fo_he2">توضیحات + دانلود</span>
+                                    </a>
+                                </div>
+                            </footer>
+                        
+                    </article>
+        
+         
+                    <!-- arritcle posts -->
+                    <article class="post white_bg">
+                        <header class="gray_cr_n">
+                            <a href="#">
+                                <img src="icon/movie.svg " alt=" " />
+                                <h2 class="gray_cr fo_he"> دانلود فیلم The Fault in Our Stars</h2>
+                            </a>
+                            <div class="star_imdb">
+                                <img src="icon/star.svg " alt=" " />
+                                <h3>
+                                    <a href="#" class="imdb_point fo_he2_b gray_cr">
+                                        <span> IMDB : </span> <span> 7.6</span>
+                                    </a>
+                                </h3>
+                            </div>
+                        </header>
+                        <section class="details_movie">
+                            <div class="pictue_movie">
+                                <a href="#">
+                                    <img src="img/The Fault in Our Stars.jpg" alt=" " />
+                                </a>
+                            </div>
+                            <ul class="right_details">
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">نام فیلم :</span>
+                                    <span class="fo_he2 gray_cr_n">The Fault in Our Stars</span>
+                                </li>
+        
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">ژانر :</span>
+                                    <a href="#"><span class="fo_he2 gray_cr"> خانوادگی و درام</span></a>
+                                </li>
+        
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">امتیاز :</span>
+                                    <a href="#"><span class="fo_he2 gray_cr">&nbsp;7.8 در IMDB</span></a>
+                                </li>
+        
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">زبان :</span>
+                                    <span class="fo_he2 gray_cr_n">&nbsp;انگلیسی</span>
+                                </li>
+        
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">محصول کشور :</span>
+                                    <a href="#"><span class="fo_he2 gray_cr">&nbsp;آمریکا</span></a>
+                                </li>
+        
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">سال انتشار :</span>
+                                    <a href="#"><span class="fo_he2 gray_cr">&nbsp;2014</span></a>
+                                </li>
+        
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">کارگردان :</span>
+                                    <a href="#"><span class="fo_he2 gray_cr">&nbsp;دیوید فینچر</span></a>
+                                </li>
+        
+                                <li>
+                                    <span class="fo_he2 gray_cr_n">بازیگران :</span>
+                                   <a href="#"> <span class="fo_he2 gray_cr">
+                                        &nbsp; Shailene Woodley ,
+                                    </span></a>
+                                    <a href="#"> <span class="fo_he2 gray_cr">
+                                        &nbsp; Ansel Elgort, 
+                                    </span></a>
+                                    <a href="#"> <span class="fo_he2 gray_cr">
+                                        &nbsp;  Nat Wolff
+                                    </span></a>
+                                </li>
+                            </ul>
+                        </section>
+                            <footer class="details_description">
+                                <div class="description gray_cr_n">
+                                    <span class="fo_he2_b">خلاصه داستان  :</span>
+                                    <p class="fo_pa">
+                                        فیلمی رمانتیک درام آمریکایی به کارگردانی جاش بون، برگرفته از رمانی به همین نام به قلم جان گرین است. در این فیلم شیلین وودلی، انسل الگورت، لورا درن، سام ترمل، نات وولف و ویلم دفو نقش‌آفرینی می‌کنند. فیلم‌برداری بخت پریشان در پیتسبورگ و آمستردام صورت گرفته‌است
+                                        و در تاریخ ۶ ژوئن ۲۰۱۴ روی پرده .
+                                    </p>
+                                </div>
+                                <div class="download">
+                                    <a href="# " class= "white_red">
+                                        <span class="fo_he2">توضیحات + دانلود</span>
+                                    </a>
+                                </div>
+                            </footer>
+                        
+                    </article>
+        
+         
+                </div>  
+
+            <!-- left-sidebar -->
+            <aside class="left-sidebar">
             <!-- news sidebox -->
             <section class="sidebox white_bg" id="sidebox_newss">
                             <header>
-                                <img src="icon/news.svg " alt="" />
-                                <h2><a href="#" class="gray_cr fo_big"> اخبار سایت</a></h2>
+                                <div class="right_header_side">
+                                    <img src="icon/news.svg " alt="" />
+                                    <h2><a href="#" class="gray_cr fo_big"> اخبار سایت</a></h2>
+                                </div>
                             </header>
                             <ul class="sidbox_genre" id="sidebox_newss_de">
                                 <li>
@@ -336,10 +800,12 @@
                             </ul>
             </section>
             <!-- random sidebox -->
-            <section class="sidebox_random_movie white_bg">
+            <section class="sidebox_random_movie sidebox white_bg">
                 <header>
-                    <img src="icon/trailer.svg" alt="" />
-                    <h2><a href="#" class="gray_cr fo_big"> آخرین تریلرها</a></h2>
+                    <div class="right_header_side">
+                        <img src="icon/trailer.svg" alt="" />
+                        <h2><a href="#" class="gray_cr fo_big"> آخرین تریلرها</a></h2>
+                    </div>
                 </header>
                 <nav>
                     <div class="rand nav nav-tabs" id="nav-tab" role="tablist">
@@ -442,10 +908,12 @@
 
             <!-- new serial sidebox -->
 
-            <section class="sidebox_news white_bg">
+            <section class="sidebox sidebox_news white_bg">
                 <header>
-                    <img src="icon/new.svg" alt="" />
-                    <h2><a href="#" class="gray_cr  fo_big"> جدیدترین فیلم و سریال ها</a></h2>
+                    <div class="right_header_side">
+                        <img src="icon/new.svg" alt="" />
+                        <h2><a href="#" class="gray_cr  fo_big"> جدیدترین فیلم و سریال ها</a></h2>
+                    </div>
                 </header>
                 <ul class="sidbox_news_ul">
                     <li>
@@ -504,10 +972,14 @@
             <!-- Genre sidebox -->
             <section class="sidebox white_bg" id="genre">
                             <header>
-                                <img src="icon/movie tape.svg" alt="" />
-                                <h2 class="gray_cr_n fo_big">براساس ژانر</h2>
-                                <h4 class="white_red fo_he2">سریال</h4>
-                                <h4 class="white_red fo_he2">فیلم</h4>
+                                <div class="right_header_side">
+                                    <img src="icon/movie tape.svg" alt="" />
+                                    <h2 class="gray_cr_n fo_big">براساس ژانر</h2>
+                                </div>
+                                <div class="left_header_side">
+                                    <h4 class="white_red fo_he2">سریال</h4>
+                                    <h4 class="white_red fo_he2">فیلم</h4>
+                                </div>
                             </header>
             
                             <ul class="sidbox_genre">
@@ -610,10 +1082,14 @@
             <!-- born sidebox -->
             <section class="sidebox gray_cr_n white_bg">
                     <header>
-                        <img src="icon/date.svg" alt="" />
-                        <h2 class="fo_big">براساس سال تولید</h2>
-                        <h4 class="white_red fo_he2">سریال</h4>
-                        <h4 class="white_red fo_he2">فیلم</h4>
+                        <div class="right_header_side">
+                            <img src="icon/date.svg" alt="" />
+                            <h2 class="fo_big">براساس سال تولید</h2>
+                        </div>
+                        <div class="left_header_side">
+                            <h4 class="white_red fo_he2">سریال</h4>
+                            <h4 class="white_red fo_he2">فیلم</h4>
+                        </div>
                     </header>
     
                     <ul class="sidbox_genre">
@@ -729,461 +1205,9 @@
                     </ul>
             </section>
                                   
-        </aside>
-
-        <!-- posts -->
-        <div class="all_posts">
-            <!-- arritcle posts -->
-            <article class="post white_bg">
-                <header class="gray_cr_n">
-                    <a href="#">
-                        <img src="icon/movie.svg " alt=" " />
-                        <h2 class="gray_cr fo_he"> دانلود فیلم The Fault in Our Stars</h2>
-                    </a>
-                    <div class="star_imdb">
-                        <img src="icon/star.svg " alt=" " />
-                        <h3>
-                            <a href="#" class="imdb_point fo_he2_b gray_cr">
-                                <span> IMDB : </span> <span> 7.6</span>
-                            </a>
-                        </h3>
-                    </div>
-                </header>
-                <section class="details_movie">
-                    <div class="pictue_movie">
-                        <a href="#">
-                            <img src="img/The Fault in Our Stars.jpg" alt=" " />
-                        </a>
-                    </div>
-                    <ul class="right_details">
-                        <li>
-                            <span class="fo_he2 gray_cr_n">نام فیلم :</span>
-                            <span class="fo_he2 gray_cr_n">The Fault in Our Stars</span>
-                        </li>
-
-                        <li>
-                            <span class="fo_he2 gray_cr_n">ژانر :</span>
-                            <a href="#"><span class="fo_he2 gray_cr"> خانوادگی و درام</span></a>
-                        </li>
-
-                        <li>
-                            <span class="fo_he2 gray_cr_n">امتیاز :</span>
-                            <a href="#"><span class="fo_he2 gray_cr">&nbsp;7.8 در IMDB</span></a>
-                        </li>
-
-                        <li>
-                            <span class="fo_he2 gray_cr_n">زبان :</span>
-                            <span class="fo_he2 gray_cr_n">&nbsp;انگلیسی</span>
-                        </li>
-
-                        <li>
-                            <span class="fo_he2 gray_cr_n">محصول کشور :</span>
-                            <a href="#"><span class="fo_he2 gray_cr">&nbsp;آمریکا</span></a>
-                        </li>
-
-                        <li>
-                            <span class="fo_he2 gray_cr_n">سال انتشار :</span>
-                            <a href="#"><span class="fo_he2 gray_cr">&nbsp;2014</span></a>
-                        </li>
-
-                        <li>
-                            <span class="fo_he2 gray_cr_n">کارگردان :</span>
-                            <a href="#"><span class="fo_he2 gray_cr">&nbsp;دیوید فینچر</span></a>
-                        </li>
-
-                        <li>
-                            <span class="fo_he2 gray_cr_n">بازیگران :</span>
-                           <a href="#"> <span class="fo_he2 gray_cr">
-                                &nbsp; Shailene Woodley ,
-                            </span></a>
-                            <a href="#"> <span class="fo_he2 gray_cr">
-                                &nbsp; Ansel Elgort, 
-                            </span></a>
-                            <a href="#"> <span class="fo_he2 gray_cr">
-                                &nbsp;  Nat Wolff
-                            </span></a>
-                        </li>
-                    </ul>
-                </section>
-                    <footer class="details_description">
-                        <div class="description gray_cr_n">
-                            <span class="fo_he2_b">خلاصه داستان  :</span>
-                            <p class="fo_pa">
-                                فیلمی رمانتیک درام آمریکایی به کارگردانی جاش بون، برگرفته از رمانی به همین نام به قلم جان گرین است. در این فیلم شیلین وودلی، انسل الگورت، لورا درن، سام ترمل، نات وولف و ویلم دفو نقش‌آفرینی می‌کنند. فیلم‌برداری بخت پریشان در پیتسبورگ و آمستردام صورت گرفته‌است
-                                و در تاریخ ۶ ژوئن ۲۰۱۴ روی پرده .
-                            </p>
-                        </div>
-                        <div class="download">
-                            <a href="# " class= "white_red">
-                                <span class="fo_he2">توضیحات + دانلود</span>
-                            </a>
-                        </div>
-                    </footer>
-                
-            </article>
-
- 
-            <!-- arritcle posts -->
-            <article class="post white_bg">
-                <header class="gray_cr_n">
-                    <a href="#">
-                        <img src="icon/movie.svg " alt=" " />
-                        <h2 class="gray_cr fo_he"> دانلود فیلم The Fault in Our Stars</h2>
-                    </a>
-                    <div class="star_imdb">
-                        <img src="icon/star.svg " alt=" " />
-                        <h3>
-                            <a href="#" class="imdb_point fo_he2_b gray_cr">
-                                <span> IMDB : </span> <span> 7.6</span>
-                            </a>
-                        </h3>
-                    </div>
-                </header>
-                <section class="details_movie">
-                    <div class="pictue_movie">
-                        <a href="#">
-                            <img src="img/The Fault in Our Stars.jpg" alt=" " />
-                        </a>
-                    </div>
-                    <ul class="right_details">
-                        <li>
-                            <span class="fo_he2 gray_cr_n">نام فیلم :</span>
-                            <span class="fo_he2 gray_cr_n">The Fault in Our Stars</span>
-                        </li>
-
-                        <li>
-                            <span class="fo_he2 gray_cr_n">ژانر :</span>
-                            <a href="#"><span class="fo_he2 gray_cr"> خانوادگی و درام</span></a>
-                        </li>
-
-                        <li>
-                            <span class="fo_he2 gray_cr_n">امتیاز :</span>
-                            <a href="#"><span class="fo_he2 gray_cr">&nbsp;7.8 در IMDB</span></a>
-                        </li>
-
-                        <li>
-                            <span class="fo_he2 gray_cr_n">زبان :</span>
-                            <span class="fo_he2 gray_cr_n">&nbsp;انگلیسی</span>
-                        </li>
-
-                        <li>
-                            <span class="fo_he2 gray_cr_n">محصول کشور :</span>
-                            <a href="#"><span class="fo_he2 gray_cr">&nbsp;آمریکا</span></a>
-                        </li>
-
-                        <li>
-                            <span class="fo_he2 gray_cr_n">سال انتشار :</span>
-                            <a href="#"><span class="fo_he2 gray_cr">&nbsp;2014</span></a>
-                        </li>
-
-                        <li>
-                            <span class="fo_he2 gray_cr_n">کارگردان :</span>
-                            <a href="#"><span class="fo_he2 gray_cr">&nbsp;دیوید فینچر</span></a>
-                        </li>
-
-                        <li>
-                            <span class="fo_he2 gray_cr_n">بازیگران :</span>
-                           <a href="#"> <span class="fo_he2 gray_cr">
-                                &nbsp; Shailene Woodley ,
-                            </span></a>
-                            <a href="#"> <span class="fo_he2 gray_cr">
-                                &nbsp; Ansel Elgort, 
-                            </span></a>
-                            <a href="#"> <span class="fo_he2 gray_cr">
-                                &nbsp;  Nat Wolff
-                            </span></a>
-                        </li>
-                    </ul>
-                </section>
-                    <footer class="details_description">
-                        <div class="description gray_cr_n">
-                            <span class="fo_he2_b">خلاصه داستان  :</span>
-                            <p class="fo_pa">
-                                فیلمی رمانتیک درام آمریکایی به کارگردانی جاش بون، برگرفته از رمانی به همین نام به قلم جان گرین است. در این فیلم شیلین وودلی، انسل الگورت، لورا درن، سام ترمل، نات وولف و ویلم دفو نقش‌آفرینی می‌کنند. فیلم‌برداری بخت پریشان در پیتسبورگ و آمستردام صورت گرفته‌است
-                                و در تاریخ ۶ ژوئن ۲۰۱۴ روی پرده .
-                            </p>
-                        </div>
-                        <div class="download">
-                            <a href="# " class= "white_red">
-                                <span class="fo_he2">توضیحات + دانلود</span>
-                            </a>
-                        </div>
-                    </footer>
-                
-            </article>
-
- 
-            <!-- arritcle posts -->
-            <article class="post white_bg">
-                <header class="gray_cr_n">
-                    <a href="#">
-                        <img src="icon/movie.svg " alt=" " />
-                        <h2 class="gray_cr fo_he"> دانلود فیلم The Fault in Our Stars</h2>
-                    </a>
-                    <div class="star_imdb">
-                        <img src="icon/star.svg " alt=" " />
-                        <h3>
-                            <a href="#" class="imdb_point fo_he2_b gray_cr">
-                                <span> IMDB : </span> <span> 7.6</span>
-                            </a>
-                        </h3>
-                    </div>
-                </header>
-                <section class="details_movie">
-                    <div class="pictue_movie">
-                        <a href="#">
-                            <img src="img/The Fault in Our Stars.jpg" alt=" " />
-                        </a>
-                    </div>
-                    <ul class="right_details">
-                        <li>
-                            <span class="fo_he2 gray_cr_n">نام فیلم :</span>
-                            <span class="fo_he2 gray_cr_n">The Fault in Our Stars</span>
-                        </li>
-
-                        <li>
-                            <span class="fo_he2 gray_cr_n">ژانر :</span>
-                            <a href="#"><span class="fo_he2 gray_cr"> خانوادگی و درام</span></a>
-                        </li>
-
-                        <li>
-                            <span class="fo_he2 gray_cr_n">امتیاز :</span>
-                            <a href="#"><span class="fo_he2 gray_cr">&nbsp;7.8 در IMDB</span></a>
-                        </li>
-
-                        <li>
-                            <span class="fo_he2 gray_cr_n">زبان :</span>
-                            <span class="fo_he2 gray_cr_n">&nbsp;انگلیسی</span>
-                        </li>
-
-                        <li>
-                            <span class="fo_he2 gray_cr_n">محصول کشور :</span>
-                            <a href="#"><span class="fo_he2 gray_cr">&nbsp;آمریکا</span></a>
-                        </li>
-
-                        <li>
-                            <span class="fo_he2 gray_cr_n">سال انتشار :</span>
-                            <a href="#"><span class="fo_he2 gray_cr">&nbsp;2014</span></a>
-                        </li>
-
-                        <li>
-                            <span class="fo_he2 gray_cr_n">کارگردان :</span>
-                            <a href="#"><span class="fo_he2 gray_cr">&nbsp;دیوید فینچر</span></a>
-                        </li>
-
-                        <li>
-                            <span class="fo_he2 gray_cr_n">بازیگران :</span>
-                           <a href="#"> <span class="fo_he2 gray_cr">
-                                &nbsp; Shailene Woodley ,
-                            </span></a>
-                            <a href="#"> <span class="fo_he2 gray_cr">
-                                &nbsp; Ansel Elgort, 
-                            </span></a>
-                            <a href="#"> <span class="fo_he2 gray_cr">
-                                &nbsp;  Nat Wolff
-                            </span></a>
-                        </li>
-                    </ul>
-                </section>
-                    <footer class="details_description">
-                        <div class="description gray_cr_n">
-                            <span class="fo_he2_b">خلاصه داستان  :</span>
-                            <p class="fo_pa">
-                                فیلمی رمانتیک درام آمریکایی به کارگردانی جاش بون، برگرفته از رمانی به همین نام به قلم جان گرین است. در این فیلم شیلین وودلی، انسل الگورت، لورا درن، سام ترمل، نات وولف و ویلم دفو نقش‌آفرینی می‌کنند. فیلم‌برداری بخت پریشان در پیتسبورگ و آمستردام صورت گرفته‌است
-                                و در تاریخ ۶ ژوئن ۲۰۱۴ روی پرده .
-                            </p>
-                        </div>
-                        <div class="download">
-                            <a href="# " class= "white_red">
-                                <span class="fo_he2">توضیحات + دانلود</span>
-                            </a>
-                        </div>
-                    </footer>
-                
-            </article>
-
- 
-            <!-- arritcle posts -->
-            <article class="post white_bg">
-                <header class="gray_cr_n">
-                    <a href="#">
-                        <img src="icon/movie.svg " alt=" " />
-                        <h2 class="gray_cr fo_he"> دانلود فیلم The Fault in Our Stars</h2>
-                    </a>
-                    <div class="star_imdb">
-                        <img src="icon/star.svg " alt=" " />
-                        <h3>
-                            <a href="#" class="imdb_point fo_he2_b gray_cr">
-                                <span> IMDB : </span> <span> 7.6</span>
-                            </a>
-                        </h3>
-                    </div>
-                </header>
-                <section class="details_movie">
-                    <div class="pictue_movie">
-                        <a href="#">
-                            <img src="img/The Fault in Our Stars.jpg" alt=" " />
-                        </a>
-                    </div>
-                    <ul class="right_details">
-                        <li>
-                            <span class="fo_he2 gray_cr_n">نام فیلم :</span>
-                            <span class="fo_he2 gray_cr_n">The Fault in Our Stars</span>
-                        </li>
-
-                        <li>
-                            <span class="fo_he2 gray_cr_n">ژانر :</span>
-                            <a href="#"><span class="fo_he2 gray_cr"> خانوادگی و درام</span></a>
-                        </li>
-
-                        <li>
-                            <span class="fo_he2 gray_cr_n">امتیاز :</span>
-                            <a href="#"><span class="fo_he2 gray_cr">&nbsp;7.8 در IMDB</span></a>
-                        </li>
-
-                        <li>
-                            <span class="fo_he2 gray_cr_n">زبان :</span>
-                            <span class="fo_he2 gray_cr_n">&nbsp;انگلیسی</span>
-                        </li>
-
-                        <li>
-                            <span class="fo_he2 gray_cr_n">محصول کشور :</span>
-                            <a href="#"><span class="fo_he2 gray_cr">&nbsp;آمریکا</span></a>
-                        </li>
-
-                        <li>
-                            <span class="fo_he2 gray_cr_n">سال انتشار :</span>
-                            <a href="#"><span class="fo_he2 gray_cr">&nbsp;2014</span></a>
-                        </li>
-
-                        <li>
-                            <span class="fo_he2 gray_cr_n">کارگردان :</span>
-                            <a href="#"><span class="fo_he2 gray_cr">&nbsp;دیوید فینچر</span></a>
-                        </li>
-
-                        <li>
-                            <span class="fo_he2 gray_cr_n">بازیگران :</span>
-                           <a href="#"> <span class="fo_he2 gray_cr">
-                                &nbsp; Shailene Woodley ,
-                            </span></a>
-                            <a href="#"> <span class="fo_he2 gray_cr">
-                                &nbsp; Ansel Elgort, 
-                            </span></a>
-                            <a href="#"> <span class="fo_he2 gray_cr">
-                                &nbsp;  Nat Wolff
-                            </span></a>
-                        </li>
-                    </ul>
-                </section>
-                    <footer class="details_description">
-                        <div class="description gray_cr_n">
-                            <span class="fo_he2_b">خلاصه داستان  :</span>
-                            <p class="fo_pa">
-                                فیلمی رمانتیک درام آمریکایی به کارگردانی جاش بون، برگرفته از رمانی به همین نام به قلم جان گرین است. در این فیلم شیلین وودلی، انسل الگورت، لورا درن، سام ترمل، نات وولف و ویلم دفو نقش‌آفرینی می‌کنند. فیلم‌برداری بخت پریشان در پیتسبورگ و آمستردام صورت گرفته‌است
-                                و در تاریخ ۶ ژوئن ۲۰۱۴ روی پرده .
-                            </p>
-                        </div>
-                        <div class="download">
-                            <a href="# " class= "white_red">
-                                <span class="fo_he2">توضیحات + دانلود</span>
-                            </a>
-                        </div>
-                    </footer>
-                
-            </article>
-
- 
-            <!-- arritcle posts -->
-            <article class="post white_bg">
-                <header class="gray_cr_n">
-                    <a href="#">
-                        <img src="icon/movie.svg " alt=" " />
-                        <h2 class="gray_cr fo_he"> دانلود فیلم The Fault in Our Stars</h2>
-                    </a>
-                    <div class="star_imdb">
-                        <img src="icon/star.svg " alt=" " />
-                        <h3>
-                            <a href="#" class="imdb_point fo_he2_b gray_cr">
-                                <span> IMDB : </span> <span> 7.6</span>
-                            </a>
-                        </h3>
-                    </div>
-                </header>
-                <section class="details_movie">
-                    <div class="pictue_movie">
-                        <a href="#">
-                            <img src="img/The Fault in Our Stars.jpg" alt=" " />
-                        </a>
-                    </div>
-                    <ul class="right_details">
-                        <li>
-                            <span class="fo_he2 gray_cr_n">نام فیلم :</span>
-                            <span class="fo_he2 gray_cr_n">The Fault in Our Stars</span>
-                        </li>
-
-                        <li>
-                            <span class="fo_he2 gray_cr_n">ژانر :</span>
-                            <a href="#"><span class="fo_he2 gray_cr"> خانوادگی و درام</span></a>
-                        </li>
-
-                        <li>
-                            <span class="fo_he2 gray_cr_n">امتیاز :</span>
-                            <a href="#"><span class="fo_he2 gray_cr">&nbsp;7.8 در IMDB</span></a>
-                        </li>
-
-                        <li>
-                            <span class="fo_he2 gray_cr_n">زبان :</span>
-                            <span class="fo_he2 gray_cr_n">&nbsp;انگلیسی</span>
-                        </li>
-
-                        <li>
-                            <span class="fo_he2 gray_cr_n">محصول کشور :</span>
-                            <a href="#"><span class="fo_he2 gray_cr">&nbsp;آمریکا</span></a>
-                        </li>
-
-                        <li>
-                            <span class="fo_he2 gray_cr_n">سال انتشار :</span>
-                            <a href="#"><span class="fo_he2 gray_cr">&nbsp;2014</span></a>
-                        </li>
-
-                        <li>
-                            <span class="fo_he2 gray_cr_n">کارگردان :</span>
-                            <a href="#"><span class="fo_he2 gray_cr">&nbsp;دیوید فینچر</span></a>
-                        </li>
-
-                        <li>
-                            <span class="fo_he2 gray_cr_n">بازیگران :</span>
-                           <a href="#"> <span class="fo_he2 gray_cr">
-                                &nbsp; Shailene Woodley ,
-                            </span></a>
-                            <a href="#"> <span class="fo_he2 gray_cr">
-                                &nbsp; Ansel Elgort, 
-                            </span></a>
-                            <a href="#"> <span class="fo_he2 gray_cr">
-                                &nbsp;  Nat Wolff
-                            </span></a>
-                        </li>
-                    </ul>
-                </section>
-                    <footer class="details_description">
-                        <div class="description gray_cr_n">
-                            <span class="fo_he2_b">خلاصه داستان  :</span>
-                            <p class="fo_pa">
-                                فیلمی رمانتیک درام آمریکایی به کارگردانی جاش بون، برگرفته از رمانی به همین نام به قلم جان گرین است. در این فیلم شیلین وودلی، انسل الگورت، لورا درن، سام ترمل، نات وولف و ویلم دفو نقش‌آفرینی می‌کنند. فیلم‌برداری بخت پریشان در پیتسبورگ و آمستردام صورت گرفته‌است
-                                و در تاریخ ۶ ژوئن ۲۰۱۴ روی پرده .
-                            </p>
-                        </div>
-                        <div class="download">
-                            <a href="# " class= "white_red">
-                                <span class="fo_he2">توضیحات + دانلود</span>
-                            </a>
-                        </div>
-                    </footer>
-                
-            </article>
-
- 
+            </aside>
         </div>
+
         <!-- wp-pagenavi -->
         <div class="wp-pagenavi white_bg">
             <span class="white_cr fo_he2 pages_navi">صفحه 1 از 100</span>
