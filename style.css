@@ -326,6 +326,10 @@ a:hover {
 .header_nav {
   display: flex;
   flex-wrap: wrap;
+  background: #ecedee ;
+}
+.contain_nav{
+  justify-content: center !important;
 }
 .navbar_all{
   justify-content: center;
@@ -600,7 +604,7 @@ a:hover {
   position: absolute;
   margin-top: 90px;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .relative_pic li {
@@ -656,14 +660,13 @@ a:hover {
 .posts_leftsidebar{
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start ;
 }
 /* all_posts */
 
 .all_posts {
-  width: 650px; 
+  width: 62%; 
   height: 2310px;
   display: flex;
   flex-direction: column;
@@ -831,7 +834,7 @@ a:hover {
 /* left-sidebar */
 
 .left-sidebar {
-  width: 393px;
+  width: 34%;
   height: 2310px;
   display: flex;
   flex-direction: column;
@@ -1055,7 +1058,7 @@ a:hover {
 /* sidebox_news */
 
 .left-sidebar .sidebox_news {
-  width: 395px;
+  width: 26.3%;
   border-radius: 8px;
   position: absolute;
 }
@@ -1159,14 +1162,14 @@ a:hover {
 }
 
 .left-sidebar #sidebox_newss li h3 {
-  float: right;
+  text-align: right;
   margin-bottom: 0;
-  margin-top: 8px;
+  margin-top: 8px; 
 }
 
 .left-sidebar .sidebox#sidebox_newss li span {
   float: right;
-  margin-right: 30px;
+  margin-right: 20px;
   margin-top: 0;
 }
 
