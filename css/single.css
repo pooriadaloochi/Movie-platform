@@ -42,8 +42,7 @@
   position: absolute;
   right: 11.2rem;
   z-index: 1;
-  opacity:0.4;
-
+  opacity: 0.4;
 }
 .trailer_video button {
   width: 40px;
@@ -63,9 +62,9 @@
   cursor: pointer;
   right: 0;
 }
-.play_trailer:hover{
+.play_trailer:hover {
   background: #cc0033;
-  transition: .4s;
+  transition: 0.4s;
 }
 .border_bottom {
   width: 93%;
@@ -83,6 +82,10 @@
   justify-content: space-evenly;
   align-items: center;
 }
+.download_box_all span {
+  align-self: flex-start;
+  /* margin: 0.5rem 1.8rem; */
+}
 .download_box_single {
   padding: 0.8rem 0;
   width: 93%;
@@ -99,16 +102,40 @@
   margin-right: 25px;
   color: #fdfdfd;
 }
+.download_box_single#serial_download_box {
+  display: flex;
+  justify-content: flex-start;
+}
+.download_box_single#serial_download_box .serail_season {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 1rem;
+  margin-top: 0.2rem;
+}
+.download_box_single#serial_download_box .serail_season span {
+  margin: 0;
+  margin-right: 0.2rem;
+}
+.download_box_single#serial_download_box img {
+  margin-right: 8.4rem;
+}
 .sidenav {
   height: 0;
   width: 100%;
   background-color: none;
   overflow-y: hidden;
   transition: 0.5s;
-  margin-top: 0.7rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+.sidenav_ser {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-right: 0.5rem;
 }
 .sidenav li {
   width: 93%;
@@ -124,10 +151,27 @@
 }
 .span_details {
   margin-right: 1.3rem;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+
 }
-.span_details span {
-  width: 70px;
+.span_details#spann {
+  width: 143.5px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  font-size: 0.5rem !important;
 }
+.span_details#spann a {
+  padding: 0;
+}
+.span_details#spann a span{
+  margin: 0;
+}
+
 .sidenav li .download {
   padding: 0.3rem 2rem;
   background: #cc0033;
@@ -140,14 +184,9 @@
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
   color: #818181;
   display: block;
   transition: 0.2s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
 }
 
 @media screen and (max-width: 450px) {
@@ -243,3 +282,12 @@
 .new_comments textarea::placeholder {
   color: #707070;
 }
+/* .left-sidebar#single_sidebar{
+  height: 2370px !important;
+}
+.left-sidebar#single_sidebar:first-child{
+  margin-top: 3rem;
+}
+.sidebox_news#sidebox_newss {
+  margin-top: 5rem;
+} */
